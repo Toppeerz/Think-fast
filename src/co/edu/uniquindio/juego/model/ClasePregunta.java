@@ -16,7 +16,7 @@ public enum ClasePregunta{
 	public int getNumeroClasePregunta() {
 		return numeroClasePregunta;
 	}
-//holaa
+//holaa 2 
 }
 
 
