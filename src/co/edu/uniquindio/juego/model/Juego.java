@@ -7,7 +7,7 @@ import java.util.Hashtable;
 public class Juego implements Serializable {
 
 	/**
-	 *  este comentario inicia la clase juego de la aplicacion
+	 *  este comentario inicia la clase juego de la aplicacion jf
 	 */
 	private static final long serialVersionUID = 1L;
 	//atributos
