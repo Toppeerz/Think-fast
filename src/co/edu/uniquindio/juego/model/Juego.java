@@ -6,7 +6,7 @@ import java.util.Hashtable;
 public class Juego implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	//atributos
+	//Atributos
 	private String nombre;
 	private Hashtable<Integer,Pregunta> listaPreguntas = new Hashtable<Integer,Pregunta>();
 	private Hashtable<Integer,Jugador> listaJugadores = new Hashtable<Integer,Jugador>();
