@@ -7,10 +7,10 @@ import java.util.Hashtable;
 public class Juego implements Serializable {
 
 	/**
-	 * 
+	 *  este comentario inicia la clase juego de la aplicacion
 	 */
 	private static final long serialVersionUID = 1L;
-
+	//atributos
 	private String nombre;
     private Hashtable<Integer,Jugador> listaJugadoresPuntuaciones = new Hashtable<Integer,Jugador>();
 	private ArrayList<Pregunta> listaPreguntasFaciles = new ArrayList<Pregunta>();
@@ -154,5 +154,5 @@ public class Juego implements Serializable {
 	
 	
 	
-	
-}
+}	//fin clase juego
+
