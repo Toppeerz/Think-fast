@@ -16,11 +16,7 @@ public enum ClasePregunta{
 	public int getNumeroClasePregunta() {
 		return numeroClasePregunta;
 	}
-//holaa 2 
 
-
-
-//pruebas para git ᓚᘏᗢᓚᘏᗢ
 }
 
 
