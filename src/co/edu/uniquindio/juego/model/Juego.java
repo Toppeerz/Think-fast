@@ -23,7 +23,7 @@ public class Juego implements Serializable {
 
 
 
-//d
+//da
 	
 	public Juego(String nombre, Hashtable<Integer, Jugador> listaJugadoresPuntuaciones,
 			ArrayList<Pregunta> listaPreguntasFaciles, ArrayList<Pregunta> listaPreguntasMedias,
