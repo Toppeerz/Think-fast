@@ -16,6 +16,7 @@ public class Juego implements Serializable {
 	
 
 	
+	//private Hashtable<Integer,Jugador> listaJugadores = new Hashtable<Integer,Jugador>();
 
 
 
