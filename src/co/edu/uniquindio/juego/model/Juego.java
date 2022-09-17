@@ -14,8 +14,8 @@ public class Juego implements Serializable {
 	private Hashtable<Integer,Pregunta> listaPreguntas = new Hashtable<Integer,Pregunta>();
 	private Hashtable<Integer,Jugador> listaJugadores = new Hashtable<Integer,Jugador>();
 	
-
-	//holas
+    //linea 7
+	//hola
 	//private Hashtable<Integer,Jugador> listaJugadores = new Hashtable<Integer,Jugador>();
 
 
