@@ -16,6 +16,10 @@ public class Pregunta implements Serializable{
 	private ClasePregunta clasePregunta;
 	private ArrayList<String> respuestasIncorrectas = new ArrayList<String>();
 	
+
+	
+
+
 	public Pregunta(String pregunta, String respuesta, TipoPregunta tipoPregunta, ClasePregunta clasePregunta) {
 		
 		this.pregunta = pregunta;
@@ -23,6 +27,10 @@ public class Pregunta implements Serializable{
 		this.tipoPregunta = tipoPregunta;
 		this.clasePregunta = clasePregunta;
 	}
+
+
+
+
 
 	public Pregunta() {
 		
