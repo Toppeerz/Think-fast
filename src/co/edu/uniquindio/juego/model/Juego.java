@@ -19,6 +19,12 @@ public class Juego implements Serializable {
 	private ArrayList<Pregunta> listaPreguntas = new ArrayList<Pregunta>();
 	private ArrayList<Jugador> listaJugadores = new ArrayList<Jugador>();
 	
+
+
+
+
+
+	
 	public Juego(String nombre, Hashtable<Integer, Jugador> listaJugadoresPuntuaciones,
 			ArrayList<Pregunta> listaPreguntasFaciles, ArrayList<Pregunta> listaPreguntasMedias,
 			ArrayList<Pregunta> listaPreguntasDificiles, ArrayList<Pregunta> listaPreguntas,
