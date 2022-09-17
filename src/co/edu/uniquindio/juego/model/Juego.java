@@ -5,19 +5,12 @@ import java.util.Hashtable;
 
 public class Juego implements Serializable {
 
-	/**
-	 *  este comentario inicia la clase juego de la aplicacion jkaskaj
-	 */
 	private static final long serialVersionUID = 1L;
 	//atributos
 	private String nombre;
 	private Hashtable<Integer,Pregunta> listaPreguntas = new Hashtable<Integer,Pregunta>();
 	private Hashtable<Integer,Jugador> listaJugadores = new Hashtable<Integer,Jugador>();
 	
-    //linea 7
-	//hola
-	//private Hashtable<Integer,Jugador> listaJugadores = new Hashtable<Integer,Jugador>();
-
 
 
 
