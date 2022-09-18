@@ -17,7 +17,7 @@ public class hilo extends Thread {
                 Platform.runLater(() -> juegoViewController.labelCronometro.setText("" + interval));
                 System.out.println(interval + Thread.currentThread().getName());
                 interval--;
-                Thread.sleep(200);
+                Thread.sleep(500);
             }
             isCorriendo = false;
             juegoViewController.setCorriendo(false);
