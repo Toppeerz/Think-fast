@@ -10,9 +10,7 @@ public class Juego implements Serializable {
 	private String nombre;
 	private Hashtable<Integer,Pregunta> listaPreguntas = new Hashtable<Integer,Pregunta>();
 	private Hashtable<Integer,Jugador> listaJugadores = new Hashtable<Integer,Jugador>();
-	
-
-
+	//registrarPregunta( listaPreguntas);
 
 //
 	
@@ -49,6 +47,108 @@ public void setListaJugadores(Hashtable<Integer, Jugador> listaJugadores) {
 	this.listaJugadores = listaJugadores;
 }
 
+private void registrarPregunta(Hashtable<Integer,Pregunta> listaPreguntas){
+	Pregunta pregunta1= new Pregunta("¿Para qué sirve la paleta?","Para mezclar pinturas",TipoPregunta.FACIL,ClasePregunta.ARTE);
+	Pregunta pregunta2= new Pregunta("¿Qué tendencia musical es la que más incursiona en Jamaica?","Reggae",TipoPregunta.FACIL,ClasePregunta.ARTE);
+	Pregunta pregunta3= new Pregunta("¿Qué usamos para diluir los colores de las acuarelas?","Agua",TipoPregunta.FACIL,ClasePregunta.ARTE);
+	Pregunta pregunta4= new Pregunta("¿Cuántos dedos tiene por lo general una caricatura?","Cuatro",TipoPregunta.FACIL,ClasePregunta.ARTE);
+	Pregunta pregunta5= new Pregunta("¿Qué nota musical hay entre re y fa?","Mi",TipoPregunta.FACIL,ClasePregunta.ARTE);
+	Pregunta pregunta6= new Pregunta("Más vale pájaro en mano...","que cien volando",TipoPregunta.FACIL,ClasePregunta.ARTE);
+	Pregunta pregunta7= new Pregunta("¿A qué se dedicaban los siete enanitos?","Eran mineros",TipoPregunta.FACIL,ClasePregunta.ARTE);
+	Pregunta pregunta8= new Pregunta("Perro que ladra...","No muerde",TipoPregunta.FACIL,ClasePregunta.ARTE);
+	Pregunta pregunta9= new Pregunta("¿A qué familia de instrumentos pertenece la guitarra, el violín y el bajo?","Cuerdas",TipoPregunta.FACIL,ClasePregunta.ARTE);
+	Pregunta pregunta10= new Pregunta("¿En qué novela el protagonista es un asesino en serie con un sentido del olfato increíblemente desarrollado?","El Perfume",TipoPregunta.FACIL,ClasePregunta.ARTE);
+
+	Pregunta pregunta11= new Pregunta("Gabriel García Márquez se caracteriza por narrar en un mundo:","Real Maravilloso",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+	Pregunta pregunta12= new Pregunta("¿Quién era la diosa de la sabiduría en la mitología griega?","Atena",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+	Pregunta pregunta13= new Pregunta("¿Cuál es el nombre de Picasso?","pablo",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+	Pregunta pregunta14= new Pregunta("¿Tira la piedra...?","Y esconde la mano",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+	Pregunta pregunta15= new Pregunta("¿A qué ciudad vasca dedicó un cuadro Pablo Picasso?","Guernica",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+	Pregunta pregunta16= new Pregunta("¿Quién escribió la novela 'Contagio'?","Robin Cook",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+	Pregunta pregunta17= new Pregunta("¿Qué pieza de arte fue robada y guardada debajo de una cama hasta que se devolvió al Museo Louvre?","Mona Lisa",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+	Pregunta pregunta18= new Pregunta("¿Qué instrumento tocaba Zeta Bosio en Soda Stereo?","Bajo",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+	Pregunta pregunta19= new Pregunta("¿Qué parte del cuerpo se cortó Vicent Van Gogh?","Oreja",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+	Pregunta pregunta20= new Pregunta("De qué país es la caricatura 'Condorito'?","Chile",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+
+	Pregunta pregunta21= new Pregunta("¿Cuál es la famosa cueva en la que se narra el Quijote?","Montesinos",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+	Pregunta pregunta22= new Pregunta("¿Cuántos anillos fueron creados por Sauron para los Señores Enanos en el Señor de los Anillos?","7",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+	Pregunta pregunta23= new Pregunta("¿Cuál de las siguientes palabras es esdrújula?","Metálico",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+	Pregunta pregunta24= new Pregunta("¿Cuál es la obra cumbre en la literatura española escrita por Fernando de Rojas?","La Celestina",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+	Pregunta pregunta25= new Pregunta("¿Cuál de las siguientes obras no pertenece a Edgar Allan Poe?","El monte de las ánimas",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+	Pregunta pregunta26= new Pregunta("¿Qué obra NO pertenece a Shakespeare?","La Divina Comedia",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+	Pregunta pregunta27= new Pregunta("¿Qué color consigues mezclando todos los colores del CMYK?","Negro",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+	Pregunta pregunta28= new Pregunta("¿Quién pintó el cuadro La Persistencia de la Memoria?","Dalí",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+	Pregunta pregunta29= new Pregunta("¿Cuántos 'gritos' pintó Munch?","Cuatro",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+	Pregunta pregunta30= new Pregunta("¿De qué murió Jean Valjean en la novela 'Los Miserables'?","De viejo",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+
+	Pregunta pregunta31= new Pregunta("¿En cuál de los siguientes deportes se puede tocar el balón con las manos?","Baloncesto",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta32= new Pregunta("¿A qué deporte pertenece la WWE?","Lucha libre",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta33= new Pregunta("¿Qué deporte estamos viendo si el árbitro señala 'falta de rotación'?","Voleibol",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta34= new Pregunta("¿Cómo se llama el lugar destinado a las carreras de caballos?","Hipódromo",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta35= new Pregunta("¿Quién tiene más balones de oro?","Lionel Messi",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta36= new Pregunta(" Estilo de atletismo en el que los corredores llevan un testigo:","Relevo",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta37= new Pregunta("¿Cuántas Copas del Mundo de Fútbol ha ganado la selección de Italia?","Cuatro",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta38= new Pregunta("¿Cuántos tiempos tiene un partido de baloncesto?","4",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta39= new Pregunta("¿En qué equipo juega Cristiano Ronaldo?","Real Madrid",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta40= new Pregunta("¿Cuál de estos partidos de la Liga Española se considera un clásico?","Barça vs Madrid",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+
+	Pregunta pregunta41= new Pregunta("¿Qué duración tiene un partido de fútbol que llega a la tanda de penaltis?","120",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+	Pregunta pregunta42= new Pregunta("¿En cuántos mundiales participó la selección de Inglaterra?","14",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+	Pregunta pregunta43= new Pregunta("¿Con qué deporte relacionarías a Aitor Osa?","Ciclismo",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+	Pregunta pregunta44= new Pregunta("¿Quién ganó el mundial de 2010 en Sudáfrica?","España",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+	Pregunta pregunta45= new Pregunta("¿Cuál es el salto más alto en caballo?","1'20 m",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+	Pregunta pregunta46= new Pregunta("¿Cuántos jugadores componen usualmente un equipo de rugby?","15",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+	Pregunta pregunta47= new Pregunta("¿Cómo se llama la anotación de un tanto en el fútbol americano?","Touchdown",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+	Pregunta pregunta48= new Pregunta("¿Quién fue el máximo goleador de la UEFA Champions League en 2013?","Cristiano Ronaldo",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+	Pregunta pregunta49= new Pregunta("En voleibol, ¿hasta cuántos toques se le puede dar a la pelota antes de pasarla al campo rival?","Tres",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+	Pregunta pregunta50= new Pregunta("Evgenia Kanaeva es la 'reina' de...","Gimnasia rítmica",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+
+	Pregunta pregunta51= new Pregunta("¿Cómo se llamaba la pelota del Mundial de Fútbol 1978?","Adidas Tango",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta52= new Pregunta("¿Cuál es el nombre de pila del tenista Federer?","Roger",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta53= new Pregunta("¿Quién es el goleador(es) del mundial 2010?","Diego Forlán y Thomas Müller",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta54= new Pregunta("¿Cómo se llama Iniesta?","Andrés",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta55= new Pregunta("¿En qué país ganó Alemania su primer mundial de fútbol?","Suiza",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta56= new Pregunta("¿Quién fue el primer jugador que recibió la distinción de 'Mejor Jugador del Siglo'?","Pelé",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta57= new Pregunta("¿A qué se denomina hacer un rosco en Tenis?","6-0",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta58= new Pregunta("¿Quién fue el primer equipo en llevar dorsales en la liga Española?","Real Madrid",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta59= new Pregunta("¿En qué deporte olímpico conlleva la expulsión salpicar deliberadamente la cara de un oponente o hundirlo en el agua cuando no tiene la pelota?","Waterpolo",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+	Pregunta pregunta60= new Pregunta("¿Cuál de estas posiciones no representa a un jugador de Baseball?","Fullback",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+
+	Pregunta pregunta61= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta62= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta63= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta64= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta65= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta66= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta67= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta68= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta69= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta70= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+
+	Pregunta pregunta71= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta72= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta73= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta74= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta75= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta76= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta77= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta78= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta79= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta80= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
+
+	Pregunta pregunta81= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta82= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta83= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta84= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta85= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta86= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta87= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta88= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta89= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+	Pregunta pregunta90= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+
+
+}
 	
 	
 	
