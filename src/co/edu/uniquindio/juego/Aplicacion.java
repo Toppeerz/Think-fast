@@ -55,6 +55,7 @@ public class Aplicacion extends Application {
 			primaryStage.show();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
+			/*nnnnn */
 			e.printStackTrace();
 		}
 	}
