@@ -147,6 +147,110 @@ private void registrarPregunta(Hashtable<Integer,Pregunta> listaPreguntas){
 	Pregunta pregunta89= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
 	Pregunta pregunta90= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
 
+	Pregunta pregunta91= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta92= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta93= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta94= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta95= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta96= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta97= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta98= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta99= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta100= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
+
+	Pregunta pregunta101= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta102= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta103= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta104= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta105= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta106= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta107= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta108= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta109= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta110= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
+	
+	Pregunta pregunta111= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta112= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta113= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta114= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta115= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta116= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta117= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta118= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta119= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.GEOGRAFIA);
+	Pregunta pregunta120= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.GEOGRAFIA);
+	
+	Pregunta pregunta121= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta122= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta123= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta124= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta125= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta126= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta127= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta128= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta129= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta130= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.HISTORIA);
+
+	Pregunta pregunta131= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
+	Pregunta pregunta132= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
+	Pregunta pregunta133= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
+	Pregunta pregunta134= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
+	Pregunta pregunta135= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
+	Pregunta pregunta136= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
+	Pregunta pregunta137= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
+	Pregunta pregunta138= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
+	Pregunta pregunta139= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
+	Pregunta pregunta140= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
+
+	Pregunta pregunta141= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta142= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta143= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta144= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta145= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta146= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta147= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta148= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta149= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
+	Pregunta pregunta150= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
+
+	Pregunta pregunta151= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta152= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta153= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta154= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta155= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta156= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta157= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta158= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta159= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta160= new Pregunta("","",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+
+	Pregunta pregunta161= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+	Pregunta pregunta162= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+	Pregunta pregunta163= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+	Pregunta pregunta164= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+	Pregunta pregunta165= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+	Pregunta pregunta166= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+	Pregunta pregunta167= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+	Pregunta pregunta168= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+	Pregunta pregunta169= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+	Pregunta pregunta170= new Pregunta("","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+
+	Pregunta pregunta171= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta172= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta173= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta174= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta175= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta176= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta177= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta178= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta179= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+	Pregunta pregunta180= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+
+
+
+
+
+
 
 }
 	
