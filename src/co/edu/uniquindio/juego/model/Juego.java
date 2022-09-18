@@ -247,8 +247,59 @@ private void registrarPregunta(Hashtable<Integer,Pregunta> listaPreguntas){
 	Pregunta pregunta180= new Pregunta("","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
 
 
+	//se llena el Hashtable
+		listaPreguntas.put(1, pregunta1);
+		listaPreguntas.put(2, pregunta2);
+		listaPreguntas.put(3, pregunta3);
+		listaPreguntas.put(4, pregunta4);
+		listaPreguntas.put(5, pregunta5);
+		listaPreguntas.put(6, pregunta6);
+		listaPreguntas.put(7, pregunta7);
+		listaPreguntas.put(8, pregunta8);
+		listaPreguntas.put(9, pregunta9);
+		listaPreguntas.put(10, pregunta10);
+		listaPreguntas.put(11, pregunta11);
+		listaPreguntas.put(12, pregunta12);
+		listaPreguntas.put(13, pregunta13);
+		listaPreguntas.put(14, pregunta14);
+		listaPreguntas.put(15, pregunta15);
+		listaPreguntas.put(16, pregunta16);
+		listaPreguntas.put(17, pregunta17);
+		listaPreguntas.put(18, pregunta18);
+		listaPreguntas.put(19, pregunta19);
+		listaPreguntas.put(20, pregunta20);
+		listaPreguntas.put(21, pregunta21);
+		listaPreguntas.put(22, pregunta22);
+		listaPreguntas.put(23, pregunta23);
+		listaPreguntas.put(24, pregunta24);
+		listaPreguntas.put(25, pregunta25);
+		listaPreguntas.put(26, pregunta26);
+		listaPreguntas.put(27, pregunta27);
+		listaPreguntas.put(28, pregunta28);
+		listaPreguntas.put(29, pregunta29);
+		listaPreguntas.put(30, pregunta30);
+		listaPreguntas.put(31, pregunta31);
+		listaPreguntas.put(32, pregunta32);
+		listaPreguntas.put(33, pregunta33);
+		listaPreguntas.put(34, pregunta34);
+		listaPreguntas.put(35, pregunta35);
+		listaPreguntas.put(36, pregunta36);
+		listaPreguntas.put(37, pregunta37);
+		listaPreguntas.put(38, pregunta38);
+		listaPreguntas.put(39, pregunta39);
+		listaPreguntas.put(40, pregunta40);
+		listaPreguntas.put(41, pregunta41);
+		listaPreguntas.put(42, pregunta42);
+		listaPreguntas.put(43, pregunta43);
+		listaPreguntas.put(44, pregunta44);
+		listaPreguntas.put(45, pregunta45);
+		listaPreguntas.put(46, pregunta46);
+		listaPreguntas.put(47, pregunta47);
+		listaPreguntas.put(48, pregunta48);
+		listaPreguntas.put(49, pregunta49);
+		listaPreguntas.put(50, pregunta50);
 
-
+	
 
 
 
