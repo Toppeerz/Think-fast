@@ -17,37 +17,49 @@ public class JuegoViewController{
    Aplicacion aplicacion;
    Juego juego = new Juego();
    long interval = 30;
+   boolean isCorriendo = false;
+   hilo hilo = new hilo();
+ 
 
     @FXML
-    private Label labelCronometro;
+    public Label labelCronometro;
 
     @FXML
     private Button btnIniciar;
 
     @FXML
-    void iniciar(ActionEvent event) {
-    
-       Timer timer = new Timer();
-           timer.scheduleAtFixedRate(new TimerTask() {
-           public void run() {
-            if(interval >= 0)
-            {
-                Platform.runLater(() -> labelCronometro.setText(""+interval));
-                System.out.println(interval);
-                interval--;
-            }
-            else
-                timer.cancel();
-        }
-    }, 1000L,1000L);
-}
+    private Button btnParar;
 
+    @FXML
+    void iniciar(ActionEvent event) {
+        if(isCorriendo==false){
+            isCorriendo=true;
+            hilo = new hilo();
+            hilo.setControlador(this,isCorriendo);
+            hilo.start();
+          
+    }else{
+        System.out.println("Ya esta corriendo");
+    }
+    }
+
+    
     
     public void setAplicacion(Aplicacion aplicacion) {
         this.aplicacion=aplicacion;
     }
 
+    @FXML
+    void parar(ActionEvent event) {
+    if(isCorriendo==true && hilo.isCorriendo==true){
+        hilo.setCorriendo(false);
+        isCorriendo=false;
+    }else{
+        System.out.println("No se puede parar el contador porque no esta corriendo");
+    }
+    }
 
-    
+
+
 
 }
