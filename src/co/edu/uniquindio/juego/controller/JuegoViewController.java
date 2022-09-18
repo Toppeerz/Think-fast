@@ -1,5 +1,8 @@
 package co.edu.uniquindio.juego.controller;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import co.edu.uniquindio.juego.Aplicacion;
 import co.edu.uniquindio.juego.model.Juego;
 import javafx.application.Platform;
@@ -13,6 +16,7 @@ public class JuegoViewController{
    public static boolean corriendoCronometro;
    Aplicacion aplicacion;
    Juego juego = new Juego();
+   long interval = 30;
 
     @FXML
     private Label labelCronometro;
@@ -22,27 +26,20 @@ public class JuegoViewController{
 
     @FXML
     void iniciar(ActionEvent event) {
-      
-      
-        (new Thread() {
-            public void run(){
-                for (int i = 0; i < 5; i++) {
-                    try {
-                    Thread.sleep(1000);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-                labelCronometro.setText("value " + i);
-                Platform.runLater(() -> {
-                
-                    labelCronometro.setText("value ");
-               
-                });
-                
-
+    
+       Timer timer = new Timer();
+           timer.scheduleAtFixedRate(new TimerTask() {
+           public void run() {
+            if(interval >= 0)
+            {
+                Platform.runLater(() -> labelCronometro.setText(""+interval));
+                System.out.println(interval);
+                interval--;
             }
+            else
+                timer.cancel();
         }
-    }).start();    
+    }, 1000L,1000L);
 }
 
     
