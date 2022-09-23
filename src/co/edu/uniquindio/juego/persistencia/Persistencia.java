@@ -17,7 +17,6 @@ public class Persistencia  {
 		try {
 			juego = (Juego)ArchivoUtil.cargarRecursoSerializadoXML(RUTA_ARCHIVO_MODELO_JUEGO_XML);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return juego;
@@ -31,7 +30,6 @@ public class Persistencia  {
 		try {
 			ArchivoUtil.salvarRecursoSerializadoXML(RUTA_ARCHIVO_MODELO_JUEGO_XML, juego);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

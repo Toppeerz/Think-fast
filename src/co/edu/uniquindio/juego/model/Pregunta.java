@@ -2,6 +2,7 @@ package co.edu.uniquindio.juego.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Pregunta implements Serializable{
 
@@ -14,18 +15,31 @@ public class Pregunta implements Serializable{
 	private String respuesta;
 	private TipoPregunta tipoPregunta;
 	private ClasePregunta clasePregunta;
-	private ArrayList<String> respuestasIncorrectas = new ArrayList<String>();
+	private ArrayList<Respuesta> respuestas = new ArrayList<Respuesta>();
 	
 
 	
 
 
-	public Pregunta(String pregunta, String respuesta, TipoPregunta tipoPregunta, ClasePregunta clasePregunta) {
+	public Pregunta(String pregunta, String respuestaCorrecta,String respuestaIncorrecta1,String respuestaIncorrecta2,String respuestaIncorrecta3,TipoPregunta tipoPregunta, ClasePregunta clasePregunta) {
 		
 		this.pregunta = pregunta;
-		this.respuesta = respuesta;
 		this.tipoPregunta = tipoPregunta;
 		this.clasePregunta = clasePregunta;
+        Respuesta respuestaAuxCorrecta = new Respuesta(respuestaCorrecta, true);
+		Respuesta respuestaAux1 = new Respuesta(respuestaIncorrecta1, false);
+		Respuesta respuestaAux2 = new Respuesta(respuestaIncorrecta2, false);
+		Respuesta respuestaAux3 = new Respuesta(respuestaIncorrecta3, false);
+		this.respuestas.add(respuestaAuxCorrecta);
+		this.respuestas.add(respuestaAux1);
+		this.respuestas.add(respuestaAux2);
+		this.respuestas.add(respuestaAux3);
+
+		Collections.shuffle(this.respuestas);
+
+		System.out.println(this.respuestas.get(0).getRespuesta());
+		
+
 	}
 
 
@@ -68,12 +82,12 @@ public class Pregunta implements Serializable{
 		this.clasePregunta = clasePregunta;
 	}
 
-	public ArrayList<String> getRespuestasIncorrectas() {
-		return respuestasIncorrectas;
+	public ArrayList<Respuesta> getRespuestasIncorrectas() {
+		return respuestas;
 	}
 
-	public void setRespuestasIncorrectas(ArrayList<String> respuestasIncorrectas) {
-		this.respuestasIncorrectas = respuestasIncorrectas;
+	public void setRespuestasIncorrectas(ArrayList<Respuesta> respuestas) {
+		this.respuestas = respuestas;
 	}
 
 	@Override
@@ -83,7 +97,7 @@ public class Pregunta implements Serializable{
 		result = prime * result + ((clasePregunta == null) ? 0 : clasePregunta.hashCode());
 		result = prime * result + ((pregunta == null) ? 0 : pregunta.hashCode());
 		result = prime * result + ((respuesta == null) ? 0 : respuesta.hashCode());
-		result = prime * result + ((respuestasIncorrectas == null) ? 0 : respuestasIncorrectas.hashCode());
+		result = prime * result + ((respuestas == null) ? 0 : respuestas.hashCode());
 		result = prime * result + ((tipoPregunta == null) ? 0 : tipoPregunta.hashCode());
 		return result;
 	}
@@ -109,10 +123,10 @@ public class Pregunta implements Serializable{
 				return false;
 		} else if (!respuesta.equals(other.respuesta))
 			return false;
-		if (respuestasIncorrectas == null) {
-			if (other.respuestasIncorrectas != null)
+		if (respuestas == null) {
+			if (other.respuestas != null)
 				return false;
-		} else if (!respuestasIncorrectas.equals(other.respuestasIncorrectas))
+		} else if (!respuestas.equals(other.respuestas))
 			return false;
 		if (tipoPregunta != other.tipoPregunta)
 			return false;
