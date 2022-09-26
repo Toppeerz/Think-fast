@@ -159,21 +159,21 @@ public class ModelFactoryController {
 		Pregunta pregunta22= new Pregunta("¿Cuántos anillos fueron creados por Sauron para los Señores Enanos en el Señor de los Anillos?","7","1","5","3",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta23= new Pregunta("¿Cuál de las siguientes palabras es esdrújula?","metálico","impídanselo","alguacil","corren",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta24= new Pregunta("¿Cuál es la obra cumbre en la literatura española escrita por Fernando de Rojas?","la Celestina","la zelestina","burgos","madrid",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta25= new Pregunta("¿Cuál de las siguientes obras no pertenece a Edgar Allan Poe?","El monte de las ánimas","","","",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta26= new Pregunta("¿Qué obra NO pertenece a Shakespeare?","La Divina Comedia",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta27= new Pregunta("¿Qué color consigues mezclando todos los colores del CMYK?","Negro",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta28= new Pregunta("¿Quién pintó el cuadro La Persistencia de la Memoria?","Dalí",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta29= new Pregunta("¿Cuántos 'gritos' pintó Munch?","Cuatro",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta30= new Pregunta("¿De qué murió Jean Valjean en la novela 'Los Miserables'?","De viejo",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta25= new Pregunta("¿Cuál de las siguientes obras no pertenece a Edgar Allan Poe?","El monte de las ánimas","It","El resplandor","Doctor Sleep",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta26= new Pregunta("¿Qué obra NO pertenece a Shakespeare?","La Divina Comedia","","","",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta27= new Pregunta("¿Qué color consigues mezclando todos los colores del CMYK?","Negro","cafe","azul","violeta",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta28= new Pregunta("¿Quién pintó el cuadro La Persistencia de la Memoria?","Dalí","Picasso","Van gogh","",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta29= new Pregunta("¿Cuántos 'gritos' pintó Munch?","cuatro","uno","cinco","tres",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta30= new Pregunta("¿De qué murió Jean Valjean en la novela 'Los Miserables'?","de viejo","disparo","suicidio","pena moral",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 	
-		Pregunta pregunta31= new Pregunta("¿En cuál de los siguientes deportes se puede tocar el balón con las manos?","Baloncesto",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta32= new Pregunta("¿A qué deporte pertenece la WWE?","Lucha libre",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta33= new Pregunta("¿Qué deporte estamos viendo si el árbitro señala 'falta de rotación'?","Voleibol",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta34= new Pregunta("¿Cómo se llama el lugar destinado a las carreras de caballos?","Hipódromo",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta35= new Pregunta("¿Quién tiene más balones de oro?","Lionel Messi",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta36= new Pregunta(" Estilo de atletismo en el que los corredores llevan un testigo:","Relevo",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta37= new Pregunta("¿Cuántas Copas del Mundo de Fútbol ha ganado la selección de Italia?","Cuatro",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta38= new Pregunta("¿Cuántos tiempos tiene un partido de baloncesto?","4",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta31= new Pregunta("¿deporte donde solo se toca el balón con las manos y se nete en una canasta?","Baloncesto","Fútbol","hockey","golf",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta32= new Pregunta("¿A qué deporte pertenece la WWE?","Lucha libre","cortar madera","belleza","tecnologia",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta33= new Pregunta("¿Qué deporte estamos viendo si el árbitro señala 'falta de rotación'?","voleibol","fútbol","hockey","baloncesto",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta34= new Pregunta("¿Cómo se llama el lugar destinado a las carreras de caballos?","Hipódromo","Cuadrilatero","Exagono","Circuito cerrado",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta35= new Pregunta("¿Quién tiene más balones de oro?","Lionel Messi","Cristiano Ronaldo","Roonie","Chicharito",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta36= new Pregunta("Estilo de atletismo en el que los corredores llevan un testigo:","relevo","maratón","waterpolo","ciclismo",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta37= new Pregunta("¿Cuántas Copas del Mundo de Fútbol ha ganado la selección de Italia?","Cuatro","Cinco","Tres","Dos",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta38= new Pregunta("¿Cuántos tiempos tiene un partido de baloncesto?","4","3","1","10",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta39= new Pregunta("¿En qué equipo juega Cristiano Ronaldo?","Real Madrid",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta40= new Pregunta("¿Cuál de estos partidos de la Liga Española se considera un clásico?","Barça vs Madrid",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
 	
