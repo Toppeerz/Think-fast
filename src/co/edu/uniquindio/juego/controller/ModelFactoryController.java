@@ -174,16 +174,16 @@ public class ModelFactoryController {
 		Pregunta pregunta36= new Pregunta("Estilo de atletismo en el que los corredores llevan un testigo:","relevo","maratón","waterpolo","ciclismo",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta37= new Pregunta("¿Cuántas Copas del Mundo de Fútbol ha ganado la selección de Italia?","Cuatro","Cinco","Tres","Dos",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta38= new Pregunta("¿Cuántos tiempos tiene un partido de baloncesto?","4","3","1","10",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta39= new Pregunta("¿En qué equipo juega Cristiano Ronaldo?","Real Madrid",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta40= new Pregunta("¿Cuál de estos partidos de la Liga Española se considera un clásico?","Barça vs Madrid",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta39= new Pregunta("¿En qué equipo juega Cristiano Ronaldo?","Real Madrid","Argentina","Millonarios","Nacional",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta40= new Pregunta("¿Cuál de estos partidos de la Liga Española se considera un clásico?","Barsa vs Madrid","Millonarios Vs Nacional","Milan Vs Inter","Manchester United Vs Manchester City",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
 	
-		Pregunta pregunta41= new Pregunta("¿Qué duración tiene un partido de fútbol que llega a la tanda de penaltis?","120",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta42= new Pregunta("¿En cuántos mundiales participó la selección de Inglaterra?","14",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta43= new Pregunta("¿Con qué deporte relacionarías a Aitor Osa?","Ciclismo",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta44= new Pregunta("¿Quién ganó el mundial de 2010 en Sudáfrica?","España",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta45= new Pregunta("¿Cuál es el salto más alto en caballo?","1'20 m",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta46= new Pregunta("¿Cuántos jugadores componen usualmente un equipo de rugby?","15",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta47= new Pregunta("¿Cómo se llama la anotación de un tanto en el fútbol americano?","Touchdown",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta41= new Pregunta("¿Qué duración tiene un partido de fútbol que llega a la tanda de penaltis?","120","110","90","130",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta42= new Pregunta("¿En cuántos mundiales participó la selección de Inglaterra?","14","8","16","20",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta43= new Pregunta("¿Con qué deporte relacionarías a Aitor Osa?","Ciclismo","futbol","Baloncesto","Hockey",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta44= new Pregunta("¿Quién ganó el mundial de 2010 en Sudáfrica?","España","Colombia","Argentina","Brazil",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta45= new Pregunta("¿Cuál es el salto más alto en caballo?","1'20 m","2'00 m","0'50 m","2'20 m",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta46= new Pregunta("¿Cuántos jugadores componen usualmente un equipo de rugby?","15","11","8","3",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta47= new Pregunta("¿Cómo se llama la anotación de un tanto en el fútbol americano?","Touchdown","gol","anotacion","",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta48= new Pregunta("¿Quién fue el máximo goleador de la UEFA Champions League en 2013?","Cristiano Ronaldo",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta49= new Pregunta("En voleibol, ¿hasta cuántos toques se le puede dar a la pelota antes de pasarla al campo rival?","Tres",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta50= new Pregunta("Evgenia Kanaeva es la 'reina' de...","Gimnasia rítmica",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
