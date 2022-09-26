@@ -133,7 +133,7 @@ public class ModelFactoryController {
 
 		juego = new Juego();
 
-		Pregunta pregunta1= new Pregunta("¿Para qué sirve la paleta?","Para mezclar pinturas",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta1= new Pregunta("¿Para qué sirve la paleta?","Para mezclar pinturas","","","",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta2= new Pregunta("¿Qué tendencia musical es la que más incursiona en Jamaica?","Reggae",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta3= new Pregunta("¿Qué usamos para diluir los colores de las acuarelas?","Agua",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta4= new Pregunta("¿Cuántos dedos tiene por lo general una caricatura?","Cuatro",TipoPregunta.FACIL,ClasePregunta.ARTE);
@@ -387,6 +387,7 @@ public class ModelFactoryController {
 		listaPreguntas.put(48, pregunta48);
 		listaPreguntas.put(49, pregunta49);
 		listaPreguntas.put(50, pregunta50);
+		listaPreguntas.put(50, pregunta51);
 
 
 
