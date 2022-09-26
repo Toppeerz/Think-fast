@@ -133,33 +133,33 @@ public class ModelFactoryController {
 
 		juego = new Juego();
 
-		Pregunta pregunta1= new Pregunta("¿Para qué sirve la paleta?","Para mezclar pinturas","comer helado","cavar un hoyo","cocinar",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta2= new Pregunta("¿Qué tendencia musical es la que más incursiona en Jamaica?","Reggae","cumbia","trap","dubstep",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta3= new Pregunta("¿Qué usamos para diluir los colores de las acuarelas?","Agua","aceite","aire","tierra",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta4= new Pregunta("¿Cuántos dedos tiene por lo general una caricatura en las manos?","Cuatro","seis","cinco","dos",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta5= new Pregunta("¿Qué nota musical hay entre re y fa?","Mi","sol","la","do",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta1= new Pregunta("¿Para qué sirve la paleta?","para mezclar pinturas","comer helado","cavar un hoyo","cocinar",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta2= new Pregunta("¿Qué tendencia musical es la que más incursiona en Jamaica?","reggae","cumbia","trap","dubstep",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta3= new Pregunta("¿Qué usamos para diluir los colores de las acuarelas?","A}agua","aceite","aire","tierra",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta4= new Pregunta("¿Cuántos dedos tiene por lo general una caricatura en las manos?","cuatro","seis","cinco","dos",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta5= new Pregunta("¿Qué nota musical hay entre re y fa?","mi","sol","la","do",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta6= new Pregunta("Más vale pájaro en mano...","que cien volando","que mal que por bien no venga!"," que lamentar."," bajo el sol.",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta7= new Pregunta("¿A qué se dedicaban los siete enanitos?","Eran mineros","borrachos","strepers","sicarios",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta7= new Pregunta("¿A qué se dedicaban los siete enanitos?","eran mineros","borrachos","strepers","sicarios",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta8= new Pregunta("Perro que ladra...","No muerde","que cien volando."," cruza venados en el mar.","esconde la mano",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta9= new Pregunta("¿A qué familia de instrumentos pertenece la guitarra, el violín y el bajo?","Cuerdas","viento","percusion","electrico",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta10= new Pregunta("¿En qué novela el protagonista es un asesino en serie con un sentido del olfato increíblemente desarrollado?","El Perfume","csi","dora la exploradora","doki",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta9= new Pregunta("¿A qué familia de instrumentos pertenece la guitarra, el violín y el bajo?","cuerdas","viento","percusion","electrico",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta10= new Pregunta("¿En qué novela el protagonista es un asesino en serie con un sentido del olfato increíblemente desarrollado?","el Perfume","csi","dora la exploradora","doki",TipoPregunta.FACIL,ClasePregunta.ARTE);
 	
-		Pregunta pregunta11= new Pregunta("Gabriel García Márquez se caracteriza por narrar en un mundo:","Real Maravilloso","macabro","historietas","manga",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta12= new Pregunta("¿Quién era la diosa de la sabiduría en la mitología griega?","Atena","rea","hera","gea",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta11= new Pregunta("Gabriel García Márquez se caracteriza por narrar en un mundo:","real maravilloso","macabro","historietas","manga",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta12= new Pregunta("¿Quién era la diosa de la sabiduría en la mitología griega?","atena","rea","hera","gea",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 		Pregunta pregunta13= new Pregunta("¿Cuál es el nombre de Picasso?","pablo","andres","didier","mary",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta14= new Pregunta("¿Tira la piedra...?","Y esconde la mano","y corre","y esconde la piedra","y le abre la cabeza",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta15= new Pregunta("¿A qué ciudad vasca dedicó un cuadro Pablo Picasso?","Guernica","Bogota","paris","armenia",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta16= new Pregunta("¿Quién escribió la novela 'Contagio'?","Robin Cook","Gabriel Garcia","Darly","cristian gonzalez",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta14= new Pregunta("¿Tira la piedra...?","y esconde la mano","y corre","y esconde la piedra","y le abre la cabeza",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta15= new Pregunta("¿A qué ciudad vasca dedicó un cuadro Pablo Picasso?","Guernica","Bogota","Paris","Armenia",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta16= new Pregunta("¿Quién escribió la novela 'Contagio'?","Robin Cook","Gabriel Garcia","Darly","Cristian Gonzalez",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 		Pregunta pregunta17= new Pregunta("¿Qué pieza de arte fue robada y guardada debajo de una cama hasta que se devolvió al Museo Louvre?","Mona Lisa","El Beso","Guernica","La Gioconda",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta18= new Pregunta("¿Qué instrumento tocaba Zeta Bosio en Soda Stereo?","Bajo",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta19= new Pregunta("¿Qué parte del cuerpo se cortó Vicent Van Gogh?","Oreja",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta20= new Pregunta("De qué país es la caricatura 'Condorito'?","Chile",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta18= new Pregunta("¿Qué instrumento tocaba Zeta Bosio en Soda Stereo?","bajo","Guitarra","flauta","bateria",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta19= new Pregunta("¿Qué parte del cuerpo se cortó Vicent Van Gogh?","oreja","el nepe","nariz","lengua",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta20= new Pregunta("De qué país es la caricatura 'Condorito'?","chile","venezuela","mexico","argentina",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 	
-		Pregunta pregunta21= new Pregunta("¿Cuál es la famosa cueva en la que se narra el Quijote?","Montesinos",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta22= new Pregunta("¿Cuántos anillos fueron creados por Sauron para los Señores Enanos en el Señor de los Anillos?","7",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta23= new Pregunta("¿Cuál de las siguientes palabras es esdrújula?","Metálico",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta24= new Pregunta("¿Cuál es la obra cumbre en la literatura española escrita por Fernando de Rojas?","La Celestina",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta25= new Pregunta("¿Cuál de las siguientes obras no pertenece a Edgar Allan Poe?","El monte de las ánimas",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta21= new Pregunta("¿Cuál es la famosa cueva en la que se narra el Quijote?","Montesinos","calasqui","salima","petra",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta22= new Pregunta("¿Cuántos anillos fueron creados por Sauron para los Señores Enanos en el Señor de los Anillos?","7","1","5","3",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta23= new Pregunta("¿Cuál de las siguientes palabras es esdrújula?","metálico","impídanselo","alguacil","corren",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta24= new Pregunta("¿Cuál es la obra cumbre en la literatura española escrita por Fernando de Rojas?","la Celestina","la zelestina","burgos","madrid",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta25= new Pregunta("¿Cuál de las siguientes obras no pertenece a Edgar Allan Poe?","El monte de las ánimas","","","",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta26= new Pregunta("¿Qué obra NO pertenece a Shakespeare?","La Divina Comedia",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta27= new Pregunta("¿Qué color consigues mezclando todos los colores del CMYK?","Negro",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta28= new Pregunta("¿Quién pintó el cuadro La Persistencia de la Memoria?","Dalí",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
