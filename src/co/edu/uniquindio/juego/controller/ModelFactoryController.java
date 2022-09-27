@@ -199,18 +199,18 @@ public class ModelFactoryController {
 		Pregunta pregunta59= new Pregunta("¿En qué deporte olímpico conlleva la expulsión salpicar deliberadamente la cara de un oponente o hundirlo en el agua cuando no tiene la pelota?","Waterpolo","Natación","Kitesurf","Windsurf",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta60= new Pregunta("¿Cuál de estas posiciones no representa a un jugador de Baseball?","Fullback","Base","Escolta","Alero",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
 	
-		Pregunta pregunta61= new Pregunta("¿Qué fruta es la casa de Bob Esponja?","Una piña",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta62= new Pregunta("¿Quién es el marido de la actriz Angelina Jolie?","Brad Pitt",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta63= new Pregunta("¿En la serie Los Simpson de qué color son las perlas de Lisa?","Blancas",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta64= new Pregunta("¿Cómo se llama el gremlin bueno de la película Gremlins?","Gizmo",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta65= new Pregunta("¿Cuál fue la primera película de Disney?","Blancanieves",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta66= new Pregunta("¿Qué famoso personaje animado sacaba inventos del futuro de su bolsillo mágico?","Doraemon",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta67= new Pregunta("¿Quién se convirtió en el mejor amigo de Woody en la película Toy Story?","Buzz Lightyear",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta68= new Pregunta("¿Cuál de estos villanos NO es enemigo de Batman?","Magento",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta69= new Pregunta("¿En qué programa sale Sheldon Cooper?","The Big Bang Theory",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta70= new Pregunta("¿Quién es el primer super saiyajin que se convierte en dios?","Goku",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta61= new Pregunta("¿Qué fruta es la casa de Bob Esponja?","Una piña","Manzana","Banana","Coco",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta62= new Pregunta("¿Quién es el marido de la actriz Angelina Jolie?","Brad Pitt","Cristiano Ronaldo","Cris evans","Cris MJ",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta63= new Pregunta("¿En la serie Los Simpson de qué color son las perlas de Lisa?","Blancas","Rojas","Azules","Verdes",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta64= new Pregunta("¿Cómo se llama el gremlin bueno de la película Gremlins?","Gizmo","Gremli","Bicho bueno","Peludin",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta65= new Pregunta("¿Cuál fue la primera película de Disney?","Blancanieves","Sirenita","Pocajontas","Hercules",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta66= new Pregunta("¿Qué famoso personaje animado sacaba inventos del futuro de su bolsillo mágico?","Doraemon","Naruto","Naguisa","Lufi",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta67= new Pregunta("¿Quién se convirtió en el mejor amigo de Woody en la película Toy Story?","Buzz Lightyear","Cerdo","Dinosaurio verde","Carro a control remoto",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta68= new Pregunta("¿Cuál de estos villanos NO es enemigo de Batman?","Magento","Pinguiono","Guazon","acertijo",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta69= new Pregunta("¿En qué programa sale Sheldon Cooper?","The Big Bang Theory","betty la fea","pasion de gabilanes","the office",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta70= new Pregunta("¿Quién es el primer super saiyajin que se convierte en dios?","Goku","Vegeta","Bardock","Gohan",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
 	
-		Pregunta pregunta71= new Pregunta("¿A qué se le llama 'manga'?","cómic japonés",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta71= new Pregunta("¿A qué se le llama 'manga'?","cómic japonés","libreta","hentai","Caricaturas",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta72= new Pregunta("¿Cómo se llama el hermano menor de Mario Bros?","Luigi",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta73= new Pregunta("¿En qué año murió Marilyn Monroe?","1962",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta74= new Pregunta("¿De qué nacionalidad es la cantante Belinda?","Mexicana",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
