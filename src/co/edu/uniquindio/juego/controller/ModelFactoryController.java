@@ -197,7 +197,7 @@ public class ModelFactoryController {
 		Pregunta pregunta57= new Pregunta("¿A qué se denomina hacer un rosco en Tenis?","6-0","Un pan","Salir de la cancha","Fuera de lugar",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta58= new Pregunta("¿Quién fue el primer equipo en llevar dorsales en la liga Española?","Real Madrid","Barcelona","Atletico de madrid","Real sociedad",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta59= new Pregunta("¿En qué deporte olímpico conlleva la expulsión salpicar deliberadamente la cara de un oponente o hundirlo en el agua cuando no tiene la pelota?","Waterpolo","Natación","Kitesurf","Windsurf",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta60= new Pregunta("¿Cuál de estas posiciones no representa a un jugador de Baseball?","Fullback",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta60= new Pregunta("¿Cuál de estas posiciones no representa a un jugador de Baseball?","Fullback","Base","Escolta","Alero",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
 	
 		Pregunta pregunta61= new Pregunta("¿Qué fruta es la casa de Bob Esponja?","Una piña",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta62= new Pregunta("¿Quién es el marido de la actriz Angelina Jolie?","Brad Pitt",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
@@ -387,7 +387,18 @@ public class ModelFactoryController {
 		listaPreguntas.put(48, pregunta48);
 		listaPreguntas.put(49, pregunta49);
 		listaPreguntas.put(50, pregunta50);
-		listaPreguntas.put(50, pregunta51);
+		listaPreguntas.put(51, pregunta51);
+		listaPreguntas.put(52, pregunta52);
+		listaPreguntas.put(53, pregunta53);
+		listaPreguntas.put(54, pregunta54);
+		listaPreguntas.put(55, pregunta55);
+		listaPreguntas.put(56, pregunta56);
+		listaPreguntas.put(57, pregunta57);
+		listaPreguntas.put(58, pregunta58);
+		listaPreguntas.put(59, pregunta59);
+		listaPreguntas.put(60, pregunta60);
+		listaPreguntas.put(61, pregunta61);
+		listaPreguntas.put(62, pregunta62);
 
 
 
