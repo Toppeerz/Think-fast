@@ -184,19 +184,19 @@ public class ModelFactoryController {
 		Pregunta pregunta45= new Pregunta("¿Cuál es el salto más alto en caballo?","1'20 m","2'00 m","0'50 m","2'20 m",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta46= new Pregunta("¿Cuántos jugadores componen usualmente un equipo de rugby?","15","11","8","3",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta47= new Pregunta("¿Cómo se llama la anotación de un tanto en el fútbol americano?","Touchdown","gol","anotacion","",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta48= new Pregunta("¿Quién fue el máximo goleador de la UEFA Champions League en 2013?","Cristiano Ronaldo",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta49= new Pregunta("En voleibol, ¿hasta cuántos toques se le puede dar a la pelota antes de pasarla al campo rival?","Tres",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta50= new Pregunta("Evgenia Kanaeva es la 'reina' de...","Gimnasia rítmica",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta48= new Pregunta("¿Quién fue el máximo goleador de la UEFA Champions League en 2013?","Cristiano Ronaldo","Leonel Messi","Neymar Jr","kaka",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta49= new Pregunta("En voleibol, ¿hasta cuántos toques se le puede dar a la pelota antes de pasarla al campo rival?","Tres","Uno","Dos","Cinco",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta50= new Pregunta("Evgenia Kanaeva es la 'reina' de...","Gimnasia rítmica","Natacion","Voleibol","Tejo",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 	
-		Pregunta pregunta51= new Pregunta("¿Cómo se llamaba la pelota del Mundial de Fútbol 1978?","Adidas Tango",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta52= new Pregunta("¿Cuál es el nombre de pila del tenista Federer?","Roger",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta53= new Pregunta("¿Quién es el goleador(es) del mundial 2010?","Diego Forlán y Thomas Müller",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta54= new Pregunta("¿Cómo se llama Iniesta?","Andrés",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta55= new Pregunta("¿En qué país ganó Alemania su primer mundial de fútbol?","Suiza",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta56= new Pregunta("¿Quién fue el primer jugador que recibió la distinción de 'Mejor Jugador del Siglo'?","Pelé",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta57= new Pregunta("¿A qué se denomina hacer un rosco en Tenis?","6-0",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta58= new Pregunta("¿Quién fue el primer equipo en llevar dorsales en la liga Española?","Real Madrid",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta59= new Pregunta("¿En qué deporte olímpico conlleva la expulsión salpicar deliberadamente la cara de un oponente o hundirlo en el agua cuando no tiene la pelota?","Waterpolo",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta51= new Pregunta("¿Cómo se llamaba la pelota del Mundial de Fútbol 1978?","Adidas Tango","Brazuca Final","Telstar 18","Al Rihla",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta52= new Pregunta("¿Cuál es el nombre de pila del tenista Federer?","Roger","Fernandez","Mario","Angel",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta53= new Pregunta("¿cuales son los goleadores del mundial 2010?","Diego y Thomas","Messi y Cristiano","Falcao y James","Neymar y Mbappé",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta54= new Pregunta("¿Cómo se llama Iniesta?","Andrés","Didier","Cristian","Juan",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta55= new Pregunta("¿En qué país ganó Alemania su primer mundial de fútbol?","Suiza","Paises bajos","Brazil","Alemania",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta56= new Pregunta("¿Quién fue el primer jugador que recibió la distinción de 'Mejor Jugador del Siglo'?","Pelé","René Higuita","Kaka","Ronaldinho",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta57= new Pregunta("¿A qué se denomina hacer un rosco en Tenis?","6-0","Un pan","Salir de la cancha","Fuera de lugar",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta58= new Pregunta("¿Quién fue el primer equipo en llevar dorsales en la liga Española?","Real Madrid","Barcelona","Atletico de madrid","Real sociedad",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta59= new Pregunta("¿En qué deporte olímpico conlleva la expulsión salpicar deliberadamente la cara de un oponente o hundirlo en el agua cuando no tiene la pelota?","Waterpolo","Natación","Kitesurf","Windsurf",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta60= new Pregunta("¿Cuál de estas posiciones no representa a un jugador de Baseball?","Fullback",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
 	
 		Pregunta pregunta61= new Pregunta("¿Qué fruta es la casa de Bob Esponja?","Una piña",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
