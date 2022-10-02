@@ -134,7 +134,7 @@ public class ModelFactoryController {
 	private void inicializarDatos() {
 
 		juego = new Juego();
-       
+        
 		Pregunta pregunta1= new Pregunta("¿Para qué sirve la paleta?","para mezclar pinturas","comer helado","cavar un hoyo","cocinar",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta2= new Pregunta("¿Qué tendencia musical es la que más incursiona en Jamaica?","reggae","cumbia","trap","dubstep",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta3= new Pregunta("¿Qué usamos para diluir los colores de las acuarelas?","A}agua","aceite","aire","tierra",TipoPregunta.FACIL,ClasePregunta.ARTE);
