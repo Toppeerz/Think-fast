@@ -34,11 +34,7 @@ public class Pregunta implements Serializable{
 		this.respuestas.add(respuestaAux1);
 		this.respuestas.add(respuestaAux2);
 		this.respuestas.add(respuestaAux3);
-
 		Collections.shuffle(this.respuestas);
-
-		System.out.println(this.respuestas.get(0).getRespuesta());
-		
 
 	}
 
