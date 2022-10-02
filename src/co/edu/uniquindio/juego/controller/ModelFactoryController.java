@@ -517,18 +517,8 @@ public class ModelFactoryController {
 		listaPreguntas.put(177, pregunta177);
 		listaPreguntas.put(178, pregunta178);
 		listaPreguntas.put(179, pregunta179);
-		listaPreguntas.put(180, pregunta180);
-
-
-
-
-		
-				
+		listaPreguntas.put(180, pregunta180);	
 		juego.setListaPreguntas(listaPreguntas);
-
-		 guardarResourceXML();
-      
-
 		System.out.println("Juego inicializado");
 
 	}
