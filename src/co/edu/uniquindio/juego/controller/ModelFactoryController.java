@@ -312,28 +312,27 @@ public class ModelFactoryController {
 		Pregunta pregunta159= new Pregunta("Cómo se llama el polígono de siete lados","Septágono","Octagono","Pentagono","Nonagono",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
 		Pregunta pregunta160= new Pregunta(" Cuál es el resultado de multiplicar 7x9","63","67","64","73",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
 		
-		Pregunta pregunta161= new Pregunta("En una panadería con 80 kg son capaces de hacer 120 kg de pan. ¿Cuántos kg de harina serán necesarios para hacer 99 kg de pan?","Si quieres hacer 99 panes necesitas 66 kg de harina","","","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
-		Pregunta pregunta162= new Pregunta("Dos ruedas están unidas por una correa de transmisión. La primera tiene un radio de 25 cm y la segunda de 75 cm. Cuando la primera ha dado 300 vueltas. ¿Cuántas vueltas dará la segunda?","Si el radio mide 75 cm da 100 vueltas","","","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
-		Pregunta pregunta163= new Pregunta("¿Cuánto es la cuarta parte de la tercera parte?","Un doceavo","","","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
-		Pregunta pregunta164= new Pregunta("Seis personas pueden vivir en un hotel durante 12 días por 792 euros. ¿Cuánto costará el hotel de 15 personas durante 8 días?","Si se quedan 15 personas durante 8 dias les saldra 1320 euros","","","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
-		Pregunta pregunta165= new Pregunta("¿Qué es un triángulo isósceles?","Un tipo de triángulo que tiene dos lados de igual longitud","","","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
-		Pregunta pregunta166= new Pregunta("¿Cómo se llama a un poliedro de 20 caras?","icosaedro","","","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
-		Pregunta pregunta167= new Pregunta("Si 8 litros de aceite valen 60 euros. ¿Cuántos litros compraré con 15 euros?","con 15 euros comprare 2 litros de aceite","","","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
-		Pregunta pregunta168= new Pregunta("¿Cuánto habrá que rebajar un producto para que valga lo mismo que valía antes de que incrementase un 25% su precio?","un 20%","","","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
-		Pregunta pregunta169= new Pregunta("En un torneo de tenis, el jugador que pierde se vuelve a casa. Cuántos jugadores iniciaron este torneo si desde la ronda preliminar hasta la final se han jugado 128 partidos","129","","","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
-		Pregunta pregunta170= new Pregunta("Tengo 20 metros de cinta roja para hacer lazos en unos paquetes de regalo idénticos. Para cada lazo necesito 50 centímetros de cinta. ¿Cuántos lazos puedo hacer?","40 lazos","","","",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+		Pregunta pregunta161= new Pregunta("En una panadería con 80 kg de harina son capaces de hacer 120 kg de pan. ¿Cuántos kg de harina serán necesarios para hacer 99 kg de pan?","66 kg de harina","67 kg de harina","64 kg de harina","73 kg de harina",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+		Pregunta pregunta162= new Pregunta("Dos ruedas están unidas por una correa de transmisión. La primera tiene un radio de 25 cm y la segunda de 75 cm. Cuando la primera ha dado 300 vueltas. ¿Cuántas vueltas dará la segunda?","100 vueltas","121 vueltas","127 vueltas","99 vueltas",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+		Pregunta pregunta163= new Pregunta("¿Cuánto es la cuarta parte de la tercera parte?","Un doceavo","Tres cuartos","Un noveno ","Un septimo",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+		Pregunta pregunta164= new Pregunta("Seis personas pueden vivir en un hotel durante 12 días por 792 euros. ¿Cuánto costará el hotel de 15 personas durante 8 días?","1320 euros","1239 euros","1327 euros","1289 euros",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+		Pregunta pregunta165= new Pregunta("¿Qué es un triángulo isósceles?","Un tipo de triángulo que tiene dos lados de igual longitud","Un tipo de triángulo que tiene un angulo de 90 grados","Un tipo de triángulo que tiene dos lados de igual longitud y necesariamnete un angulo recto","Un tipo de triángulo que tiene todos sus lados iguales",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+		Pregunta pregunta166= new Pregunta("¿Cómo se llama a un poliedro de 20 caras?","icosaedro","tetradecaedro","hectaedro","pentadecaedro",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+		Pregunta pregunta167= new Pregunta("Si 8 litros de aceite valen 60 euros. ¿Cuántos litros compraré con 15 euros?","2 litros de aceite","2,5 litros de aceite","2,7 litros de aceite","2,8 litros de aceite",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+		Pregunta pregunta168= new Pregunta("¿Cuánto habrá que rebajar un producto para que valga lo mismo que valía antes de que incrementase un 25% su precio?","un 20%","un 23%","un 25%","un 22",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+		Pregunta pregunta169= new Pregunta("En un torneo de tenis, el jugador que pierde se vuelve a casa. Cuántos jugadores iniciaron este torneo si desde la ronda preliminar hasta la final se han jugado 128 partidos","129","67","64","128",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+		Pregunta pregunta170= new Pregunta("Tengo 20 metros de cinta roja para hacer lazos en unos paquetes de regalo idénticos. Para cada lazo necesito 50 centímetros de cinta. ¿Cuántos lazos puedo hacer?","40 lazos","47 lazos","50 lazos","39 lazos",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
 	
-		Pregunta pregunta171= new Pregunta("¿Cuál es la función inversa de y=sen.x?","y=arc. sen x","","","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta172= new Pregunta("¿Cómo se llaman los triángulos con dos los lados iguales y uno desigual?","Isósceles","","","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta173= new Pregunta("El monstruo del lago Ness mide 80 metros más la mitad de lo que mide, ¿cuánto mide el monstruo del lago Ness?","160","","","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta174= new Pregunta("Adivina cuántos años tengo sabiendo que la tercera parte de ellos menos 1 es igual a la sexta parte","6","","","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta175= new Pregunta("¿A cuánto equivale pi?","3.1415","","","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta176= new Pregunta("¿Qué formula es esta? S = π x R²","Superficie de un circulo","","","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta177= new Pregunta("Por un bolso hemos pagado 50 euros, más el 21% de IVA. ¿Cuánto hemos tenido que pagar en total?","60,50","","","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta178= new Pregunta("¿Qué expresa esta formula? e = mc²","equivalente entre masa y energía","","","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta179= new Pregunta("Una rueda de un coche da 4590 vueltas en 9 minutos. ¿Cuántas vueltas dará en 24 horas y 24 minutos?","746640","","","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta180= new Pregunta("¿Cuáles de los siguientes triángulos, según sus medidas son rectángulos?","3 cm, 4 cm, 5 cm","","","",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
-	
+		Pregunta pregunta171= new Pregunta("¿Cuál es la función inversa de y=sen.x?","y=arc. sen x","y = arccsc(x)","x = tan(y)","x = csc(y)",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta172= new Pregunta("¿Cómo se llaman los triángulos con dos los lados iguales y uno desigual?","Isósceles","icosaedro","escaleno","Equilatero",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta173= new Pregunta("El monstruo del lago Ness mide 80 metros más la mitad de lo que mide, ¿cuánto mide el monstruo del lago Ness?","160 metros","173 metos","178 metros","167 metros ",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta174= new Pregunta("Adivina cuántos años tengo sabiendo que la tercera parte de ellos menos 1 es igual a la sexta parte","6","13","7","9",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta175= new Pregunta("¿A cuánto equivale pi?","3.1415","3.1416","3.1514","3.1418",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta176= new Pregunta("¿Qué formula es esta? S = π x R²","Superficie de un circulo","Radio de un circulo","Area de un circulo","perimetro de un cubo",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta177= new Pregunta("Por un bolso hemos pagado 50 euros, más el 21% de IVA. ¿Cuánto hemos tenido que pagar en total?","60,50","59.80","64,79","61,35",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta178= new Pregunta("¿Qué expresa esta formula? e = mc²","equivalente entre masa y energía","Energia cinetica","64","Constante de Coulomb",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta179= new Pregunta("Una rueda de un coche da 4590 vueltas en 9 minutos. ¿Cuántas vueltas dará en 24 horas y 24 minutos?","746640","746646","746648","744640",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta180= new Pregunta("¿Cuáles de los siguientes triángulos, según sus medidas son rectángulos?","3 cm, 4 cm, 5 cm","4 cm, 4 cm, 4 cm","3 cm, 4 cm, 4 cm","3 cm, 4 cm, 0 cm",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
         //se llena el Hashtable
 
         Hashtable<Integer,Pregunta> listaPreguntas = new Hashtable<Integer,Pregunta>();
