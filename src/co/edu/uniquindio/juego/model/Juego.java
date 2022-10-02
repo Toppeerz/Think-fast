@@ -64,14 +64,6 @@ public class Juego implements Serializable {
 
 			listaJugadores.put(listaJugadores.size(), jugadorNuevo);
 
-			Enumeration<Integer> enumeracionJugador = listaJugadores.keys();
-		     int jugador;
-		    while (enumeracionJugador.hasMoreElements()) {
-			jugador = enumeracionJugador.nextElement();
-			System.out.println(jugador);
-			}
-		
-
 			mensaje = "Registro del jugador exitoso";
 
 		}
