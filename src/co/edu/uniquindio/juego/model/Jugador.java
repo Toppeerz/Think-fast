@@ -10,15 +10,13 @@ public class Jugador implements Serializable {
 	private static final long serialVersionUID = 1L;
 
     private String nombre;
-	private String cedula;
+	private String contrasenia;
 	private int puntaje;
 	private int fallos;
 	
-	public Jugador(String nombre, String cedula, int puntaje, int fallos) {
+	public Jugador(String nombre, String contrasenia) {
 		this.nombre = nombre;
-		this.cedula = cedula;
-		this.puntaje = puntaje;
-		this.fallos = fallos;
+		this.contrasenia = contrasenia;
 	}
 
 	public Jugador() {
@@ -32,12 +30,12 @@ public class Jugador implements Serializable {
 		this.nombre = nombre;
 	}
 
-	public String getCedula() {
-		return cedula;
+	public String getContrasenia() {
+		return contrasenia;
 	}
 
-	public void setCedula(String cedula) {
-		this.cedula = cedula;
+	public void setContrasenia(String contrasenia) {
+		this.contrasenia = contrasenia;
 	}
 
 	public int getPuntaje() {
@@ -60,7 +58,7 @@ public class Jugador implements Serializable {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((cedula == null) ? 0 : cedula.hashCode());
+		result = prime * result + ((contrasenia == null) ? 0 : contrasenia.hashCode());
 		result = prime * result + fallos;
 		result = prime * result + ((nombre == null) ? 0 : nombre.hashCode());
 		result = prime * result + puntaje;
@@ -76,10 +74,10 @@ public class Jugador implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		Jugador other = (Jugador) obj;
-		if (cedula == null) {
-			if (other.cedula != null)
+		if (contrasenia == null) {
+			if (other.contrasenia != null)
 				return false;
-		} else if (!cedula.equals(other.cedula))
+		} else if (!contrasenia.equals(other.contrasenia))
 			return false;
 		if (fallos != other.fallos)
 			return false;
@@ -94,6 +92,5 @@ public class Jugador implements Serializable {
 	}
 
 	
-
 
 }

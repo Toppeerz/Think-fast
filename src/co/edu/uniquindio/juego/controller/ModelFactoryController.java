@@ -2,6 +2,7 @@ package co.edu.uniquindio.juego.controller;
 
 import java.util.Hashtable;
 
+import co.edu.uniquindio.juego.exceptions.JuegoException;
 import co.edu.uniquindio.juego.model.ClasePregunta;
 import co.edu.uniquindio.juego.model.Juego;
 import co.edu.uniquindio.juego.model.Jugador;
@@ -14,6 +15,7 @@ public class ModelFactoryController {
 
 
 	Juego juego;
+	Jugador jugadorLogueado;
 	
 
 
@@ -45,7 +47,7 @@ public class ModelFactoryController {
 		//4. Guardar y Cargar el recurso serializable XML
     // 	guardarResourceXML();
 		
-	//cargarResourceXML();
+	    cargarResourceXML();
 
 
 		//Siempre se debe verificar si la raiz del recurso es null
@@ -132,7 +134,7 @@ public class ModelFactoryController {
 	private void inicializarDatos() {
 
 		juego = new Juego();
-
+       /** 
 		Pregunta pregunta1= new Pregunta("¿Para qué sirve la paleta?","para mezclar pinturas","comer helado","cavar un hoyo","cocinar",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta2= new Pregunta("¿Qué tendencia musical es la que más incursiona en Jamaica?","reggae","cumbia","trap","dubstep",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta3= new Pregunta("¿Qué usamos para diluir los colores de las acuarelas?","A}agua","aceite","aire","tierra",TipoPregunta.FACIL,ClasePregunta.ARTE);
@@ -406,8 +408,8 @@ public class ModelFactoryController {
 				
 		juego.setListaPreguntas(listaPreguntas);
 
-		guardarResourceXML();
-
+		 guardarResourceXML();
+      */
 
 		System.out.println("Juego inicializado");
 
@@ -429,10 +431,38 @@ public class ModelFactoryController {
 	 * @param juego
 	 */
 
-	public void setMarketplace(Juego juego) {
+	public void setJuego(Juego juego) {
 		this.juego = juego;
 	}
 
+	public Jugador getJugadorLogueado() {
+		return jugadorLogueado;
+	}
+
+	public void setJugadorLogueado(Jugador jugadorLogueado) {
+		this.jugadorLogueado = jugadorLogueado;
+	}
+
+
+	
+	public String registrarJugador(String nombre, String contrasenia) throws JuegoException{
+
+       String mensaje=juego.crearJugador(nombre, contrasenia);
+
+	   if(!mensaje.equalsIgnoreCase("")){
+		guardarResourceXML();
+	   }
+
+		return mensaje;
+	}
+
+	public Hashtable<Integer,Jugador> obtenerJugadores() {
+		return juego.getListaJugadores();
+	}
+
+	
+
+	
 
 	
 }

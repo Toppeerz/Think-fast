@@ -1,57 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.8.0_111" class="java.beans.XMLDecoder">
+<java version="1.8.0_341" class="java.beans.XMLDecoder">
  <object class="co.edu.uniquindio.juego.model.Juego" id="Juego0">
-  <void property="listaPreguntas">
+  <void property="listaJugadores">
    <void method="put">
     <int>1</int>
-    <object class="co.edu.uniquindio.juego.model.Pregunta" id="Pregunta0">
-     <void property="clasePregunta">
-      <object class="java.lang.Enum" method="valueOf">
-       <class>co.edu.uniquindio.juego.model.ClasePregunta</class>
-       <string>ARTE</string>
-      </object>
+    <object class="co.edu.uniquindio.juego.model.Jugador">
+     <void property="contrasenia">
+      <string>123</string>
      </void>
-     <void property="pregunta">
-      <string>¿Para qué sirve la paleta?</string>
+     <void property="nombre">
+      <string>juan1</string>
      </void>
-     <void property="respuestasIncorrectas">
-      <void method="add">
-       <object class="co.edu.uniquindio.juego.model.Respuesta">
-        <void property="correcta">
-         <boolean>true</boolean>
-        </void>
-        <void property="respuesta">
-         <string>Para mezclar pinturas</string>
-        </void>
-       </object>
-      </void>
-      <void method="add">
-       <object class="co.edu.uniquindio.juego.model.Respuesta">
-        <void property="respuesta">
-         <string>Incorrecta 1</string>
-        </void>
-       </object>
-      </void>
-      <void method="add">
-       <object class="co.edu.uniquindio.juego.model.Respuesta">
-        <void property="respuesta">
-         <string>Incorrecta 2</string>
-        </void>
-       </object>
-      </void>
-      <void method="add">
-       <object class="co.edu.uniquindio.juego.model.Respuesta">
-        <void property="respuesta">
-         <string>Incorrecta 3</string>
-        </void>
-       </object>
-      </void>
+    </object>
+   </void>
+   <void method="put">
+    <int>0</int>
+    <object class="co.edu.uniquindio.juego.model.Jugador">
+     <void property="contrasenia">
+      <string>123</string>
      </void>
-     <void property="tipoPregunta">
-      <object class="java.lang.Enum" method="valueOf">
-       <class>co.edu.uniquindio.juego.model.TipoPregunta</class>
-       <string>FACIL</string>
-      </object>
+     <void property="nombre">
+      <string>Juan</string>
      </void>
     </object>
    </void>

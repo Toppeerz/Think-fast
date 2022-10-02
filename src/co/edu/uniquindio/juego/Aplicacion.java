@@ -4,7 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import co.edu.uniquindio.juego.controller.IniciarSesionViewController;
-import co.edu.uniquindio.juego.controller.InicioViewController;
+import co.edu.uniquindio.juego.controller.MenuViewController;
+import co.edu.uniquindio.juego.controller.RegistroViewController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -51,10 +52,10 @@ public class Aplicacion extends Application {
 
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Aplicacion.class.getResource("views/InicioView.fxml"));
+			loader.setLocation(Aplicacion.class.getResource("views/IniciarSesionView.fxml"));
 			AnchorPane rootLayout = (AnchorPane)loader.load();
-			InicioViewController inicioViewController = loader.getController();
-			inicioViewController.setAplicacion(this);
+			IniciarSesionViewController iniciarSesionViewController = loader.getController();
+			iniciarSesionViewController.setAplicacion(this);
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
 			primaryStage.show();
@@ -77,15 +78,18 @@ public class Aplicacion extends Application {
 	    try
 	    {
 	        root = (Parent)loader.load();
-	        if(fxmlFile.equals("views/InicioView.fxml"))
-	        {
-	        	InicioViewController inicioViewController = loader.getController();
-	        	inicioViewController.setAplicacion(this);
-	        }
-	       else if(fxmlFile.equals("views/IniciarSesionView.fxml"))
+	        if(fxmlFile.equals("views/IniciarSesionView.fxml"))
 	        {
 	        	IniciarSesionViewController iniciarSesionViewController = loader.getController();
 	        	iniciarSesionViewController.setAplicacion(this);
+	        } else if(fxmlFile.equals("views/RegistroView.fxml"))
+	        {
+	        	RegistroViewController registroViewController = loader.getController();
+	        	registroViewController.setAplicacion(this);
+	        }else if(fxmlFile.equals("views/MenuView.fxml"))
+	        {
+	        	MenuViewController menuViewController = loader.getController();
+	        	menuViewController.setAplicacion(this);
 	        }
 	        this.primaryStage.setScene(new Scene(root));
 	    }
