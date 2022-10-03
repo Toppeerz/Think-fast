@@ -13,7 +13,7 @@
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0">
          <image>
-            <Image url="@../../../../../resources/imagenes/a.jpg" />
+            <Image url="@../../../../../resources/imagenes/BackGrnd.jpg" />
          </image>
       </ImageView>
       <Circle fill="#9b39c1" layoutX="529.0" layoutY="41.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
@@ -43,17 +43,17 @@
       </ImageView>
       <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="319.0" layoutY="32.0">
          <image>
-            <Image url="@../../../../../resources/imagenes/lu.png" />
+            <Image url="@../../../../../resources/imagenes/Lupa.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="404.0" layoutY="23.0">
          <image>
-            <Image url="@../../../../../resources/imagenes/kjnk.png" />
+            <Image url="@../../../../../resources/imagenes/Next.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="219.0" layoutY="31.0">
          <image>
-            <Image url="@../../../../../resources/imagenes/PicsArt_22-10-02_22-51-08-020.png" />
+            <Image url="@../../../../../resources/imagenes/FiftyFifty.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="54.0" fitWidth="75.0" layoutX="519.0" layoutY="346.0" pickOnBounds="true" smooth="false">
@@ -64,17 +64,17 @@
       <Button layoutX="251.0" layoutY="334.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="Rendirse" />
       <ImageView fitHeight="54.0" fitWidth="62.0" layoutX="88.0" layoutY="178.0">
          <image>
-            <Image url="@../../../../../resources/imagenes/PicsArt_22-10-02_23-30-52-226.png" />
+            <Image url="@../../../../../resources/imagenes/Chulo.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="54.0" fitWidth="62.0" layoutX="136.0" layoutY="178.0">
          <image>
-            <Image url="@../../../../../resources/imagenes/PicsArt_22-10-02_23-30-52-226.png" />
+            <Image url="@../../../../../resources/imagenes/Chulo.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="54.0" fitWidth="62.0" layoutX="188.0" layoutY="178.0">
          <image>
-            <Image url="@../../../../../resources/imagenes/PicsArt_22-10-02_23-30-52-226.png" />
+            <Image url="@../../../../../resources/imagenes/Chulo.png" />
          </image>
       </ImageView>
    </children>
