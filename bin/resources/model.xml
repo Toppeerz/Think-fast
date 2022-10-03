@@ -3,6 +3,50 @@
  <object class="co.edu.uniquindio.juego.model.Juego" id="Juego0">
   <void property="listaJugadores">
    <void method="put">
+    <int>6</int>
+    <object class="co.edu.uniquindio.juego.model.Jugador">
+     <void property="contrasenia">
+      <string>123</string>
+     </void>
+     <void property="nombre">
+      <string>skas</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <int>5</int>
+    <object class="co.edu.uniquindio.juego.model.Jugador">
+     <void property="contrasenia">
+      <string>1234</string>
+     </void>
+     <void property="nombre">
+      <string>adios</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <int>4</int>
+    <object class="co.edu.uniquindio.juego.model.Jugador">
+     <void property="contrasenia">
+      <string>123</string>
+     </void>
+     <void property="nombre">
+      <string>ola</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <int>3</int>
+    <object class="co.edu.uniquindio.juego.model.Jugador">
+     <void property="contrasenia">
+      <string>1234</string>
+     </void>
+     <void property="nombre">
+      <string>cristian</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
     <int>2</int>
     <object class="co.edu.uniquindio.juego.model.Jugador">
      <void property="contrasenia">

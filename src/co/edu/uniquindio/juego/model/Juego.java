@@ -1,8 +1,12 @@
 package co.edu.uniquindio.juego.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Random;
 
 import co.edu.uniquindio.juego.exceptions.JuegoException;
 
@@ -65,6 +69,7 @@ public class Juego implements Serializable {
 			listaJugadores.put(listaJugadores.size(), jugadorNuevo);
 
 			mensaje = "Registro del jugador exitoso";
+			//System.out.println(listaPreguntas.get(1).getPregunta());
 
 		}
 		return mensaje;
@@ -83,6 +88,28 @@ public class Juego implements Serializable {
 		}
 
 		return true;
+	}
+
+
+	private void generarPreguntasFaciles(TipoPregunta tipoP){
+		LinkedList <Pregunta> cola = new LinkedList<Pregunta>();
+		List<Integer> numeros = new ArrayList<>(180);
+
+		for (int i=1;i<181;i++){
+		numeros.add(i);
+		}
+		Random random = new Random();
+		while (cola.size()<10){
+
+		int posicionPregunta = random.nextInt(numeros.size())+1;
+		Pregunta preguntaAux = listaPreguntas.get(posicionPregunta);
+
+		if(preguntaAux.getTipoPregunta().equals(tipoP))
+		{
+			cola.add(preguntaAux);
+		}
+		numeros.remove(posicionPregunta);
+		}
 	}
 
 	
