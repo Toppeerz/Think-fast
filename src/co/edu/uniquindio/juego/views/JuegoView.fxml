@@ -28,17 +28,17 @@
       <TextArea layoutX="160.0" layoutY="110.0" opacity="0.42" prefHeight="71.0" prefWidth="322.0" />
       <ImageView fitHeight="100.0" fitWidth="103.0" layoutX="379.0">
          <image>
-            <Image url="@../../../../../../../../Downloads/PicsArt_22-10-02_22-07-35-093.png" />
+            <Image url="@../../../../../resources/imagenes/Circulo.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="100.0" fitWidth="103.0" layoutX="288.0">
          <image>
-            <Image url="@../../../../../../../../Downloads/PicsArt_22-10-02_22-07-35-093.png" />
+            <Image url="@../../../../../resources/imagenes/Circulo.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="100.0" fitWidth="103.0" layoutX="188.0">
          <image>
-            <Image url="@../../../../../../../../Downloads/PicsArt_22-10-02_22-07-35-093.png" />
+            <Image url="@../../../../../resources/imagenes/Circulo.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="319.0" layoutY="32.0">
