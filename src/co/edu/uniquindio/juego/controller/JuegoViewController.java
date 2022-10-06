@@ -1,5 +1,7 @@
 package co.edu.uniquindio.juego.controller;
 
+import java.io.File;
+
 import co.edu.uniquindio.juego.Aplicacion;
 import co.edu.uniquindio.juego.model.Juego;
 
@@ -7,8 +9,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 
 public class JuegoViewController {
+
+    MediaPlayer mediaPlayer;
+
+
 
     public static boolean corriendoCronometro;
     Aplicacion aplicacion;
@@ -33,6 +41,9 @@ public class JuegoViewController {
             isCorriendo = true;
             hilo = new hilo();
             hilo.setControlador(this, isCorriendo);
+            
+            String fileName = "fondo.mp4";
+            reproducirSonido(fileName);
             hilo.start();
         } else {
             System.out.println("Ya esta corriendo");
@@ -59,4 +70,13 @@ public class JuegoViewController {
         this.isCorriendo = isCorriendo;
     }
 
+    private void reproducirSonido(String filename){
+        String patch = getClass().getResource(filename).getPath();
+        System.out.println(patch);
+        Media media= new Media(new File(patch).toURI().toString());
+        mediaPlayer = new MediaPlayer(media);
+        mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
+        mediaPlayer.play();
+
+    }
 }
