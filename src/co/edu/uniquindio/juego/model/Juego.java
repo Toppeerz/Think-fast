@@ -91,24 +91,42 @@ public class Juego implements Serializable {
 	}
 
 
-	private void generarPreguntasFaciles(TipoPregunta tipoP){
-		LinkedList <Pregunta> cola = new LinkedList<Pregunta>();
+	private void generarPreguntasTipoP(TipoPregunta tipoP){
+		LinkedList <Pregunta> colaPreguntas = new LinkedList<Pregunta>();
 		List<Integer> numeros = new ArrayList<>(180);
 
 		for (int i=1;i<181;i++){
 		numeros.add(i);
 		}
 		Random random = new Random();
-		while (cola.size()<10){
+		while (colaPreguntas.size()<10){
 
 		int posicionPregunta = random.nextInt(numeros.size())+1;
 		Pregunta preguntaAux = listaPreguntas.get(posicionPregunta);
 
 		if(preguntaAux.getTipoPregunta().equals(tipoP))
 		{
-			cola.add(preguntaAux);
+			colaPreguntas.add(preguntaAux);
 		}
 		numeros.remove(posicionPregunta);
+		}
+	}
+
+	
+	private void generarRespuestas(Pregunta pregunta){
+		LinkedList <String> colaRespuestas = new LinkedList<String>();
+		List<Integer> numeros = new ArrayList<>(4);
+		for (int i=1;i<4;i++){
+		numeros.add(i);
+		}
+
+		Random random = new Random();
+		while (colaRespuestas.size()<4){
+		int opcionRespuesta = random.nextInt(numeros.size())+1;
+		String respuestaAux = pregunta.getRespuestasIncorrectas().get(opcionRespuesta).getRespuesta();
+		colaRespuestas.add(respuestaAux);
+		
+		numeros.remove(opcionRespuesta);
 		}
 	}
 
