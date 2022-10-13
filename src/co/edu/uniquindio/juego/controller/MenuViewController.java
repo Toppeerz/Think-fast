@@ -38,7 +38,11 @@ public class MenuViewController {
 
     @FXML
     void iniciarJuego(ActionEvent event) {
+         iniciarJuego();
+    }
 
+    private void iniciarJuego() {
+        aplicacion.cambiarEscena("views/JuegoView.fxml");
     }
 
     @FXML

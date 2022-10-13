@@ -4,15 +4,19 @@ import java.io.File;
 import java.io.IOException;
 
 import co.edu.uniquindio.juego.controller.IniciarSesionViewController;
+import co.edu.uniquindio.juego.controller.JuegoViewController;
 import co.edu.uniquindio.juego.controller.MenuViewController;
 import co.edu.uniquindio.juego.controller.RegistroViewController;
 import javafx.application.Application;
+import javafx.application.Platform;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 public class Aplicacion extends Application {
 
@@ -28,8 +32,7 @@ public class Aplicacion extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		this.primaryStage = primaryStage;
-		primaryStage.getIcons().add(new Image(new File("src/resources/imagenes/Logo.png").toURI().toString()));
-		this.primaryStage.setTitle("Think Fast");
+		configurarVentana();
 		mostrarVentanaPrincipal();
 
 	}
@@ -64,6 +67,23 @@ public class Aplicacion extends Application {
 		}
 	}
 
+	private void configurarVentana() {
+
+		primaryStage.getIcons().add(new Image(new File("src/resources/imagenes/Logo.png").toURI().toString()));
+
+		primaryStage.setTitle("Think Fast");
+		
+		primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+			@Override
+			public void handle(WindowEvent e) {
+			   Platform.exit();
+			   System.exit(0);
+			}
+		 });
+
+	}
+
+
 	/**
 	 * Metodo que permite cambiar de una vista a otra
 	 * @author Juan David Ortega
@@ -90,6 +110,10 @@ public class Aplicacion extends Application {
 	        {
 	        	MenuViewController menuViewController = loader.getController();
 	        	menuViewController.setAplicacion(this);
+	        }else if(fxmlFile.equals("views/JuegoView.fxml"))
+	        {
+	        	JuegoViewController juegoViewController = loader.getController();
+	        	juegoViewController.setAplicacion(this);
 	        }
 	        this.primaryStage.setScene(new Scene(root));
 	    }

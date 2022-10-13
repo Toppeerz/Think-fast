@@ -1,82 +1,163 @@
 package co.edu.uniquindio.juego.controller;
 
 import java.io.File;
+import java.util.LinkedList;
 
 import co.edu.uniquindio.juego.Aplicacion;
-import co.edu.uniquindio.juego.model.Juego;
-
+import co.edu.uniquindio.juego.model.Pregunta;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-
+import javafx.scene.image.ImageView;
 public class JuegoViewController {
 
     MediaPlayer mediaPlayer;
-
-
-
-    public static boolean corriendoCronometro;
     Aplicacion aplicacion;
-    Juego juego = new Juego();
-    long interval = 30;
-    boolean isCorriendo = false;
-    hilo hilo = new hilo();
+    ModelFactoryController modelFactoryController;
+    int cantidadCorrectasSeguidas = 0;
+    boolean cronometroCorriendo = false;
+    JuegoViewControllerCronometro cronometro = new JuegoViewControllerCronometro();
+    LinkedList<Pregunta> colaPreguntas = new LinkedList<Pregunta>();
+    @FXML
+    private Label txtPregunta;
 
     @FXML
-    public Label labelCronometro;
+    private Button btnPistaPista;
 
     @FXML
-    private Button btnIniciar;
+    private Button btnPistaSaltar;
 
     @FXML
-    private Button btnParar;
+    private Button btnPista5050;
 
     @FXML
-    void iniciar(ActionEvent event) {
+    private Button btnRendirse;
 
-        if (isCorriendo == false) {
-            isCorriendo = true;
-            hilo = new hilo();
-            hilo.setControlador(this, isCorriendo);
-            
-            String fileName = "fondo.mp4";
-            reproducirSonido(fileName);
-            hilo.start();
-        } else {
-            System.out.println("Ya esta corriendo");
-        }
+    @FXML
+    private ImageView vida1;
+
+    @FXML
+    private ImageView vida2;
+
+    @FXML
+    private ImageView vida3;
+
+    @FXML
+    public Label txtCronometro;
+
+    @FXML
+    private Button btnResponder1;
+
+    @FXML
+    private Button btnResponder2;
+
+    @FXML
+    private Button btnResponder3;
+
+    @FXML
+    private Button btnResponder4;
+
+    @FXML
+    private Label txtPuntuacion;
+
+    @FXML
+    void rendirse(ActionEvent event) {
+        rendirse();
+     
     }
+
+    private void rendirse() {
+        mediaPlayer.stop();
+     cronometro.setCorriendo(false);
+     cronometroCorriendo = false;
+     aplicacion.cambiarEscena("views/MenuView.fxml");
+    }
+
+    @FXML
+    void responder1(ActionEvent event) {
+
+    }
+
+    @FXML
+    void responder2(ActionEvent event) {
+
+    }
+
+    @FXML
+    void responder3(ActionEvent event) {
+
+    }
+
+    @FXML
+    void responder4(ActionEvent event) {
+
+    }
+
+    @FXML
+    void usarPista5050(ActionEvent event) {
+        rendirse();
+    }
+
+    @FXML
+    void usarPistaPista(ActionEvent event) {
+        rendirse();
+    }
+
+    @FXML
+    void usarPistaSaltar(ActionEvent event) {
+        rendirse();
+    }
+
+
+    // @FXML
+    // void parar(ActionEvent event) {
+    //     if (cronometroCorriendo == true && cronometro.isCorriendo == true) {
+
+    //         cronometro.setCorriendo(false);
+    //         cronometroCorriendo = false;
+
+    //     } else {
+    //         System.out.println("No se puede parar el contador porque no esta corriendo");
+    //     }
+    // }
+
+
 
     public void setAplicacion(Aplicacion aplicacion) {
         this.aplicacion = aplicacion;
     }
 
     @FXML
-    void parar(ActionEvent event) {
-        if (isCorriendo == true && hilo.isCorriendo == true) {
+    void initialize() {
+        modelFactoryController = ModelFactoryController.getInstance();
 
-            hilo.setCorriendo(false);
-            isCorriendo = false;
+        iniciarCronometro();
 
-        } else {
-            System.out.println("No se puede parar el contador porque no esta corriendo");
-        }
     }
 
-    public void setCorriendo(boolean isCorriendo) {
-        this.isCorriendo = isCorriendo;
+    private void iniciarCronometro() {
+
+        cronometroCorriendo = true;
+        cronometro = new JuegoViewControllerCronometro();
+        cronometro.setControlador(this, cronometroCorriendo);
+        
+        String fileName = "src/resources/musica/Fondo.mp3";
+        reproducirSonido(fileName);
+        cronometro.start();
     }
+
 
     private void reproducirSonido(String filename){
-        String patch = getClass().getResource(filename).getPath();
-        System.out.println(patch);
-        Media media= new Media(new File(patch).toURI().toString());
+        Media media= new Media(new File(filename).toURI().toString());
         mediaPlayer = new MediaPlayer(media);
         mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
         mediaPlayer.play();
+    }
 
+    public void setCorriendo(boolean isCorriendo) {
+        this.cronometroCorriendo = isCorriendo;
     }
 }

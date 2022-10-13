@@ -7,7 +7,6 @@ import java.util.Hashtable;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
-
 import co.edu.uniquindio.juego.exceptions.JuegoException;
 
 public class Juego implements Serializable {
@@ -17,9 +16,9 @@ public class Juego implements Serializable {
 	private String nombre;
 	private Hashtable<Integer, Pregunta> listaPreguntas = new Hashtable<Integer, Pregunta>();
 	private Hashtable<Integer, Jugador> listaJugadores = new Hashtable<Integer, Jugador>();
-	// registrarPregunta( listaPreguntas);
+	
 
-	//
+	
 
 	public Juego(String nombre, Hashtable<Integer, Pregunta> listaPreguntas,
 			Hashtable<Integer, Jugador> listaJugadores) {
@@ -69,7 +68,7 @@ public class Juego implements Serializable {
 			listaJugadores.put(listaJugadores.size(), jugadorNuevo);
 
 			mensaje = "Registro del jugador exitoso";
-			//System.out.println(listaPreguntas.get(1).getPregunta());
+			
 
 		}
 		return mensaje;
@@ -91,7 +90,7 @@ public class Juego implements Serializable {
 	}
 
 
-	private void generarPreguntasTipoP(TipoPregunta tipoP){
+	private LinkedList<Pregunta> generarPreguntasTipoP(TipoPregunta tipoP){
 		LinkedList <Pregunta> colaPreguntas = new LinkedList<Pregunta>();
 		List<Integer> numeros = new ArrayList<>(180);
 
@@ -110,27 +109,9 @@ public class Juego implements Serializable {
 		}
 		numeros.remove(posicionPregunta);
 		}
+		return colaPreguntas;
 	}
 
-	
-	private void generarRespuestas(Pregunta pregunta){
-		LinkedList <String> colaRespuestas = new LinkedList<String>();
-		List<Integer> numeros = new ArrayList<>(4);
-		for (int i=1;i<4;i++){
-		numeros.add(i);
-		}
-
-		Random random = new Random();
-		while (colaRespuestas.size()<4){
-		int opcionRespuesta = random.nextInt(numeros.size())+1;
-		String respuestaAux = pregunta.getRespuestasIncorrectas().get(opcionRespuesta).getRespuesta();
-		colaRespuestas.add(respuestaAux);
-		
-		numeros.remove(opcionRespuesta);
-		}
-	}
-
-	
 
 	
 

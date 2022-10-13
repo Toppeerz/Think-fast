@@ -2,7 +2,7 @@ package co.edu.uniquindio.juego.controller;
 
 import javafx.application.Platform;
 
-public class hilo extends Thread {
+public class JuegoViewControllerCronometro extends Thread {
 
     int interval;
     JuegoViewController juegoViewController;
@@ -13,11 +13,10 @@ public class hilo extends Thread {
 
             interval = 30;
 
-            while (isCorriendo == true && interval >= 0) {
-                Platform.runLater(() -> juegoViewController.labelCronometro.setText("" + interval));
-                System.out.println(interval + Thread.currentThread().getName());
+            while (isCorriendo == true && interval > 0) {
+                Platform.runLater(() -> juegoViewController.txtCronometro.setText("" + interval));
                 interval--;
-                Thread.sleep(500);
+                Thread.sleep(1000);
             }
             isCorriendo = false;
             juegoViewController.setCorriendo(false);

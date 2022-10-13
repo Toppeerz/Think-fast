@@ -1,0 +1,34 @@
+.pista5050, .pistaPista , .pistaSaltar{ 
+    -fx-background-size: 100px 100px;
+    background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    -fx-background-position: center;
+    background-position: center;
+    -fx-background-color: transparent;
+    background-color: transparent;
+}
+
+.pista5050 {
+    -fx-background-image: url('Pista5050.png');
+    background-image: url(Pista5050.png);
+}
+
+.pistaSaltar {
+    -fx-background-image: url('PistaSaltar.png');
+    background-image: url(PistaSaltar.png);
+}
+
+.pistaPista {
+    -fx-background-image: url('PistaPista.png');
+    background-image: url(PistaPista.png);
+}
+
+.respuesta{
+    -fx-background-color: rgba(180,14,190,255);
+    background-color: rgba(180,14,190,255);
+    -fx-font-size: 12px; 
+    font-size: 12px; 
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(two-pass-box, #ff29fb, 10, 0.7, 0, 0);
+    }
