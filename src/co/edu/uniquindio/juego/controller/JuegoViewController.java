@@ -5,6 +5,7 @@ import java.util.LinkedList;
 
 import co.edu.uniquindio.juego.Aplicacion;
 import co.edu.uniquindio.juego.model.Pregunta;
+import co.edu.uniquindio.juego.model.TipoPregunta;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -134,8 +135,27 @@ public class JuegoViewController {
     void initialize() {
         modelFactoryController = ModelFactoryController.getInstance();
 
+        getColaData(TipoPregunta.FACIL);
+
+        Pregunta preguntaPantalla = new Pregunta();
+
+        preguntaPantalla=colaPreguntas.poll();
+
+        txtPregunta.setText(preguntaPantalla.getPregunta());
+
+        btnResponder1.setText(preguntaPantalla.getRespuestasIncorrectas().get(0).getRespuesta());
+        btnResponder2.setText(preguntaPantalla.getRespuestasIncorrectas().get(1).getRespuesta()); 
+        btnResponder3.setText(preguntaPantalla.getRespuestasIncorrectas().get(2).getRespuesta());  
+        btnResponder4.setText(preguntaPantalla.getRespuestasIncorrectas().get(3).getRespuesta());
+
         iniciarCronometro();
 
+
+    }
+
+    private void getColaData(TipoPregunta tipoPregunta) {
+        colaPreguntas.addAll(modelFactoryController.obtenerColaPreguntas(tipoPregunta));
+    
     }
 
     private void iniciarCronometro() {

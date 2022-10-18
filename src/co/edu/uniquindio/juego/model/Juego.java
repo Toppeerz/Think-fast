@@ -90,7 +90,7 @@ public class Juego implements Serializable {
 	}
 
 
-	private LinkedList<Pregunta> generarPreguntasTipoP(TipoPregunta tipoP){
+	public LinkedList<Pregunta> generarPreguntasTipoP(TipoPregunta tipoP){
 		LinkedList <Pregunta> colaPreguntas = new LinkedList<Pregunta>();
 		List<Integer> numeros = new ArrayList<>(180);
 

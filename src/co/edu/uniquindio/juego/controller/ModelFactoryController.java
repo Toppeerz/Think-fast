@@ -1,6 +1,8 @@
 package co.edu.uniquindio.juego.controller;
 
+import java.util.Collection;
 import java.util.Hashtable;
+import java.util.LinkedList;
 
 import co.edu.uniquindio.juego.exceptions.JuegoException;
 import co.edu.uniquindio.juego.model.ClasePregunta;
@@ -137,7 +139,7 @@ public class ModelFactoryController {
         
 		Pregunta pregunta1= new Pregunta("¿Para qué sirve la paleta?","para mezclar pinturas","comer helado","cavar un hoyo","cocinar",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta2= new Pregunta("¿Qué tendencia musical es la que más incursiona en Jamaica?","reggae","cumbia","trap","dubstep",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta3= new Pregunta("¿Qué usamos para diluir los colores de las acuarelas?","A}agua","aceite","aire","tierra",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta3= new Pregunta("¿Qué usamos para diluir los colores de las acuarelas?","agua","aceite","aire","tierra",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta4= new Pregunta("¿Cuántos dedos tiene por lo general una caricatura en las manos?","cuatro","seis","cinco","dos",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta5= new Pregunta("¿Qué nota musical hay entre re y fa?","mi","sol","la","do",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta6= new Pregunta("Más vale pájaro en mano...","que cien volando","que mal que por bien no venga!"," que lamentar."," bajo el sol.",TipoPregunta.FACIL,ClasePregunta.ARTE);
@@ -567,6 +569,10 @@ public class ModelFactoryController {
 	public Hashtable<Integer,Jugador> obtenerJugadores() {
 		return juego.getListaJugadores();
 	}
+
+    public LinkedList<Pregunta> obtenerColaPreguntas(TipoPregunta tipoPregunta) {
+        return juego.generarPreguntasTipoP(tipoPregunta);
+    }
 
 	
 
