@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
+import java.util.Random;
 
 import co.edu.uniquindio.juego.Aplicacion;
 import co.edu.uniquindio.juego.model.Pregunta;
@@ -174,7 +175,17 @@ public class JuegoViewController {
            rendirse();}
     }
 
+    
     private void cambiarPreguntaPantalla() {
+
+        if(!btnPista5050.isVisible()){
+            btnResponder1.setVisible(true);
+            btnResponder2.setVisible(true);
+            btnResponder3.setVisible(true);
+            btnResponder4.setVisible(true);
+
+        }
+
         preguntaPantalla = colaPreguntas.poll();
 
         Collections.shuffle(preguntaPantalla.getRespuestas());
@@ -242,7 +253,47 @@ public class JuegoViewController {
 
     @FXML
     void usarPista5050(ActionEvent event) {
-        rendirse();
+        usarPista5050();
+    }
+
+    private void usarPista5050() {
+        ArrayList<Button> botones = new ArrayList<Button>();
+
+        botones.add(btnResponder1);
+        botones.add(btnResponder2);
+        botones.add(btnResponder3);
+        botones.add(btnResponder4);
+        String respuestaCorrecta ="";
+        
+        for (int i = 0; i < preguntaPantalla.getRespuestas().size(); i++) {
+            if(preguntaPantalla.getRespuestas().get(i).isCorrecta()){
+             respuestaCorrecta = preguntaPantalla.getRespuestas().get(i).getRespuesta();
+            }
+        }
+
+        for (int i = 0; i < botones.size(); i++) {
+            if(botones.get(i).getText().equalsIgnoreCase(respuestaCorrecta)){
+                botones.remove(i);
+            }
+        }
+
+       
+            
+         Random rand = new Random();
+
+
+         int n = rand.nextInt(3);
+
+         botones.remove(n);
+
+
+
+        for (int i = 0; i < botones.size(); i++) {
+          botones.get(i).setVisible(false);
+        }
+        
+        btnPista5050.setVisible(false);
+
     }
 
     @FXML
