@@ -303,10 +303,16 @@ public class JuegoViewController {
 
     @FXML
     void usarPistaSaltar(ActionEvent event) {
-        rendirse();
+        usarPistaSaltar();
     }
 
 
+
+    private void usarPistaSaltar() {
+        pararCronometro();
+        cambiarPreguntaPantalla();
+        btnPistaSaltar.setVisible(false);   
+     }
 
     public void setAplicacion(Aplicacion aplicacion) {
         this.aplicacion = aplicacion;
