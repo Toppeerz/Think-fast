@@ -146,6 +146,7 @@ public class JuegoViewController {
         }
         if(cantidadCorrectasSeguidas==5 && !preguntaPantalla.getTipoPregunta().equals(TipoPregunta.DIFICIL)){
             aumentarDificultadColaPreguntas();
+            cantidadCorrectasSeguidas=0;
         }
     }
 
