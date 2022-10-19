@@ -88,7 +88,7 @@ public class Juego implements Serializable {
 	}
 
 
-	public LinkedList<Pregunta> generarPreguntasTipoP(TipoPregunta tipoP){
+	public LinkedList<Pregunta> generarPreguntasTipoP(){
 		Random rand = new Random();
 		int numberOfElements = 180;
 		LinkedList<Pregunta> preguntasAux = new LinkedList<Pregunta>();
@@ -101,7 +101,23 @@ public class Juego implements Serializable {
 		for (int i = 0; i < numberOfElements && colaPreguntas.size()<10; i++) {
 			int randomIndex = rand.nextInt(preguntasAux.size());
 			Pregunta pregunta = preguntasAux.get(randomIndex);
-			if(pregunta.getTipoPregunta().equals(tipoP)){
+			if(pregunta.getTipoPregunta().equals(TipoPregunta.FACIL)){
+				colaPreguntas.add(pregunta);
+			}
+			preguntasAux.remove(randomIndex);
+		}
+		for (int i = 0; i < numberOfElements && colaPreguntas.size()<20; i++) {
+			int randomIndex = rand.nextInt(preguntasAux.size());
+			Pregunta pregunta = preguntasAux.get(randomIndex);
+			if(pregunta.getTipoPregunta().equals(TipoPregunta.MEDIA)){
+				colaPreguntas.add(pregunta);
+			}
+			preguntasAux.remove(randomIndex);
+		}
+		for (int i = 0; i < numberOfElements && colaPreguntas.size()<30; i++) {
+			int randomIndex = rand.nextInt(preguntasAux.size());
+			Pregunta pregunta = preguntasAux.get(randomIndex);
+			if(pregunta.getTipoPregunta().equals(TipoPregunta.DIFICIL)){
 				colaPreguntas.add(pregunta);
 			}
 			preguntasAux.remove(randomIndex);
@@ -109,7 +125,46 @@ public class Juego implements Serializable {
 		return colaPreguntas;
 	}
 
+    public LinkedList<Pregunta> generarPreguntasDificultadAumentada(int preguntasQueFaltan, TipoPregunta tipoPregunta) {
+		Random rand = new Random();
+		int numberOfElements = 180;
+		LinkedList<Pregunta> preguntasAux = new LinkedList<Pregunta>();
+		for (int i = 1; i < numberOfElements+1; i++) {
+			preguntasAux.add(listaPreguntas.get(i));
+		}
+		LinkedList<Pregunta> colaPreguntas = new LinkedList<Pregunta>();
+		
+	if(tipoPregunta.equals(TipoPregunta.FACIL)){
+		for (int i = 0; i < numberOfElements && colaPreguntas.size()<preguntasQueFaltan-10; i++) {
+			int randomIndex = rand.nextInt(preguntasAux.size());
+			Pregunta pregunta = preguntasAux.get(randomIndex);
+			if(pregunta.getTipoPregunta().equals(TipoPregunta.MEDIA)){
+				colaPreguntas.add(pregunta);
+			}
+			preguntasAux.remove(randomIndex);
+		}
 
+		for (int i = 0; i < numberOfElements && colaPreguntas.size()<preguntasQueFaltan; i++) {
+			int randomIndex = rand.nextInt(preguntasAux.size());
+			Pregunta pregunta = preguntasAux.get(randomIndex);
+			if(pregunta.getTipoPregunta().equals(TipoPregunta.DIFICIL)){
+				colaPreguntas.add(pregunta);
+			}
+			preguntasAux.remove(randomIndex);
+		}
+	}else if(tipoPregunta.equals(TipoPregunta.MEDIA)){
+		for (int i = 0; i < numberOfElements && colaPreguntas.size()<preguntasQueFaltan; i++) {
+			int randomIndex = rand.nextInt(preguntasAux.size());
+			Pregunta pregunta = preguntasAux.get(randomIndex);
+			if(pregunta.getTipoPregunta().equals(TipoPregunta.DIFICIL)){
+				colaPreguntas.add(pregunta);
+			}
+			preguntasAux.remove(randomIndex);
+		}
+	}
+		return colaPreguntas;
+	}
+    
 	
 
 } // fin clase juego

@@ -144,6 +144,19 @@ public class JuegoViewController {
             cantidadCorrectasSeguidas=0;
             removerVida();
         }
+        if(cantidadCorrectasSeguidas==5 && !preguntaPantalla.getTipoPregunta().equals(TipoPregunta.DIFICIL)){
+            aumentarDificultadColaPreguntas();
+        }
+    }
+
+    private void aumentarDificultadColaPreguntas() {
+        int preguntasQueFaltan = colaPreguntas.size();
+        getColaDificultadAumentadaData(preguntasQueFaltan,preguntaPantalla.getTipoPregunta());
+    }
+
+    private void getColaDificultadAumentadaData(int preguntasQueFaltan, TipoPregunta tipoPregunta) {
+        colaPreguntas.clear();
+        colaPreguntas.addAll(modelFactoryController.obtenerColaDificultadAumentadaPreguntas(preguntasQueFaltan,tipoPregunta));
     }
 
     private void removerVida() {
@@ -271,10 +284,16 @@ public class JuegoViewController {
         reproducirSonido();
         iniciarCronometro();
 
+        txtCronometro.textProperty().addListener((observable, oldValue, newValue) -> {
+            if(newValue.equals("0")){
+                rendirse();
+            }
+        });
+
     }
 
     private void getColaData(TipoPregunta tipoPregunta) {
-        colaPreguntas.addAll(modelFactoryController.obtenerColaPreguntas(tipoPregunta));
+        colaPreguntas.addAll(modelFactoryController.obtenerColaPreguntas());
 
     }
 

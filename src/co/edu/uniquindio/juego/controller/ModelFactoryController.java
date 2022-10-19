@@ -1,5 +1,6 @@
 package co.edu.uniquindio.juego.controller;
 
+
 import java.util.Hashtable;
 import java.util.LinkedList;
 
@@ -571,9 +572,14 @@ public class ModelFactoryController {
 		return juego.getListaJugadores();
 	}
 
-    public LinkedList<Pregunta> obtenerColaPreguntas(TipoPregunta tipoPregunta) {
-        return juego.generarPreguntasTipoP(tipoPregunta);
+    public LinkedList<Pregunta> obtenerColaPreguntas() {
+        return juego.generarPreguntasTipoP();
     }
+
+	public LinkedList<Pregunta> obtenerColaDificultadAumentadaPreguntas(int preguntasQueFaltan,
+			TipoPregunta tipoPregunta) {
+		return juego.generarPreguntasDificultadAumentada(preguntasQueFaltan,tipoPregunta);
+	}
 
 	
 
