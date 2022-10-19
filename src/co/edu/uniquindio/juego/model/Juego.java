@@ -1,11 +1,9 @@
 package co.edu.uniquindio.juego.model;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Random;
 import co.edu.uniquindio.juego.exceptions.JuegoException;
 
@@ -91,23 +89,22 @@ public class Juego implements Serializable {
 
 
 	public LinkedList<Pregunta> generarPreguntasTipoP(TipoPregunta tipoP){
-		LinkedList <Pregunta> colaPreguntas = new LinkedList<Pregunta>();
-		List<Integer> numeros = new ArrayList<>(180);
-
-		for (int i=1;i<181;i++){
-		numeros.add(i);
+		Random rand = new Random();
+		int numberOfElements = 180;
+		LinkedList<Pregunta> preguntasAux = new LinkedList<Pregunta>();
+		for (int i = 1; i < numberOfElements+1; i++) {
+			preguntasAux.add(listaPreguntas.get(i));
 		}
-		Random random = new Random();
-		while (colaPreguntas.size()<10){
-
-		int posicionPregunta = random.nextInt(numeros.size())+1;
-		Pregunta preguntaAux = listaPreguntas.get(posicionPregunta);
-
-		if(preguntaAux.getTipoPregunta().equals(tipoP))
-		{
-			colaPreguntas.add(preguntaAux);
-		}
-		numeros.remove(posicionPregunta);
+		LinkedList<Pregunta> colaPreguntas = new LinkedList<Pregunta>();
+		
+	
+		for (int i = 0; i < numberOfElements && colaPreguntas.size()<10; i++) {
+			int randomIndex = rand.nextInt(preguntasAux.size());
+			Pregunta pregunta = preguntasAux.get(randomIndex);
+			if(pregunta.getTipoPregunta().equals(tipoP)){
+				colaPreguntas.add(pregunta);
+			}
+			preguntasAux.remove(randomIndex);
 		}
 		return colaPreguntas;
 	}

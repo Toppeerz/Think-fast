@@ -1,18 +1,25 @@
 package co.edu.uniquindio.juego.controller;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 
 import co.edu.uniquindio.juego.Aplicacion;
 import co.edu.uniquindio.juego.model.Pregunta;
+import co.edu.uniquindio.juego.model.Respuesta;
 import co.edu.uniquindio.juego.model.TipoPregunta;
+import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.util.Duration;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+
 public class JuegoViewController {
 
     MediaPlayer mediaPlayer;
@@ -22,6 +29,10 @@ public class JuegoViewController {
     boolean cronometroCorriendo = false;
     JuegoViewControllerCronometro cronometro = new JuegoViewControllerCronometro();
     LinkedList<Pregunta> colaPreguntas = new LinkedList<Pregunta>();
+    Pregunta preguntaPantalla = new Pregunta();
+    int vidas;
+    int puntuacion;
+
     @FXML
     private Label txtPregunta;
 
@@ -67,35 +78,153 @@ public class JuegoViewController {
     @FXML
     void rendirse(ActionEvent event) {
         rendirse();
-     
+
     }
 
     private void rendirse() {
         mediaPlayer.stop();
-     cronometro.setCorriendo(false);
-     cronometroCorriendo = false;
-     aplicacion.cambiarEscena("views/MenuView.fxml");
+        cronometro.setCorriendo(false);
+        cronometroCorriendo = false;
+        aplicacion.cambiarEscena("views/MenuView.fxml");
     }
 
     @FXML
     void responder1(ActionEvent event) {
-
+        seleccionarRespuesta(btnResponder1, preguntaPantalla.getRespuestas().get(0));
+       
     }
+
 
     @FXML
     void responder2(ActionEvent event) {
-
+        seleccionarRespuesta(btnResponder2, preguntaPantalla.getRespuestas().get(1));
+       
     }
 
     @FXML
     void responder3(ActionEvent event) {
-
+        seleccionarRespuesta(btnResponder3, preguntaPantalla.getRespuestas().get(2));
+     
     }
 
     @FXML
     void responder4(ActionEvent event) {
+        seleccionarRespuesta(btnResponder4, preguntaPantalla.getRespuestas().get(3));
+        
+    }
+   
+
+    private void seleccionarRespuesta(Button boton, Respuesta respuesta) {
+        pararCronometro();
+        boton.getStyleClass().add("respuestaSeleccionada");
+        PauseTransition pause = new PauseTransition(
+        Duration.seconds(1));
+        PauseTransition pause2 = new PauseTransition(
+        Duration.seconds(1));
+        pause.setOnFinished(event -> {
+           boton.getStyleClass().remove("respuestaSeleccionada");
+           revelarRespuestas();
+           responder(respuesta);
+           pause2.play();
+        });
+        pause2.setOnFinished(event -> {
+            removerRespuestas();
+            cambiarPreguntaPantalla();
+         });
+        pause.play();
 
     }
+
+    private void responder(Respuesta respuesta) {
+        if(respuesta.isCorrecta()){
+            cantidadCorrectasSeguidas++;
+            puntuacion += 300*Integer.parseInt(txtCronometro.getText()); 
+            txtPuntuacion.setText("Puntuacion: "+puntuacion);
+        }else{
+            cantidadCorrectasSeguidas=0;
+            removerVida();
+        }
+    }
+
+    private void removerVida() {
+        if(vidas==3){
+            vida3.setImage(new Image(new File("src/resources/imagenes/Malo.png").toURI().toString()));
+            vidas--;
+        }else if(vidas==2){
+            vida2.setImage(new Image(new File("src/resources/imagenes/Malo.png").toURI().toString()));
+            vidas--;
+        }else if(vidas==1){
+            vida1.setImage(new Image(new File("src/resources/imagenes/Malo.png").toURI().toString()));
+            vidas--;
+        }else if(vidas==0){
+           rendirse();}
+    }
+
+    private void cambiarPreguntaPantalla() {
+        preguntaPantalla = colaPreguntas.poll();
+
+        Collections.shuffle(preguntaPantalla.getRespuestas());
+
+        txtPregunta.setText(preguntaPantalla.getPregunta());
+
+        btnResponder1.setText(preguntaPantalla.getRespuestas().get(0).getRespuesta());
+        btnResponder2.setText(preguntaPantalla.getRespuestas().get(1).getRespuesta());
+        btnResponder3.setText(preguntaPantalla.getRespuestas().get(2).getRespuesta());
+        btnResponder4.setText(preguntaPantalla.getRespuestas().get(3).getRespuesta());
+        iniciarCronometro();
+    }
+
+    private void revelarRespuestas() {
+
+        ArrayList<Respuesta> respuestas = preguntaPantalla.getRespuestas();
+
+        if(respuestas.get(0).isCorrecta()){
+            btnResponder1.getStyleClass().add("respuestaCorrecta");
+        }else{
+            btnResponder1.getStyleClass().add("respuestaIncorrecta");
+        }
+        if(respuestas.get(1).isCorrecta()){
+            btnResponder2.getStyleClass().add("respuestaCorrecta");
+        }else{
+            btnResponder2.getStyleClass().add("respuestaIncorrecta");
+        }
+        if(respuestas.get(2).isCorrecta()){
+            btnResponder3.getStyleClass().add("respuestaCorrecta");
+        }else{
+            btnResponder3.getStyleClass().add("respuestaIncorrecta");
+        }
+        if(respuestas.get(3).isCorrecta()){
+            btnResponder4.getStyleClass().add("respuestaCorrecta");
+        }else{
+            btnResponder4.getStyleClass().add("respuestaIncorrecta");
+        }
+       }
+
+       private void removerRespuestas() {
+
+        ArrayList<Respuesta> respuestas = preguntaPantalla.getRespuestas();
+
+        if(respuestas.get(0).isCorrecta()){
+            btnResponder1.getStyleClass().remove("respuestaCorrecta");
+        }else{
+            btnResponder1.getStyleClass().remove("respuestaIncorrecta");
+        }
+        if(respuestas.get(1).isCorrecta()){
+            btnResponder2.getStyleClass().remove("respuestaCorrecta");
+        }else{
+            btnResponder2.getStyleClass().remove("respuestaIncorrecta");
+        }
+        if(respuestas.get(2).isCorrecta()){
+            btnResponder3.getStyleClass().remove("respuestaCorrecta");
+        }else{
+            btnResponder3.getStyleClass().remove("respuestaIncorrecta");
+        }
+        if(respuestas.get(3).isCorrecta()){
+            btnResponder4.getStyleClass().remove("respuestaCorrecta");
+        }else{
+            btnResponder4.getStyleClass().remove("respuestaIncorrecta");
+        }
+       }
 
     @FXML
     void usarPista5050(ActionEvent event) {
@@ -113,19 +242,6 @@ public class JuegoViewController {
     }
 
 
-    // @FXML
-    // void parar(ActionEvent event) {
-    //     if (cronometroCorriendo == true && cronometro.isCorriendo == true) {
-
-    //         cronometro.setCorriendo(false);
-    //         cronometroCorriendo = false;
-
-    //     } else {
-    //         System.out.println("No se puede parar el contador porque no esta corriendo");
-    //     }
-    // }
-
-
 
     public void setAplicacion(Aplicacion aplicacion) {
         this.aplicacion = aplicacion;
@@ -133,29 +249,33 @@ public class JuegoViewController {
 
     @FXML
     void initialize() {
+
+        vidas = 3;
+        puntuacion = 0;
+
         modelFactoryController = ModelFactoryController.getInstance();
 
         getColaData(TipoPregunta.FACIL);
 
-        Pregunta preguntaPantalla = new Pregunta();
+        preguntaPantalla = colaPreguntas.poll();
 
-        preguntaPantalla=colaPreguntas.poll();
+        Collections.shuffle(preguntaPantalla.getRespuestas());
 
         txtPregunta.setText(preguntaPantalla.getPregunta());
 
-        btnResponder1.setText(preguntaPantalla.getRespuestasIncorrectas().get(0).getRespuesta());
-        btnResponder2.setText(preguntaPantalla.getRespuestasIncorrectas().get(1).getRespuesta()); 
-        btnResponder3.setText(preguntaPantalla.getRespuestasIncorrectas().get(2).getRespuesta());  
-        btnResponder4.setText(preguntaPantalla.getRespuestasIncorrectas().get(3).getRespuesta());
+        btnResponder1.setText(preguntaPantalla.getRespuestas().get(0).getRespuesta());
+        btnResponder2.setText(preguntaPantalla.getRespuestas().get(1).getRespuesta());
+        btnResponder3.setText(preguntaPantalla.getRespuestas().get(2).getRespuesta());
+        btnResponder4.setText(preguntaPantalla.getRespuestas().get(3).getRespuesta());
 
+        reproducirSonido();
         iniciarCronometro();
-
 
     }
 
     private void getColaData(TipoPregunta tipoPregunta) {
         colaPreguntas.addAll(modelFactoryController.obtenerColaPreguntas(tipoPregunta));
-    
+
     }
 
     private void iniciarCronometro() {
@@ -163,15 +283,18 @@ public class JuegoViewController {
         cronometroCorriendo = true;
         cronometro = new JuegoViewControllerCronometro();
         cronometro.setControlador(this, cronometroCorriendo);
-        
-        String fileName = "src/resources/musica/Fondo.mp3";
-        reproducirSonido(fileName);
         cronometro.start();
     }
 
+    private void pararCronometro() {
+        cronometro.setCorriendo(false);
+        cronometroCorriendo = false;
 
-    private void reproducirSonido(String filename){
-        Media media= new Media(new File(filename).toURI().toString());
+    }
+
+    private void reproducirSonido() {
+        String fileName = "src/resources/musica/Fondo.mp3";
+        Media media = new Media(new File(fileName).toURI().toString());
         mediaPlayer = new MediaPlayer(media);
         mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
         mediaPlayer.play();

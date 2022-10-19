@@ -13,10 +13,10 @@ public class JuegoViewControllerCronometro extends Thread {
 
             interval = 30;
 
-            while (isCorriendo == true && interval > 0) {
+            while (isCorriendo == true && interval >= 0) {
                 Platform.runLater(() -> juegoViewController.txtCronometro.setText("" + interval));
-                interval--;
                 Thread.sleep(1000);
+                interval--;
             }
             isCorriendo = false;
             juegoViewController.setCorriendo(false);

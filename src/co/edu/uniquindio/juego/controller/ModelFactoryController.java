@@ -1,6 +1,5 @@
 package co.edu.uniquindio.juego.controller;
 
-import java.util.Collection;
 import java.util.Hashtable;
 import java.util.LinkedList;
 
@@ -521,6 +520,8 @@ public class ModelFactoryController {
 		listaPreguntas.put(179, pregunta179);
 		listaPreguntas.put(180, pregunta180);	
 		juego.setListaPreguntas(listaPreguntas);
+
+	
 		System.out.println("Juego inicializado");
 
 	}

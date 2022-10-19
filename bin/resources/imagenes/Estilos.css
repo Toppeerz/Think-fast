@@ -32,3 +32,30 @@
     -fx-text-fill: white;
     -fx-effect: dropshadow(two-pass-box, #ff29fb, 10, 0.7, 0, 0);
     }
+
+    .respuestaSeleccionada{
+        -fx-background-color: rgba(241, 90, 34,1);
+        background-color: rgba(241, 90, 34,1);
+        -fx-font-size: 12px; 
+        font-size: 12px; 
+        -fx-text-fill: black;
+        -fx-effect: dropshadow(two-pass-box, #ff5f00, 10, 0.7, 0, 0);
+        }
+
+        .respuestaCorrecta{
+            -fx-background-color: rgb(31, 133, 0);
+            background-color: rgb(31, 133, 0);
+            -fx-font-size: 12px; 
+            font-size: 12px; 
+            -fx-text-fill: black;
+            -fx-effect: dropshadow(two-pass-box, rgb(31, 133, 0), 10, 0.7, 0, 0);
+        }
+
+        .respuestaIncorrecta{
+            -fx-background-color: red;
+            background-color: red;
+            -fx-font-size: 12px; 
+            font-size: 12px; 
+            -fx-text-fill: black;
+            -fx-effect: dropshadow(two-pass-box, red, 10, 0.7, 0, 0);
+        }
