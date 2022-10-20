@@ -3,6 +3,7 @@ package co.edu.uniquindio.juego;
 import java.io.File;
 import java.io.IOException;
 
+import co.edu.uniquindio.juego.controller.ComoJugarViewController;
 import co.edu.uniquindio.juego.controller.IniciarSesionViewController;
 import co.edu.uniquindio.juego.controller.JuegoViewController;
 import co.edu.uniquindio.juego.controller.MenuViewController;
@@ -114,6 +115,10 @@ public class Aplicacion extends Application {
 	        {
 	        	JuegoViewController juegoViewController = loader.getController();
 	        	juegoViewController.setAplicacion(this);
+	        }else if(fxmlFile.equals("views/ComoJugarView.fxml"))
+	        {
+	        	ComoJugarViewController comoJugarViewController = loader.getController();
+	        	comoJugarViewController.setAplicacion(this);
 	        }
 	        this.primaryStage.setScene(new Scene(root));
 	    }

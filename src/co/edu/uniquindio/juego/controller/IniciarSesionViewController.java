@@ -25,6 +25,7 @@ public class IniciarSesionViewController {
     @FXML
     private Button btnIniciarSesion;
 
+
     @FXML
     private TextField txtNombre;
 
