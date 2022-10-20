@@ -1,4 +1,4 @@
-.pista5050, .pistaPista , .pistaSaltar{ 
+.pista5050, .pistaParar , .pistaSaltar{ 
     -fx-background-size: 100px 100px;
     background-size: 100px 100px;
     -fx-background-repeat: no-repeat;
@@ -19,9 +19,9 @@
     background-image: url(PistaSaltar.png);
 }
 
-.pistaPista {
-    -fx-background-image: url('PistaPista.png');
-    background-image: url(PistaPista.png);
+.pistaParar {
+    -fx-background-image: url('PistaParar.png');
+    background-image: url(PistaParar.png);
 }
 
 .respuesta{

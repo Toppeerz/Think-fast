@@ -4,14 +4,14 @@ import javafx.application.Platform;
 
 public class JuegoViewControllerCronometro extends Thread {
 
-    int interval;
+    int interval = 30;
     JuegoViewController juegoViewController;
     boolean isCorriendo;
 
     public void run() {
         try {
 
-            interval = 30;
+            
 
             while (isCorriendo == true && interval >= 0) {
                 Platform.runLater(() -> juegoViewController.txtCronometro.setText("" + interval));
@@ -43,5 +43,11 @@ public class JuegoViewControllerCronometro extends Thread {
     public int getInterval() {
         return interval;
     }
+
+    public void setInterval(int interval) {
+        this.interval = interval;
+    }
+
+   
 
 }

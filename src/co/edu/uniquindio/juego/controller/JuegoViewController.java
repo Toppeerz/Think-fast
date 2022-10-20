@@ -33,12 +33,14 @@ public class JuegoViewController {
     Pregunta preguntaPantalla = new Pregunta();
     int vidas;
     int puntuacion;
+    PauseTransition pausaPista = new PauseTransition(
+            Duration.seconds(10));
 
     @FXML
     private Label txtPregunta;
 
     @FXML
-    private Button btnPistaPista;
+    private Button btnPistaParar;
 
     @FXML
     private Button btnPistaSaltar;
@@ -92,93 +94,93 @@ public class JuegoViewController {
     @FXML
     void responder1(ActionEvent event) {
         seleccionarRespuesta(btnResponder1, preguntaPantalla.getRespuestas().get(0));
-       
-    }
 
+    }
 
     @FXML
     void responder2(ActionEvent event) {
         seleccionarRespuesta(btnResponder2, preguntaPantalla.getRespuestas().get(1));
-       
+
     }
 
     @FXML
     void responder3(ActionEvent event) {
         seleccionarRespuesta(btnResponder3, preguntaPantalla.getRespuestas().get(2));
-     
+
     }
 
     @FXML
     void responder4(ActionEvent event) {
         seleccionarRespuesta(btnResponder4, preguntaPantalla.getRespuestas().get(3));
-        
+
     }
-   
 
     private void seleccionarRespuesta(Button boton, Respuesta respuesta) {
+        pausaPista.stop();
         pararCronometro();
         boton.getStyleClass().add("respuestaSeleccionada");
         PauseTransition pause = new PauseTransition(
-        Duration.seconds(1));
+                Duration.seconds(1));
         PauseTransition pause2 = new PauseTransition(
-        Duration.seconds(1));
+                Duration.seconds(1));
         pause.setOnFinished(event -> {
-           boton.getStyleClass().remove("respuestaSeleccionada");
-           revelarRespuestas();
-           responder(respuesta);
-           pause2.play();
+            boton.getStyleClass().remove("respuestaSeleccionada");
+            revelarRespuestas();
+            responder(respuesta);
+            pause2.play();
         });
         pause2.setOnFinished(event -> {
             removerRespuestas();
             cambiarPreguntaPantalla();
-         });
+        });
         pause.play();
 
     }
 
     private void responder(Respuesta respuesta) {
-        if(respuesta.isCorrecta()){
+        if (respuesta.isCorrecta()) {
             cantidadCorrectasSeguidas++;
-            puntuacion += 300*Integer.parseInt(txtCronometro.getText()); 
-            txtPuntuacion.setText("Puntuacion: "+puntuacion);
-        }else{
-            cantidadCorrectasSeguidas=0;
+            puntuacion += 300 * Integer.parseInt(txtCronometro.getText());
+            txtPuntuacion.setText("Puntuacion: " + puntuacion);
+        } else {
+            cantidadCorrectasSeguidas = 0;
             removerVida();
         }
-        if(cantidadCorrectasSeguidas==5 && !preguntaPantalla.getTipoPregunta().equals(TipoPregunta.DIFICIL)){
+        if (cantidadCorrectasSeguidas == 5 && !preguntaPantalla.getTipoPregunta().equals(TipoPregunta.DIFICIL)) {
             aumentarDificultadColaPreguntas();
-            cantidadCorrectasSeguidas=0;
+            cantidadCorrectasSeguidas = 0;
         }
     }
 
     private void aumentarDificultadColaPreguntas() {
         int preguntasQueFaltan = colaPreguntas.size();
-        getColaDificultadAumentadaData(preguntasQueFaltan,preguntaPantalla.getTipoPregunta());
+        getColaDificultadAumentadaData(preguntasQueFaltan, preguntaPantalla.getTipoPregunta());
     }
 
     private void getColaDificultadAumentadaData(int preguntasQueFaltan, TipoPregunta tipoPregunta) {
         colaPreguntas.clear();
-        colaPreguntas.addAll(modelFactoryController.obtenerColaDificultadAumentadaPreguntas(preguntasQueFaltan,tipoPregunta));
+        colaPreguntas.addAll(
+                modelFactoryController.obtenerColaDificultadAumentadaPreguntas(preguntasQueFaltan, tipoPregunta));
     }
 
     private void removerVida() {
-        if(vidas==3){
+        if (vidas == 3) {
             vida3.setImage(new Image(new File("src/resources/imagenes/Malo.png").toURI().toString()));
             vidas--;
-        }else if(vidas==2){
+        } else if (vidas == 2) {
             vida2.setImage(new Image(new File("src/resources/imagenes/Malo.png").toURI().toString()));
             vidas--;
-        }else if(vidas==1){
+        } else if (vidas == 1) {
             vida1.setImage(new Image(new File("src/resources/imagenes/Malo.png").toURI().toString()));
             vidas--;
-        }else if(vidas==0){
-           rendirse();}
+        } else if (vidas == 0) {
+            rendirse();
+        }
     }
 
-    
     private void cambiarPreguntaPantalla() {
 
-        if(!btnPista5050.isVisible()){
+        if (!btnPista5050.isVisible()) {
             btnResponder1.setVisible(true);
             btnResponder2.setVisible(true);
             btnResponder3.setVisible(true);
@@ -203,53 +205,53 @@ public class JuegoViewController {
 
         ArrayList<Respuesta> respuestas = preguntaPantalla.getRespuestas();
 
-        if(respuestas.get(0).isCorrecta()){
+        if (respuestas.get(0).isCorrecta()) {
             btnResponder1.getStyleClass().add("respuestaCorrecta");
-        }else{
+        } else {
             btnResponder1.getStyleClass().add("respuestaIncorrecta");
         }
-        if(respuestas.get(1).isCorrecta()){
+        if (respuestas.get(1).isCorrecta()) {
             btnResponder2.getStyleClass().add("respuestaCorrecta");
-        }else{
+        } else {
             btnResponder2.getStyleClass().add("respuestaIncorrecta");
         }
-        if(respuestas.get(2).isCorrecta()){
+        if (respuestas.get(2).isCorrecta()) {
             btnResponder3.getStyleClass().add("respuestaCorrecta");
-        }else{
+        } else {
             btnResponder3.getStyleClass().add("respuestaIncorrecta");
         }
-        if(respuestas.get(3).isCorrecta()){
+        if (respuestas.get(3).isCorrecta()) {
             btnResponder4.getStyleClass().add("respuestaCorrecta");
-        }else{
+        } else {
             btnResponder4.getStyleClass().add("respuestaIncorrecta");
         }
-       }
+    }
 
-       private void removerRespuestas() {
+    private void removerRespuestas() {
 
         ArrayList<Respuesta> respuestas = preguntaPantalla.getRespuestas();
 
-        if(respuestas.get(0).isCorrecta()){
+        if (respuestas.get(0).isCorrecta()) {
             btnResponder1.getStyleClass().remove("respuestaCorrecta");
-        }else{
+        } else {
             btnResponder1.getStyleClass().remove("respuestaIncorrecta");
         }
-        if(respuestas.get(1).isCorrecta()){
+        if (respuestas.get(1).isCorrecta()) {
             btnResponder2.getStyleClass().remove("respuestaCorrecta");
-        }else{
+        } else {
             btnResponder2.getStyleClass().remove("respuestaIncorrecta");
         }
-        if(respuestas.get(2).isCorrecta()){
+        if (respuestas.get(2).isCorrecta()) {
             btnResponder3.getStyleClass().remove("respuestaCorrecta");
-        }else{
+        } else {
             btnResponder3.getStyleClass().remove("respuestaIncorrecta");
         }
-        if(respuestas.get(3).isCorrecta()){
+        if (respuestas.get(3).isCorrecta()) {
             btnResponder4.getStyleClass().remove("respuestaCorrecta");
-        }else{
+        } else {
             btnResponder4.getStyleClass().remove("respuestaIncorrecta");
         }
-       }
+    }
 
     @FXML
     void usarPista5050(ActionEvent event) {
@@ -263,42 +265,48 @@ public class JuegoViewController {
         botones.add(btnResponder2);
         botones.add(btnResponder3);
         botones.add(btnResponder4);
-        String respuestaCorrecta ="";
-        
+        String respuestaCorrecta = "";
+
         for (int i = 0; i < preguntaPantalla.getRespuestas().size(); i++) {
-            if(preguntaPantalla.getRespuestas().get(i).isCorrecta()){
-             respuestaCorrecta = preguntaPantalla.getRespuestas().get(i).getRespuesta();
+            if (preguntaPantalla.getRespuestas().get(i).isCorrecta()) {
+                respuestaCorrecta = preguntaPantalla.getRespuestas().get(i).getRespuesta();
             }
         }
 
         for (int i = 0; i < botones.size(); i++) {
-            if(botones.get(i).getText().equalsIgnoreCase(respuestaCorrecta)){
+            if (botones.get(i).getText().equalsIgnoreCase(respuestaCorrecta)) {
                 botones.remove(i);
             }
         }
 
-       
-            
-         Random rand = new Random();
+        Random rand = new Random();
 
+        int n = rand.nextInt(3);
 
-         int n = rand.nextInt(3);
-
-         botones.remove(n);
-
-
+        botones.remove(n);
 
         for (int i = 0; i < botones.size(); i++) {
-          botones.get(i).setVisible(false);
+            botones.get(i).setVisible(false);
         }
-        
+
         btnPista5050.setVisible(false);
 
     }
 
     @FXML
-    void usarPistaPista(ActionEvent event) {
-        rendirse();
+    void usarPistaParar(ActionEvent event) {
+        usarPistaParar();
+    }
+
+    private void usarPistaParar() {
+        int tiempoRestante = cronometro.getInterval();
+        pararCronometro();
+        pausaPista.setOnFinished(event -> {
+            iniciarCronometro();
+            cronometro.setInterval(tiempoRestante);
+        });
+        pausaPista.play();
+        btnPistaParar.setVisible(false);
     }
 
     @FXML
@@ -306,13 +314,11 @@ public class JuegoViewController {
         usarPistaSaltar();
     }
 
-
-
     private void usarPistaSaltar() {
         pararCronometro();
         cambiarPreguntaPantalla();
-        btnPistaSaltar.setVisible(false);   
-     }
+        btnPistaSaltar.setVisible(false);
+    }
 
     public void setAplicacion(Aplicacion aplicacion) {
         this.aplicacion = aplicacion;
@@ -343,7 +349,7 @@ public class JuegoViewController {
         iniciarCronometro();
 
         txtCronometro.textProperty().addListener((observable, oldValue, newValue) -> {
-            if(newValue.equals("0")){
+            if (newValue.equals("0")) {
                 rendirse();
             }
         });
