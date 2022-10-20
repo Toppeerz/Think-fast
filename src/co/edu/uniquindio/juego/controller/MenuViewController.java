@@ -33,6 +33,12 @@ public class MenuViewController {
 
     @FXML
     void verComoJugar(ActionEvent event) {
+        comoJugar();
+
+    }
+
+    private void comoJugar() {
+        aplicacion.cambiarEscena("views/ComoJugarView.fxml");
 
     }
 

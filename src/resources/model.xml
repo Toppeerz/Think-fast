@@ -3,6 +3,17 @@
  <object class="co.edu.uniquindio.juego.model.Juego" id="Juego0">
   <void property="listaJugadores">
    <void method="put">
+    <int>3</int>
+    <object class="co.edu.uniquindio.juego.model.Jugador">
+     <void property="contrasenia">
+      <string>12345</string>
+     </void>
+     <void property="nombre">
+      <string>Andres</string>
+     </void>
+    </object>
+   </void>
+   <void method="put">
     <int>2</int>
     <object class="co.edu.uniquindio.juego.model.Jugador">
      <void property="contrasenia">
