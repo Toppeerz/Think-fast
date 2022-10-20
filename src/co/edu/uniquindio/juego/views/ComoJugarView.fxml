@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="245.0" layoutY="27.0" text="Instrucciones" />
+      <TextArea editable="false" layoutX="26.0" layoutY="56.0" prefHeight="135.0" prefWidth="536.0" scrollLeft="10000.0" text="Think fast! es un juego de preguntas de multiple elección, debes elegir la respuesta correcta para&#10;aumentar tu puntuación y pasar a la siguiente pregunta, pero cuidado, si te equivocas tres veces &#10;en todo el juego perderás automáticamente y , por si no fuera poco, debes responder antes de&#10;que se acabe el temporizador que se encuentra arriba a la derecha, si se acaba también perderas.&#10;&#10;No todo es malo, contarás con 3 comodines que te ayudaran cuando no sepas la respuesta a una &#10;pregunta, los comodines son los siguientes:" />
+      <Label layoutX="246.0" layoutY="208.0" prefHeight="17.0" prefWidth="108.0" text="Comodines" />
+      <Label layoutX="234.0" layoutY="30.0" prefHeight="17.0" prefWidth="108.0" text="Instrucciones" />
    </children>
 </AnchorPane>
