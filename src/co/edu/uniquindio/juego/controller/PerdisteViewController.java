@@ -20,7 +20,7 @@ public class PerdisteViewController {
 
         
     private void volver() {
-        aplicacion.cambiarEscena("views/IniciarSesionView.fxml");
+        aplicacion.cambiarEscena("views/MenuView.fxml");
     }
 
 

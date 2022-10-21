@@ -15,11 +15,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.util.Duration;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 
 public class JuegoViewController {
 
@@ -119,10 +119,11 @@ public class JuegoViewController {
         pausaPista.stop();
         pararCronometro();
         boton.getStyleClass().add("respuestaSeleccionada");
+        cambiarEstadoBotones(true);
         PauseTransition pause = new PauseTransition(
-                Duration.seconds(1));
+                Duration.seconds(2));
         PauseTransition pause2 = new PauseTransition(
-                Duration.seconds(1));
+                Duration.seconds(2));
         pause.setOnFinished(event -> {
             boton.getStyleClass().remove("respuestaSeleccionada");
             revelarRespuestas();
@@ -135,6 +136,13 @@ public class JuegoViewController {
         });
         pause.play();
 
+    }
+
+    private void cambiarEstadoBotones(boolean b) {
+         btnResponder1.setDisable(b);
+        btnResponder2.setDisable(b);
+        btnResponder3.setDisable(b);
+        btnResponder4.setDisable(b);
     }
 
     private void responder(Respuesta respuesta) {
@@ -188,6 +196,8 @@ public class JuegoViewController {
 
         }
 
+        cambiarEstadoBotones(false);
+
         preguntaPantalla = colaPreguntas.poll();
 
         Collections.shuffle(preguntaPantalla.getRespuestas());
@@ -225,6 +235,8 @@ public class JuegoViewController {
         } else {
             btnResponder4.getStyleClass().add("respuestaIncorrecta");
         }
+
+       
     }
 
     private void removerRespuestas() {
@@ -251,6 +263,8 @@ public class JuegoViewController {
         } else {
             btnResponder4.getStyleClass().remove("respuestaIncorrecta");
         }
+        btnPistaSaltar.setDisable(false);
+
     }
 
     @FXML
@@ -304,9 +318,11 @@ public class JuegoViewController {
         pausaPista.setOnFinished(event -> {
             iniciarCronometro();
             cronometro.setInterval(tiempoRestante);
+            btnPistaSaltar.setDisable(false);
         });
         pausaPista.play();
         btnPistaParar.setVisible(false);
+        btnPistaSaltar.setDisable(true);
     }
 
     @FXML

@@ -40,6 +40,8 @@
         font-size: 12px; 
         -fx-text-fill: black;
         -fx-effect: dropshadow(two-pass-box, #ff5f00, 10, 0.7, 0, 0);
+        -fx-opacity: 1;
+            opacity: 1;
         }
 
         .respuestaCorrecta{
@@ -49,6 +51,8 @@
             font-size: 12px; 
             -fx-text-fill: black;
             -fx-effect: dropshadow(two-pass-box, rgb(31, 133, 0), 10, 0.7, 0, 0);
+            -fx-opacity: 1;
+            opacity: 1;
         }
 
         .respuestaIncorrecta{
@@ -58,4 +62,23 @@
             font-size: 12px; 
             -fx-text-fill: black;
             -fx-effect: dropshadow(two-pass-box, red, 10, 0.7, 0, 0);
+            -fx-opacity: 1;
+            opacity: 1;
         }
+
+     .txtLogueo, .txtRegistro{
+        -fx-background-color: #570557;
+            background-color: #570557;
+            -fx-text-fill: #ffffff;
+            -fx-font-weight: bold;
+            font-weight: bold;
+     }
+     .txtLogueo{
+        -fx-background-color: #570557;
+            background-color: #570557;
+     }
+     
+     .txtRegistro{
+        -fx-background-color: #E92288;
+            background-color: #E92288;
+     }
