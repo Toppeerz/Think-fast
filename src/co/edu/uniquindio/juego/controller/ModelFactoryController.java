@@ -187,7 +187,7 @@ public class ModelFactoryController {
 		Pregunta pregunta44= new Pregunta("¿Quién ganó el mundial de 2010 en Sudáfrica?","España","Colombia","Argentina","Brazil",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta45= new Pregunta("¿Cuál es el salto más alto en caballo?","1'20 m","2'00 m","0'50 m","2'20 m",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta46= new Pregunta("¿Cuántos jugadores componen usualmente un equipo de rugby?","15","11","8","3",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta47= new Pregunta("¿Cómo se llama la anotación de un tanto en el fútbol americano?","Touchdown","gol","anotacion","***",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta47= new Pregunta("¿Cómo se llama la anotación de un tanto en el fútbol americano?","Touchdown","gol","anotacion","entrada",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta48= new Pregunta("¿Quién fue el máximo goleador de la UEFA Champions League en 2013?","Cristiano Ronaldo","Leonel Messi","Neymar Jr","kaka",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta49= new Pregunta("En voleibol, ¿hasta cuántos toques se le puede dar a la pelota antes de pasarla al campo rival?","Tres","Uno","Dos","Cinco",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta50= new Pregunta("Evgenia Kanaeva es la 'reina' de...","Gimnasia rítmica","Natacion","Voleibol","Tejo",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
