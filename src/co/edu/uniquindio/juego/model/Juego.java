@@ -16,8 +16,6 @@ public class Juego implements Serializable {
 	private Hashtable<Integer, Jugador> listaJugadores = new Hashtable<Integer, Jugador>();
 	
 
-	
-
 	public Juego(String nombre, Hashtable<Integer, Pregunta> listaPreguntas,
 			Hashtable<Integer, Jugador> listaJugadores) {
 		this.nombre = nombre;

@@ -5,18 +5,22 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="774.0" style="-fx-background-color: #eeeeee;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.juego.controller.MenuViewController">
    <children>
-      <Button fx:id="btnVerTablaPuntuaciones" layoutX="508.0" layoutY="283.0" mnemonicParsing="false" onAction="#verTablaPuntuaciones" text="Tabla de puntuaciones" />
-      <Button fx:id="btnVerComoJugar" layoutX="307.0" layoutY="283.0" mnemonicParsing="false" onAction="#verComoJugar" prefHeight="25.0" prefWidth="136.0" text="Como jugar" />
-      <Button fx:id="btnIniciarJuego" layoutX="97.0" layoutY="283.0" mnemonicParsing="false" onAction="#iniciarJuego" prefHeight="18.0" prefWidth="136.0" text="Jugar" />
-      <Label fx:id="txtNombreLogueado" layoutX="23.0" layoutY="24.0" prefHeight="55.0" prefWidth="136.0" text="Logueado como:" />
-      <Button fx:id="btnCerrarSesion" layoutX="309.0" layoutY="353.0" mnemonicParsing="false" onAction="#verCerrarSesion" prefHeight="26.0" prefWidth="136.0" text="Cerrar sesion" />
-      <ImageView fitHeight="460.0" fitWidth="781.0">
+      <ImageView fitHeight="461.0" fitWidth="780.0">
          <image>
-            <Image url="@../../../../../resources/imagenes/IniciarSesion.png" />
+            <Image url="@../../../../../resources/imagenes/MenuView.png" />
          </image>
       </ImageView>
+      <Button fx:id="btnVerTablaPuntuaciones" layoutX="527.0" layoutY="322.0" mnemonicParsing="false" onAction="#verTablaPuntuaciones" opacity="0.0" prefHeight="34.0" prefWidth="151.0" text="Tabla de puntuaciones" />
+      <Button fx:id="btnVerComoJugar" layoutX="325.0" layoutY="322.0" mnemonicParsing="false" onAction="#verComoJugar" opacity="0.0" prefHeight="34.0" prefWidth="151.0" text="Como jugar" />
+      <Button fx:id="btnIniciarJuego" layoutX="125.0" layoutY="322.0" mnemonicParsing="false" onAction="#iniciarJuego" opacity="0.0" prefHeight="34.0" prefWidth="151.0" text="Jugar" />
+      <Label fx:id="txtNombreLogueado" layoutX="42.0" layoutY="66.0" prefHeight="55.0" prefWidth="348.0" text="Logueado como:                    " textFill="#fffbfb">
+         <font>
+            <Font name="OCR A Extended" size="16.0" />
+         </font></Label>
+      <Button fx:id="btnCerrarSesion" layoutX="325.0" layoutY="399.0" mnemonicParsing="false" onAction="#verCerrarSesion" opacity="0.0" prefHeight="34.0" prefWidth="151.0" text="Cerrar sesion" />
    </children>
 </AnchorPane>

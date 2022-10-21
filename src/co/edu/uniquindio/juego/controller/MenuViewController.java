@@ -28,6 +28,11 @@ public class MenuViewController {
 
     @FXML
     void verTablaPuntuaciones(ActionEvent event) {
+    verTablaPuntuacionesAction();
+    }
+
+    private void verTablaPuntuacionesAction() {
+        aplicacion.cambiarEscena("views/TablaPosiciones.fxml");
 
     }
 
