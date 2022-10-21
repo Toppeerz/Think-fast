@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 import co.edu.uniquindio.juego.controller.ComoJugarViewController;
+import co.edu.uniquindio.juego.controller.GanasteViewController;
 import co.edu.uniquindio.juego.controller.IniciarSesionViewController;
 import co.edu.uniquindio.juego.controller.JuegoViewController;
 import co.edu.uniquindio.juego.controller.MenuViewController;
@@ -129,6 +130,10 @@ public class Aplicacion extends Application {
 	        {
 	        	PerdisteViewController perdisteViewController = loader.getController();
 	        	perdisteViewController.setAplicacion(this);
+	        }else if(fxmlFile.equals("views/GanasteView.fxml"))
+	        {
+	        	GanasteViewController ganasteViewController = loader.getController();
+	        	ganasteViewController.setAplicacion(this);
 	        }
 	        this.primaryStage.setScene(new Scene(root));
 	    }
