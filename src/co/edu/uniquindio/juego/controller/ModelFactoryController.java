@@ -164,7 +164,7 @@ public class ModelFactoryController {
 		Pregunta pregunta23= new Pregunta("¿Cuál de las siguientes palabras es esdrújula?","metálico","impídanselo","alguacil","corren",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta24= new Pregunta("¿Cuál es la obra cumbre en la literatura española escrita por Fernando de Rojas?","la Celestina","la zelestina","burgos","madrid",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta25= new Pregunta("¿Cuál de las siguientes obras no pertenece a Edgar Allan Poe?","El monte de las ánimas","It","El resplandor","Doctor Sleep",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta26= new Pregunta("¿Qué obra NO pertenece a Shakespeare?","La Divina Comedia","","","",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta26= new Pregunta("¿Qué obra NO pertenece a Shakespeare?","La Divina Comedia","Muere anunciada","Hamlet","Romeo y julieta",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta27= new Pregunta("¿Qué color consigues mezclando todos los colores del CMYK?","Negro","cafe","azul","violeta",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta28= new Pregunta("¿Quién pintó el cuadro La Persistencia de la Memoria?","Dalí","Picasso","Van gogh","",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta29= new Pregunta("¿Cuántos 'gritos' pintó Munch?","cuatro","uno","cinco","tres",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
@@ -187,7 +187,7 @@ public class ModelFactoryController {
 		Pregunta pregunta44= new Pregunta("¿Quién ganó el mundial de 2010 en Sudáfrica?","España","Colombia","Argentina","Brazil",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta45= new Pregunta("¿Cuál es el salto más alto en caballo?","1'20 m","2'00 m","0'50 m","2'20 m",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta46= new Pregunta("¿Cuántos jugadores componen usualmente un equipo de rugby?","15","11","8","3",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta47= new Pregunta("¿Cómo se llama la anotación de un tanto en el fútbol americano?","Touchdown","gol","anotacion","",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta47= new Pregunta("¿Cómo se llama la anotación de un tanto en el fútbol americano?","Touchdown","gol","anotacion","***",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta48= new Pregunta("¿Quién fue el máximo goleador de la UEFA Champions League en 2013?","Cristiano Ronaldo","Leonel Messi","Neymar Jr","kaka",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta49= new Pregunta("En voleibol, ¿hasta cuántos toques se le puede dar a la pelota antes de pasarla al campo rival?","Tres","Uno","Dos","Cinco",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta50= new Pregunta("Evgenia Kanaeva es la 'reina' de...","Gimnasia rítmica","Natacion","Voleibol","Tejo",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
@@ -298,7 +298,7 @@ public class ModelFactoryController {
 		Pregunta pregunta144= new Pregunta("¿Por cuánto vendió Rusia a Alaska a los Estados Unidos?","Alrededor de 7,2 millones de dólares","7200 millones de dólares","720 millones de dólares","72 millones de dolares",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta145= new Pregunta("¿Cuándo fue el periodo de la guerra de África?","De 1859 a 1860","De 1859 a 1861","De 1858 a 1860","De 1859 a 1862",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta146= new Pregunta("¿Cómo se llamaba el caballo de Alejandro Magno?","Bucéfalo","Rocinante","Pegaso","Babieca",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
-		Pregunta pregunta147= new Pregunta("¿De qué color eran los permisos de conducir en España en el año 2003?","Rosa","Rojo","Fucsia","Marron",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
+		Pregunta pregunta147= new Pregunta("¿De qué color eran los permisos de conducir en en el año 2003?","Rosa","Rojo","Fucsia","Marron",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta148= new Pregunta("¿A quién mató el anarquista Angiolillo?","Cánovas del Castillo","Práxedes Mateo Sagasta","Serafín Estébanez Calderón","Arsenio Martínez Campos",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta149= new Pregunta("La fiebre del oro fue un período de migraciones hacia áreas rurales para explorar oro. ¿Dónde se produjo las más famosa?","California","Alaska","Klondike","Norte de nevada",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta150= new Pregunta("¿Qué conquistador y explorador, cuyos restos momificados se exhibieron en Perú, fue asesinado por sus propios hombres?","Francisco Pizarro","Lope de Aguirre","Hernando Pizarro","Diego de Almagro",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);

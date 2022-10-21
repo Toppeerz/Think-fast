@@ -198,6 +198,10 @@ public class JuegoViewController {
 
         cambiarEstadoBotones(false);
 
+       
+
+        if(!colaPreguntas.isEmpty())
+{
         preguntaPantalla = colaPreguntas.poll();
 
         Collections.shuffle(preguntaPantalla.getRespuestas());
@@ -209,8 +213,10 @@ public class JuegoViewController {
         btnResponder3.setText(preguntaPantalla.getRespuestas().get(2).getRespuesta());
         btnResponder4.setText(preguntaPantalla.getRespuestas().get(3).getRespuesta());
         iniciarCronometro();
+    }else{
+        rendirse();
     }
-
+    }
     private void revelarRespuestas() {
 
         ArrayList<Respuesta> respuestas = preguntaPantalla.getRespuestas();
