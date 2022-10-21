@@ -88,7 +88,7 @@ public class JuegoViewController {
         mediaPlayer.stop();
         cronometro.setCorriendo(false);
         cronometroCorriendo = false;
-        aplicacion.cambiarEscena("views/MenuView.fxml");
+        aplicacion.cambiarEscena("views/PerdisteView.fxml");
     }
 
     @FXML

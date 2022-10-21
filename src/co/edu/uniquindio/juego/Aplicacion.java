@@ -7,6 +7,7 @@ import co.edu.uniquindio.juego.controller.ComoJugarViewController;
 import co.edu.uniquindio.juego.controller.IniciarSesionViewController;
 import co.edu.uniquindio.juego.controller.JuegoViewController;
 import co.edu.uniquindio.juego.controller.MenuViewController;
+import co.edu.uniquindio.juego.controller.PerdisteViewController;
 import co.edu.uniquindio.juego.controller.RegistroViewController;
 import co.edu.uniquindio.juego.controller.TablaPosicionesViewController;
 import javafx.application.Application;
@@ -124,6 +125,10 @@ public class Aplicacion extends Application {
 	        {
 	        	TablaPosicionesViewController tablaPosicionesViewController = loader.getController();
 	        	tablaPosicionesViewController.setAplicacion(this);
+	        }else if(fxmlFile.equals("views/PerdisteView.fxml"))
+	        {
+	        	PerdisteViewController perdisteViewController = loader.getController();
+	        	perdisteViewController.setAplicacion(this);
 	        }
 	        this.primaryStage.setScene(new Scene(root));
 	    }
