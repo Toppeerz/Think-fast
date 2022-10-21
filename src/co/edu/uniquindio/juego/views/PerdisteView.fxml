@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.juego.controller.PerdisteViewController">
+   <children>
+      <ImageView fitHeight="454.0" fitWidth="774.0">
+         <image>
+            <Image url="@../../../../../resources/imagenes/perdiste.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnRegresar" layoutX="291.0" layoutY="377.0" mnemonicParsing="false" onAction="#regresar" prefHeight="39.0" prefWidth="189.0" text="regresar" />
+   </children>
+</AnchorPane>
