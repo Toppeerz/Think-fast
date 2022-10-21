@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.8.0_202" class="java.beans.XMLDecoder">
+<java version="1.8.0_301" class="java.beans.XMLDecoder">
  <object class="co.edu.uniquindio.juego.model.Juego" id="Juego0">
   <void property="listaJugadores">
+   <void method="put">
+    <int>4</int>
+    <object class="co.edu.uniquindio.juego.model.Jugador">
+     <void property="contrasenia">
+      <string>didier</string>
+     </void>
+     <void property="nombre">
+      <string>didier</string>
+     </void>
+    </object>
+   </void>
    <void method="put">
     <int>3</int>
     <object class="co.edu.uniquindio.juego.model.Jugador">

@@ -7,24 +7,27 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #eeeeee;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.juego.controller.IniciarSesionViewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="774.0" style="-fx-background-color: #eeeeee;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.juego.controller.IniciarSesionViewController">
    <children>
-      <Button fx:id="btnVerTablaPuntuaciones" layoutX="232.0" layoutY="385.0" mnemonicParsing="false" onAction="#verTablaPuntuaciones" text="Tabla de puntuaciones" />
-      <Label fx:id="btnRegistrarse" layoutX="271.0" layoutY="428.0" onMouseClicked="#registrarse" text="Registrarse" textFill="#2b7de4" underline="true">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="174.0" layoutY="42.0" pickOnBounds="true" smooth="false">
+      <ImageView fitHeight="460.0" fitWidth="781.0">
          <image>
-            <Image url="@../../../../../resources/imagenes/Logo.png" />
+            <Image url="@../../../../../resources/imagenes/IniciarSesion.png" />
          </image>
       </ImageView>
-      <Label layoutX="266.0" layoutY="208.0" prefHeight="17.0" prefWidth="69.0" text="THINK FAST " textFill="#f57d6e" />
-      <Button fx:id="btnIniciarSesion" layoutX="233.0" layoutY="346.0" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="25.0" prefWidth="136.0" text="Iniciar sesión" />
-      <Label layoutX="160.0" layoutY="250.0" text="Nombre:" />
-      <Label layoutX="149.0" layoutY="304.0" prefHeight="17.0" prefWidth="69.0" text="Contraseña:" />
-      <TextField fx:id="txtNombre" layoutX="233.0" layoutY="246.0" />
-      <TextField fx:id="txtContrasenia" layoutX="233.0" layoutY="300.0" />
+      <Button fx:id="btnVerTablaPuntuaciones" layoutX="501.0" layoutY="348.0" mnemonicParsing="false" onAction="#verTablaPuntuaciones" opacity="0.0" prefHeight="32.0" prefWidth="143.0" text="Tabla de puntuaciones" />
+      <Label fx:id="btnRegistrarse" layoutX="356.0" layoutY="354.0" onMouseClicked="#registrarse" text="Registrarse" textFill="#2b7de4" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="btnIniciarSesion" layoutX="135.0" layoutY="348.0" mnemonicParsing="false" onAction="#iniciarSesion" opacity="0.0" prefHeight="32.0" prefWidth="143.0" text="Iniciar sesión" />
+      <Label layoutX="271.0" layoutY="218.0" opacity="0.0" text="Nombre:" />
+      <Label layoutX="283.0" layoutY="282.0" opacity="0.0" prefHeight="17.0" prefWidth="69.0" text="Contraseña:" />
+      <TextField fx:id="txtNombre" layoutX="338.0" layoutY="213.0" prefHeight="26.0" prefWidth="208.0" />
+      <TextField fx:id="txtContrasenia" layoutX="376.0" layoutY="280.0" prefHeight="26.0" prefWidth="170.0" />
    </children>
 </AnchorPane>

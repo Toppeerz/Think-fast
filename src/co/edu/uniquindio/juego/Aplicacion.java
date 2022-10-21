@@ -8,6 +8,7 @@ import co.edu.uniquindio.juego.controller.IniciarSesionViewController;
 import co.edu.uniquindio.juego.controller.JuegoViewController;
 import co.edu.uniquindio.juego.controller.MenuViewController;
 import co.edu.uniquindio.juego.controller.RegistroViewController;
+import co.edu.uniquindio.juego.controller.TablaPosicionesViewController;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.EventHandler;
@@ -119,6 +120,10 @@ public class Aplicacion extends Application {
 	        {
 	        	ComoJugarViewController comoJugarViewController = loader.getController();
 	        	comoJugarViewController.setAplicacion(this);
+	        }else if(fxmlFile.equals("views/TablaPosiciones.fxml"))
+	        {
+	        	TablaPosicionesViewController tablaPosicionesViewController = loader.getController();
+	        	tablaPosicionesViewController.setAplicacion(this);
 	        }
 	        this.primaryStage.setScene(new Scene(root));
 	    }
