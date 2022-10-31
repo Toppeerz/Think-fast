@@ -1,6 +1,10 @@
 package co.edu.uniquindio.juego.controller;
 
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.LinkedList;
 
@@ -580,6 +584,22 @@ public class ModelFactoryController {
 			TipoPregunta tipoPregunta) {
 		return juego.generarPreguntasDificultadAumentada(preguntasQueFaltan,tipoPregunta);
 	}
+
+    public ArrayList<Jugador> obtenerJugadoresOrdenados() {
+		Enumeration<Jugador> enumeracionJugador = juego.getListaJugadores().elements();
+		ArrayList<Jugador> listaJugadores = new ArrayList<Jugador>();
+		while (enumeracionJugador.hasMoreElements()) {
+			listaJugadores.add(enumeracionJugador.nextElement());
+		}
+
+        Collections.sort(listaJugadores, new Comparator<Jugador>(){
+			public int compare(Jugador e1, Jugador e2){
+				return Integer.compare(e2.getPuntaje(), e1.getPuntaje()) ;
+			}
+		});
+
+        return listaJugadores;
+    }
 
 	
 

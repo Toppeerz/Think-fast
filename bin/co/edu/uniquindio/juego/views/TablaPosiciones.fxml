@@ -6,18 +6,15 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.juego.controller.TablaPosicionesViewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="756.0" styleClass="fondoTabla" stylesheets="@../../../../../resources/imagenes/Estilos.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.juego.controller.TablaPosicionesViewController">
    <children>
-      <TableView layoutX="32.0" layoutY="70.0" prefHeight="283.0" prefWidth="656.0">
+      <TableView fx:id="tablaJugadores" layoutX="102.0" layoutY="87.0" prefHeight="254.0" prefWidth="566.0" stylesheets="@../../../../../resources/imagenes/Estilos.css">
         <columns>
-          <TableColumn fx:id="tablePos" prefWidth="141.5999984741211" text="C1" />
-          <TableColumn prefWidth="120.79998779296875" text="C2" />
-            <TableColumn prefWidth="122.39996337890625" text="C3" />
-            <TableColumn prefWidth="143.20004272460938" text="C4" />
-            <TableColumn prefWidth="124.79998779296875" text="C5" />
+          <TableColumn fx:id="columnaNombre" prefWidth="268.0" text="Nombre" />
+          <TableColumn fx:id="columnaPuntuacion" minWidth="0.0" prefWidth="297.0" text="Puntuacion" />
         </columns>
       </TableView>
-      <Label layoutX="308.0" layoutY="26.0" text="Tabla de posiciones" />
-      <Button fx:id="btnRegresar" layoutX="337.0" layoutY="373.0" mnemonicParsing="false" onAction="#regresar" text="Regresar" />
+      <Label layoutX="308.0" layoutY="26.0" styleClass="txtNormal" text="Tabla de posiciones" />
+      <Button fx:id="btnRegresar" layoutX="337.0" layoutY="373.0" mnemonicParsing="false" onAction="#regresar" styleClass="respuesta" text="Regresar" />
    </children>
 </AnchorPane>
