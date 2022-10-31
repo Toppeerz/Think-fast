@@ -154,13 +154,13 @@ public class ModelFactoryController {
 	
 		Pregunta pregunta11= new Pregunta("Gabriel García Márquez se caracteriza por narrar en un mundo:","real maravilloso","macabro","historietas","manga",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 		Pregunta pregunta12= new Pregunta("¿Quién era la diosa de la sabiduría en la mitología griega?","atena","rea","hera","gea",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta13= new Pregunta("¿Cuál es el nombre de Picasso?","pablo","andres","didier","mary",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta13= new Pregunta("¿Cuál es el nombre de Picasso?","pablo","juan","didier","mary",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 		Pregunta pregunta14= new Pregunta("¿Tira la piedra...?","y esconde la mano","y corre","y esconde la piedra","y le abre la cabeza",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 		Pregunta pregunta15= new Pregunta("¿A qué ciudad vasca dedicó un cuadro Pablo Picasso?","Guernica","Bogota","Paris","Armenia",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 		Pregunta pregunta16= new Pregunta("¿Quién escribió la novela 'Contagio'?","Robin Cook","Gabriel Garcia","Darly","Cristian Gonzalez",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 		Pregunta pregunta17= new Pregunta("¿Qué pieza de arte fue robada y guardada debajo de una cama hasta que se devolvió al Museo Louvre?","Mona Lisa","El Beso","Guernica","La Gioconda",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 		Pregunta pregunta18= new Pregunta("¿Qué instrumento tocaba Zeta Bosio en Soda Stereo?","bajo","Guitarra","flauta","bateria",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta19= new Pregunta("¿Qué parte del cuerpo se cortó Vicent Van Gogh?","oreja","el nepe","nariz","lengua",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta19= new Pregunta("¿Qué parte del cuerpo se cortó Vicent Van Gogh?","oreja","brazo","nariz","lengua",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 		Pregunta pregunta20= new Pregunta("De qué país es la caricatura 'Condorito'?","chile","venezuela","mexico","argentina",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 	
 		Pregunta pregunta21= new Pregunta("¿Cuál es la famosa cueva en la que se narra el Quijote?","Montesinos","calasqui","salima","petra",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
@@ -168,9 +168,9 @@ public class ModelFactoryController {
 		Pregunta pregunta23= new Pregunta("¿Cuál de las siguientes palabras es esdrújula?","metálico","impídanselo","alguacil","corren",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta24= new Pregunta("¿Cuál es la obra cumbre en la literatura española escrita por Fernando de Rojas?","la Celestina","la zelestina","burgos","madrid",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta25= new Pregunta("¿Cuál de las siguientes obras no pertenece a Edgar Allan Poe?","El monte de las ánimas","It","El resplandor","Doctor Sleep",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta26= new Pregunta("¿Qué obra NO pertenece a Shakespeare?","La Divina Comedia","","","",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta26= new Pregunta("¿Qué obra NO pertenece a Shakespeare?","La Divina Comedia","Muere anunciada","Hamlet","Romeo y julieta",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta27= new Pregunta("¿Qué color consigues mezclando todos los colores del CMYK?","Negro","cafe","azul","violeta",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta28= new Pregunta("¿Quién pintó el cuadro La Persistencia de la Memoria?","Dalí","Picasso","Van gogh","",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta28= new Pregunta("¿Quién pintó el cuadro La Persistencia de la Memoria?","Dalí","Picasso","Van gogh","Frederick valvo",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta29= new Pregunta("¿Cuántos 'gritos' pintó Munch?","cuatro","uno","cinco","tres",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta30= new Pregunta("¿De qué murió Jean Valjean en la novela 'Los Miserables'?","de viejo","disparo","suicidio","pena moral",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 	
@@ -182,7 +182,7 @@ public class ModelFactoryController {
 		Pregunta pregunta36= new Pregunta("Estilo de atletismo en el que los corredores llevan un testigo:","relevo","maratón","waterpolo","ciclismo",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta37= new Pregunta("¿Cuántas Copas del Mundo de Fútbol ha ganado la selección de Italia?","Cuatro","Cinco","Tres","Dos",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta38= new Pregunta("¿Cuántos tiempos tiene un partido de baloncesto?","4","3","1","10",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta39= new Pregunta("¿En qué equipo juega Cristiano Ronaldo?","Real Madrid","Argentina","Millonarios","Nacional",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta39= new Pregunta("¿En qué equipo juega Cristiano Ronaldo?","manchester unite","Argentina","Millonarios","Nacional",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta40= new Pregunta("¿Cuál de estos partidos de la Liga Española se considera un clásico?","Barsa vs Madrid","Millonarios Vs Nacional","Milan Vs Inter","Manchester United Vs Manchester City",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
 	
 		Pregunta pregunta41= new Pregunta("¿Qué duración tiene un partido de fútbol que llega a la tanda de penaltis?","120","110","90","130",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
@@ -191,7 +191,7 @@ public class ModelFactoryController {
 		Pregunta pregunta44= new Pregunta("¿Quién ganó el mundial de 2010 en Sudáfrica?","España","Colombia","Argentina","Brazil",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta45= new Pregunta("¿Cuál es el salto más alto en caballo?","1'20 m","2'00 m","0'50 m","2'20 m",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta46= new Pregunta("¿Cuántos jugadores componen usualmente un equipo de rugby?","15","11","8","3",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta47= new Pregunta("¿Cómo se llama la anotación de un tanto en el fútbol americano?","Touchdown","gol","anotacion","",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta47= new Pregunta("¿Cómo se llama la anotación de un tanto en el fútbol americano?","Touchdown","gol","anotacion","entrada",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta48= new Pregunta("¿Quién fue el máximo goleador de la UEFA Champions League en 2013?","Cristiano Ronaldo","Leonel Messi","Neymar Jr","kaka",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta49= new Pregunta("En voleibol, ¿hasta cuántos toques se le puede dar a la pelota antes de pasarla al campo rival?","Tres","Uno","Dos","Cinco",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta50= new Pregunta("Evgenia Kanaeva es la 'reina' de...","Gimnasia rítmica","Natacion","Voleibol","Tejo",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
@@ -302,7 +302,7 @@ public class ModelFactoryController {
 		Pregunta pregunta144= new Pregunta("¿Por cuánto vendió Rusia a Alaska a los Estados Unidos?","Alrededor de 7,2 millones de dólares","7200 millones de dólares","720 millones de dólares","72 millones de dolares",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta145= new Pregunta("¿Cuándo fue el periodo de la guerra de África?","De 1859 a 1860","De 1859 a 1861","De 1858 a 1860","De 1859 a 1862",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta146= new Pregunta("¿Cómo se llamaba el caballo de Alejandro Magno?","Bucéfalo","Rocinante","Pegaso","Babieca",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
-		Pregunta pregunta147= new Pregunta("¿De qué color eran los permisos de conducir en España en el año 2003?","Rosa","Rojo","Fucsia","Marron",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
+		Pregunta pregunta147= new Pregunta("¿De qué color eran los permisos de conducir en en el año 2003?","Rosa","Rojo","Fucsia","Marron",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta148= new Pregunta("¿A quién mató el anarquista Angiolillo?","Cánovas del Castillo","Práxedes Mateo Sagasta","Serafín Estébanez Calderón","Arsenio Martínez Campos",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta149= new Pregunta("La fiebre del oro fue un período de migraciones hacia áreas rurales para explorar oro. ¿Dónde se produjo las más famosa?","California","Alaska","Klondike","Norte de nevada",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta150= new Pregunta("¿Qué conquistador y explorador, cuyos restos momificados se exhibieron en Perú, fue asesinado por sus propios hombres?","Francisco Pizarro","Lope de Aguirre","Hernando Pizarro","Diego de Almagro",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
@@ -325,7 +325,7 @@ public class ModelFactoryController {
 		Pregunta pregunta165= new Pregunta("¿Qué es un triángulo isósceles?","Un tipo de triángulo que tiene dos lados de igual longitud","Un tipo de triángulo que tiene un angulo de 90 grados","Un tipo de triángulo que tiene dos lados de igual longitud y necesariamnete un angulo recto","Un tipo de triángulo que tiene todos sus lados iguales",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
 		Pregunta pregunta166= new Pregunta("¿Cómo se llama a un poliedro de 20 caras?","icosaedro","tetradecaedro","hectaedro","pentadecaedro",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
 		Pregunta pregunta167= new Pregunta("Si 8 litros de aceite valen 60 euros. ¿Cuántos litros compraré con 15 euros?","2 litros de aceite","2,5 litros de aceite","2,7 litros de aceite","2,8 litros de aceite",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
-		Pregunta pregunta168= new Pregunta("¿Cuánto habrá que rebajar un producto para que valga lo mismo que valía antes de que incrementase un 25% su precio?","un 20%","un 23%","un 25%","un 22",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+		Pregunta pregunta168= new Pregunta("¿Cuánto habrá que rebajar un producto para que valga lo mismo que valía antes de que incrementase un 25% su precio?","un 20%","un 23%","un 25%","un 22%",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
 		Pregunta pregunta169= new Pregunta("En un torneo de tenis, el jugador que pierde se vuelve a casa. Cuántos jugadores iniciaron este torneo si desde la ronda preliminar hasta la final se han jugado 128 partidos","129","67","64","128",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
 		Pregunta pregunta170= new Pregunta("Tengo 20 metros de cinta roja para hacer lazos en unos paquetes de regalo idénticos. Para cada lazo necesito 50 centímetros de cinta. ¿Cuántos lazos puedo hacer?","40 lazos","47 lazos","50 lazos","39 lazos",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
 	
