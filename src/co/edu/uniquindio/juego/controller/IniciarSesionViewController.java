@@ -10,11 +10,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 public class IniciarSesionViewController {
@@ -39,7 +37,7 @@ public class IniciarSesionViewController {
     private Button btnVerTablaPuntuaciones;
 
     @FXML
-    private Label btnRegistrarse;
+    private Button btnRegistrarse;
 
     @FXML
     void iniciarSesion(ActionEvent event) {
@@ -64,11 +62,8 @@ public class IniciarSesionViewController {
                         if (nombre.equalsIgnoreCase(nombreJugador) && contrasenia.equalsIgnoreCase(contraseniaJugador)) {
                             jugadorEncontrado= true;
                             modelFactoryController.setJugadorLogueado(jugador);
-                            if(nombreJugador.equalsIgnoreCase("admin")){
-                            aplicacion.cambiarEscena("views/CrudJugadoresView.fxml");}
-                            else{
-                                aplicacion.cambiarEscena("views/MenuView.fxml");
-                            }
+                            aplicacion.cambiarEscena("views/MenuView.fxml");
+                            
                         } 
                 }
 
@@ -105,10 +100,11 @@ public class IniciarSesionViewController {
     }
 
     private void verTablaPuntuaciones() {
+        aplicacion.cambiarEscena("views/TablaPosiciones.fxml");
     }
 
     @FXML
-    void registrarse(MouseEvent event) {
+    void registrarse(ActionEvent event) {
         registrarse();
     }
 

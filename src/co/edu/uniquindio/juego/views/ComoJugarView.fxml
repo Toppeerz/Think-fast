@@ -5,13 +5,13 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.juego.controller.ComoJugarViewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.juego.controller.ComoJugarViewController">
    <children>
-      <ImageView fitHeight="460.0" fitWidth="781.0">
+      <ImageView fitHeight="600.0" fitWidth="900.0">
          <image>
             <Image url="@../../../../../resources/imagenes/instruccionesView.png" />
          </image>
       </ImageView>
-      <Button fx:id="btnRegresar" layoutX="296.0" layoutY="356.0" mnemonicParsing="false" onAction="#regresar" opacity="0.0" prefHeight="37.0" prefWidth="123.0" text="Regresar" />
+      <Button fx:id="btnRegresar" layoutX="340.0" layoutY="470.0" mnemonicParsing="false" onAction="#regresar" opacity="0.0" prefHeight="41.0" prefWidth="148.0" text="Regresar" />
    </children>
 </AnchorPane>

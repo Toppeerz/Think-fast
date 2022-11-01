@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.8.0_301" class="java.beans.XMLDecoder">
+<java version="1.8.0_341" class="java.beans.XMLDecoder">
  <object class="co.edu.uniquindio.juego.model.Juego" id="Juego0">
   <void property="listaJugadores">
+   <void method="put">
+    <int>5</int>
+    <object class="co.edu.uniquindio.juego.model.Jugador">
+     <void property="contrasenia">
+      <string>4444</string>
+     </void>
+     <void property="nombre">
+      <string>4444</string>
+     </void>
+    </object>
+   </void>
    <void method="put">
     <int>4</int>
     <object class="co.edu.uniquindio.juego.model.Jugador">
@@ -54,6 +65,9 @@
      </void>
      <void property="nombre">
       <string>123</string>
+     </void>
+     <void property="puntaje">
+      <int>8400</int>
      </void>
     </object>
    </void>
@@ -8153,14 +8167,14 @@
       <void method="add">
        <object class="co.edu.uniquindio.juego.model.Respuesta">
         <void property="respuesta">
-         <string>percusion</string>
+         <string>electrico</string>
         </void>
        </object>
       </void>
       <void method="add">
        <object class="co.edu.uniquindio.juego.model.Respuesta">
         <void property="respuesta">
-         <string>electrico</string>
+         <string>percusion</string>
         </void>
        </object>
       </void>
@@ -8464,6 +8478,13 @@
      <void property="respuestas">
       <void method="add">
        <object class="co.edu.uniquindio.juego.model.Respuesta">
+        <void property="respuesta">
+         <string>trap</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="co.edu.uniquindio.juego.model.Respuesta">
         <void property="correcta">
          <boolean>true</boolean>
         </void>
@@ -8476,13 +8497,6 @@
        <object class="co.edu.uniquindio.juego.model.Respuesta">
         <void property="respuesta">
          <string>cumbia</string>
-        </void>
-       </object>
-      </void>
-      <void method="add">
-       <object class="co.edu.uniquindio.juego.model.Respuesta">
-        <void property="respuesta">
-         <string>trap</string>
         </void>
        </object>
       </void>

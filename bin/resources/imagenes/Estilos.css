@@ -1,6 +1,6 @@
 .pista5050, .pistaParar , .pistaSaltar{ 
-    -fx-background-size: 100px 100px;
-    background-size: 100px 100px;
+    -fx-background-size: 150px 150px;
+    background-size: 150px 150px;
     -fx-background-repeat: no-repeat;
     background-repeat: no-repeat;
     -fx-background-position: center;
@@ -81,6 +81,11 @@
             background-color: #E92288;
      }
 
+     .txtNormal{
+        -fx-font-size:20px;
+        font-size:20px;
+     }
+
      .fondoTabla
      {
         -fx-background-image:url('BackGrnd.jpg');
@@ -91,21 +96,21 @@
         background-position: center;
         -fx-background-color: transparent;
         background-color: transparent;
-        -fx-background-size: 756px 413px;
-    background-size: 756px 413px;
+        -fx-background-size: 900px 600px;
+        background-size: 900px 600px;
      }
      .table-cell {     
         -fx-padding: 0.5em 0.5em 0.1em 0.3em;
         padding: 0.5em 0.5em 0.1em 0.3em;
-        
         -fx-border-color: -fx-box-border -fx-box-border transparent transparent;  
         border-color: -fx-box-border -fx-box-border transparent transparent;  
         -fx-border-insets: 0;
     }
  
- 
     .table-view .column-header .label{
         -fx-text-fill: #ffffff;
+        -fx-font-size:20px;
+        font-size:20px;
         -fx-font-weight: bold;
             font-weight: bold;
         -fx-alignment: CENTER;
@@ -133,9 +138,36 @@
     .table-row-cell .text {
         -fx-fill: #ffffff;
         fill: #ffffff;
+        -fx-font-size:20px;
+        font-size:20px;
         -fx-font-weight: bold;
             font-weight: bold;
         -fx-alignment: CENTER;
         
  
  }
+
+ .table-view *.scroll-bar:horizontal *.increment-button,
+.table-view *.scroll-bar:horizontal *.decrement-button {
+  -fx-background-color: null;
+  background-color: null;
+  -fx-background-radius: 0;
+  -fx-background-insets: 0;
+  -fx-padding: 0;
+  padding: 0;
+}
+
+.table-view *.scroll-bar:horizontal *.increment-arrow,
+.table-view *.scroll-bar:horizontal *.decrement-arrow {
+  -fx-background-color: null;
+  background-color: null;
+  -fx-background-radius: 0;
+  -fx-background-insets: 0;
+  -fx-padding: 0;
+  padding: 0;
+  -fx-shape: null;
+}
+.table-view:focused {
+    -fx-background-color: transparent ,-fx-box-border,-fx-control-inner-background;
+    background-color: transparent ,-fx-box-border,-fx-control-inner-background;
+  }

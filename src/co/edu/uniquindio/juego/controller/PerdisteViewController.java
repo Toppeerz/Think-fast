@@ -4,6 +4,7 @@ import co.edu.uniquindio.juego.Aplicacion;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 
 public class PerdisteViewController {
 
@@ -12,6 +13,9 @@ public class PerdisteViewController {
     
     @FXML
     private Button btnRegresar;
+
+    @FXML
+    private Label txtPuntuacion;
 
     @FXML
     void regresar(ActionEvent event) {
@@ -32,5 +36,6 @@ public class PerdisteViewController {
     @FXML
         void initialize() {
             modelFactoryController = ModelFactoryController.getInstance();
+            txtPuntuacion.setText("Puntuacion: "+ modelFactoryController.getPuntajeTemporal());
         }
 }

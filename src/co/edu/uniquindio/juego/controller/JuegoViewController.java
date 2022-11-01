@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import java.util.Random;
 
 import co.edu.uniquindio.juego.Aplicacion;
+import co.edu.uniquindio.juego.model.Jugador;
 import co.edu.uniquindio.juego.model.Pregunta;
 import co.edu.uniquindio.juego.model.Respuesta;
 import co.edu.uniquindio.juego.model.TipoPregunta;
@@ -23,6 +24,8 @@ import javafx.util.Duration;
 
 public class JuegoViewController {
 
+    Jugador jugadorLogueado;
+    boolean perdio;
     MediaPlayer mediaPlayer;
     Aplicacion aplicacion;
     ModelFactoryController modelFactoryController;
@@ -32,9 +35,13 @@ public class JuegoViewController {
     LinkedList<Pregunta> colaPreguntas = new LinkedList<Pregunta>();
     Pregunta preguntaPantalla = new Pregunta();
     int vidas;
-    int puntuacion;
+    int puntuacion = 0;
     PauseTransition pausaPista = new PauseTransition(
             Duration.seconds(10));
+    PauseTransition pausaUno = new PauseTransition(
+            Duration.seconds(2));
+    PauseTransition pausaDos = new PauseTransition(
+            Duration.seconds(2));
 
     @FXML
     private Label txtPregunta;
@@ -80,15 +87,29 @@ public class JuegoViewController {
 
     @FXML
     void rendirse(ActionEvent event) {
-        rendirse();
+        rendirse("views/PerdisteView.fxml");
 
     }
 
-    private void rendirse() {
+    private void rendirse(String fxmlFile) {
+        detenerTodo();
         mediaPlayer.stop();
-        cronometro.setCorriendo(false);
-        cronometroCorriendo = false;
-        aplicacion.cambiarEscena("views/PerdisteView.fxml");
+        pararCronometro();
+        cambiarPuntaje();
+        aplicacion.cambiarEscena(fxmlFile);
+    }
+
+    private void detenerTodo() {
+        pausaPista.stop();
+        pausaDos.stop();
+        pausaUno.stop();
+    }
+
+    private void cambiarPuntaje() {
+        if (jugadorLogueado.getPuntaje() < puntuacion) {
+            modelFactoryController.cambiarPuntaje(puntuacion);
+        }
+        modelFactoryController.setPuntajeTemporal(puntuacion);
     }
 
     @FXML
@@ -100,46 +121,44 @@ public class JuegoViewController {
     @FXML
     void responder2(ActionEvent event) {
         seleccionarRespuesta(btnResponder2, preguntaPantalla.getRespuestas().get(1));
+       
 
     }
 
     @FXML
     void responder3(ActionEvent event) {
         seleccionarRespuesta(btnResponder3, preguntaPantalla.getRespuestas().get(2));
+        
 
     }
 
     @FXML
     void responder4(ActionEvent event) {
         seleccionarRespuesta(btnResponder4, preguntaPantalla.getRespuestas().get(3));
-
+       
     }
 
     private void seleccionarRespuesta(Button boton, Respuesta respuesta) {
+        cambiarEstadoBotones(true);
         pausaPista.stop();
         pararCronometro();
         boton.getStyleClass().add("respuestaSeleccionada");
-        cambiarEstadoBotones(true);
-        PauseTransition pause = new PauseTransition(
-                Duration.seconds(2));
-        PauseTransition pause2 = new PauseTransition(
-                Duration.seconds(2));
-        pause.setOnFinished(event -> {
+        pausaUno.setOnFinished(event -> {
             boton.getStyleClass().remove("respuestaSeleccionada");
             revelarRespuestas();
             responder(respuesta);
-            pause2.play();
+            pausaDos.play();
         });
-        pause2.setOnFinished(event -> {
+        pausaDos.setOnFinished(event -> {
             removerRespuestas();
             cambiarPreguntaPantalla();
         });
-        pause.play();
+        pausaUno.play();
 
     }
 
     private void cambiarEstadoBotones(boolean b) {
-         btnResponder1.setDisable(b);
+        btnResponder1.setDisable(b);
         btnResponder2.setDisable(b);
         btnResponder3.setDisable(b);
         btnResponder4.setDisable(b);
@@ -152,6 +171,8 @@ public class JuegoViewController {
             txtPuntuacion.setText("Puntuacion: " + puntuacion);
         } else {
             cantidadCorrectasSeguidas = 0;
+            puntuacion -= 100;
+            txtPuntuacion.setText("Puntuacion: " + puntuacion);
             removerVida();
         }
         if (cantidadCorrectasSeguidas == 5 && !preguntaPantalla.getTipoPregunta().equals(TipoPregunta.DIFICIL)) {
@@ -182,41 +203,43 @@ public class JuegoViewController {
             vida1.setImage(new Image(new File("src/resources/imagenes/Malo.png").toURI().toString()));
             vidas--;
         } else if (vidas == 0) {
-            rendirse();
+            perdio = true;
+            rendirse("views/PerdisteView.fxml");
         }
     }
 
     private void cambiarPreguntaPantalla() {
+        if (!perdio) {
+            if (!btnPista5050.isVisible()) {
+                btnResponder1.setVisible(true);
+                btnResponder2.setVisible(true);
+                btnResponder3.setVisible(true);
+                btnResponder4.setVisible(true);
 
-        if (!btnPista5050.isVisible()) {
-            btnResponder1.setVisible(true);
-            btnResponder2.setVisible(true);
-            btnResponder3.setVisible(true);
-            btnResponder4.setVisible(true);
+            }
 
+            cambiarEstadoBotones(false);
+
+            if (!colaPreguntas.isEmpty()) {
+                preguntaPantalla = colaPreguntas.poll();
+
+                Collections.shuffle(preguntaPantalla.getRespuestas());
+
+                txtPregunta.setText(preguntaPantalla.getPregunta());
+
+                btnResponder1.setText(preguntaPantalla.getRespuestas().get(0).getRespuesta());
+                btnResponder2.setText(preguntaPantalla.getRespuestas().get(1).getRespuesta());
+                btnResponder3.setText(preguntaPantalla.getRespuestas().get(2).getRespuesta());
+                btnResponder4.setText(preguntaPantalla.getRespuestas().get(3).getRespuesta());
+                iniciarCronometro();
+            } else {
+
+                rendirse("views/GanasteView.fxml");
+
+            }
         }
-
-        cambiarEstadoBotones(false);
-
-       
-
-        if(!colaPreguntas.isEmpty())
-{
-        preguntaPantalla = colaPreguntas.poll();
-
-        Collections.shuffle(preguntaPantalla.getRespuestas());
-
-        txtPregunta.setText(preguntaPantalla.getPregunta());
-
-        btnResponder1.setText(preguntaPantalla.getRespuestas().get(0).getRespuesta());
-        btnResponder2.setText(preguntaPantalla.getRespuestas().get(1).getRespuesta());
-        btnResponder3.setText(preguntaPantalla.getRespuestas().get(2).getRespuesta());
-        btnResponder4.setText(preguntaPantalla.getRespuestas().get(3).getRespuesta());
-        iniciarCronometro();
-    }else{
-        rendirse();
     }
-    }
+
     private void revelarRespuestas() {
 
         ArrayList<Respuesta> respuestas = preguntaPantalla.getRespuestas();
@@ -242,7 +265,6 @@ public class JuegoViewController {
             btnResponder4.getStyleClass().add("respuestaIncorrecta");
         }
 
-       
     }
 
     private void removerRespuestas() {
@@ -311,6 +333,8 @@ public class JuegoViewController {
 
         btnPista5050.setVisible(false);
 
+        puntuacion -= 100;
+        txtPuntuacion.setText("Puntuacion: " + puntuacion);
     }
 
     @FXML
@@ -329,6 +353,8 @@ public class JuegoViewController {
         pausaPista.play();
         btnPistaParar.setVisible(false);
         btnPistaSaltar.setDisable(true);
+        puntuacion -= 100;
+        txtPuntuacion.setText("Puntuacion: " + puntuacion);
     }
 
     @FXML
@@ -340,6 +366,8 @@ public class JuegoViewController {
         pararCronometro();
         cambiarPreguntaPantalla();
         btnPistaSaltar.setVisible(false);
+        puntuacion -= 100;
+        txtPuntuacion.setText("Puntuacion: " + puntuacion);
     }
 
     public void setAplicacion(Aplicacion aplicacion) {
@@ -351,8 +379,11 @@ public class JuegoViewController {
 
         vidas = 3;
         puntuacion = 0;
+        perdio = false;
 
         modelFactoryController = ModelFactoryController.getInstance();
+
+        jugadorLogueado = modelFactoryController.getJugadorLogueado();
 
         getColaData(TipoPregunta.FACIL);
 
@@ -372,7 +403,7 @@ public class JuegoViewController {
 
         txtCronometro.textProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue.equals("0")) {
-                rendirse();
+                rendirse("views/PerdisteView.fxml");
             }
         });
 

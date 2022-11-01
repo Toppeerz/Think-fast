@@ -162,6 +162,29 @@ public class Juego implements Serializable {
 		return colaPreguntas;
 	}
     
-	
+	public String borrarJugador(String nombreJugador){
+		String mensaje = "";
+
+		int posicionJugador = obtenerPosicion(nombreJugador);
+
+			listaJugadores.remove(posicionJugador);
+
+			mensaje = "Cuenta eliminada con exito";
+			
+		return mensaje;
+	}
+
+	private int obtenerPosicion(String nombreJugador) {
+		Enumeration<Integer> enumeracionJugador = listaJugadores.keys();
+		int posicion = 0;
+		int i;
+		while (enumeracionJugador.hasMoreElements()) {
+			i = enumeracionJugador.nextElement();
+			if (listaJugadores.get(i).getNombre().equalsIgnoreCase(nombreJugador)) {
+				posicion=i;
+			}
+		}
+		return posicion;
+	}
 
 } // fin clase juego

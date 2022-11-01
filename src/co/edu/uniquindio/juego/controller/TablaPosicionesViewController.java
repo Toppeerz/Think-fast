@@ -34,8 +34,13 @@ public class TablaPosicionesViewController {
     }
 
     private void regresarVentana() {
-        aplicacion.cambiarEscena("views/MenuView.fxml");
-    }
+        if(modelFactoryController.getJugadorLogueado() != null ){
+        aplicacion.cambiarEscena("views/MenuView.fxml");}
+        else{
+            aplicacion.cambiarEscena("views/IniciarSesionView.fxml");}
+
+        }
+    
 
     public void setAplicacion(Aplicacion aplicacion) {
         this.aplicacion = aplicacion;

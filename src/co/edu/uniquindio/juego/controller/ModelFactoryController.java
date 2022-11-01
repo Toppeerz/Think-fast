@@ -22,6 +22,7 @@ public class ModelFactoryController {
 
 	Juego juego;
 	Jugador jugadorLogueado;
+	int puntajeTemporal;
 	
 
 
@@ -130,6 +131,7 @@ public class ModelFactoryController {
 	public void guardarResourceXML() {
 
 	    Persistencia.guardarRecursoBancoXML(juego);
+	
 	}
 
 
@@ -526,7 +528,8 @@ public class ModelFactoryController {
 		listaPreguntas.put(180, pregunta180);	
 		juego.setListaPreguntas(listaPreguntas);
 
-	
+	  
+
 		System.out.println("Juego inicializado");
 
 	}
@@ -600,6 +603,23 @@ public class ModelFactoryController {
 
         return listaJugadores;
     }
+
+	public void cambiarPuntaje(int puntuacion) {
+		jugadorLogueado.setPuntaje(puntuacion);
+		guardarResourceXML();
+	}
+
+	public int getPuntajeTemporal() {
+		return puntajeTemporal;
+	}
+
+	public void setPuntajeTemporal(int puntajeTemporal) {
+		this.puntajeTemporal = puntajeTemporal;
+	}
+
+	public String eliminarCuenta() {
+		return juego.borrarJugador(jugadorLogueado.getNombre());
+	}
 
 	
 
