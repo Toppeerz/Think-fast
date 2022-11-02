@@ -170,7 +170,7 @@ public class ModelFactoryController {
 		Pregunta pregunta23= new Pregunta("¿Cuál de las siguientes palabras es esdrújula?","metálico","impídanselo","alguacil","corren",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta24= new Pregunta("¿Cuál es la obra cumbre en la literatura española escrita por Fernando de Rojas?","la Celestina","la zelestina","burgos","madrid",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta25= new Pregunta("¿Cuál de las siguientes obras no pertenece a Edgar Allan Poe?","El monte de las ánimas","It","El resplandor","Doctor Sleep",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta26= new Pregunta("¿Qué obra NO pertenece a Shakespeare?","La Divina Comedia","Muere anunciada","Hamlet","Romeo y julieta",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta26= new Pregunta("¿Quien escribio doctor sleep?","Stephen king","Muere anunciada","Hamlet","Romeo y julieta",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta27= new Pregunta("¿Qué color consigues mezclando todos los colores del CMYK?","Negro","cafe","azul","violeta",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta28= new Pregunta("¿Quién pintó el cuadro La Persistencia de la Memoria?","Dalí","Picasso","Van gogh","Frederick valvo",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta29= new Pregunta("¿Cuántos 'gritos' pintó Munch?","cuatro","uno","cinco","tres",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
@@ -227,7 +227,7 @@ public class ModelFactoryController {
 		Pregunta pregunta75= new Pregunta("¿De qué juego son las siglas WOW?","World of Warcraft","World of Wonder","World of Wisdom","World of Wracaft",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta76= new Pregunta("¿Con qué canción saltó a la fama del grupo Hombres G?","Sufre mamón","Venezia","Devuelveme a mi chica","Marta tiene un marcapasos",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta77= new Pregunta("¿Qué icono tiene la aplicación Instagram?","Una cámara de fotos","Un lente fotografico","Una ventana ","un recuadro minimalista",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta78= new Pregunta("¿Cómo se llama el amigo inseparable de Dora la Exploradora?","Botas ","El mapa","hentai","Caricaturas",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta78= new Pregunta("¿Cómo se llama el amigo inseparable de Dora la Exploradora?","Botas ","El mapa","fernando","Caricaturas",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta79= new Pregunta("¿En qué año nació Michael Jackson?","1958","1978","1968","1948",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta80= new Pregunta("¿Cuál es el nombre del actor que interpreta a Harry Potter?","Daniel Radcliffe","Robbie Coltrane","Richard Harris","Richard Harrison",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 	
@@ -324,7 +324,7 @@ public class ModelFactoryController {
 		Pregunta pregunta162= new Pregunta("Dos ruedas están unidas por una correa de transmisión. La primera tiene un radio de 25 cm y la segunda de 75 cm. Cuando la primera ha dado 300 vueltas. ¿Cuántas vueltas dará la segunda?","100 vueltas","121 vueltas","127 vueltas","99 vueltas",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
 		Pregunta pregunta163= new Pregunta("¿Cuánto es la cuarta parte de la tercera parte?","Un doceavo","Tres cuartos","Un noveno ","Un septimo",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
 		Pregunta pregunta164= new Pregunta("Seis personas pueden vivir en un hotel durante 12 días por 792 euros. ¿Cuánto costará el hotel de 15 personas durante 8 días?","1320 euros","1239 euros","1327 euros","1289 euros",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
-		Pregunta pregunta165= new Pregunta("¿Qué es un triángulo isósceles?","Un tipo de triángulo que tiene dos lados de igual longitud","Un tipo de triángulo que tiene un angulo de 90 grados","Un tipo de triángulo que tiene dos lados de igual longitud y necesariamnete un angulo recto","Un tipo de triángulo que tiene todos sus lados iguales",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+		Pregunta pregunta165= new Pregunta("¿Cuanto es 1257+12-504*0 ?","0","200","100","10",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
 		Pregunta pregunta166= new Pregunta("¿Cómo se llama a un poliedro de 20 caras?","icosaedro","tetradecaedro","hectaedro","pentadecaedro",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
 		Pregunta pregunta167= new Pregunta("Si 8 litros de aceite valen 60 euros. ¿Cuántos litros compraré con 15 euros?","2 litros de aceite","2,5 litros de aceite","2,7 litros de aceite","2,8 litros de aceite",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
 		Pregunta pregunta168= new Pregunta("¿Cuánto habrá que rebajar un producto para que valga lo mismo que valía antes de que incrementase un 25% su precio?","un 20%","un 23%","un 25%","un 22%",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
