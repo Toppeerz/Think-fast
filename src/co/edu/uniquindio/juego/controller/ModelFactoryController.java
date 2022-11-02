@@ -143,23 +143,23 @@ public class ModelFactoryController {
 
 		juego = new Juego();
         
-		Pregunta pregunta1= new Pregunta("¿Para qué sirve la paleta?","para mezclar pinturas","comer helado","cavar un hoyo","cocinar",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta1= new Pregunta("¿Para qué sirve la paleta?","mezclar pinturas","comer helado","cavar un hoyo","cocinar",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta2= new Pregunta("¿Qué tendencia musical es la que más incursiona en Jamaica?","reggae","cumbia","trap","dubstep",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta3= new Pregunta("¿Qué usamos para diluir los colores de las acuarelas?","agua","aceite","aire","tierra",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta4= new Pregunta("¿Cuántos dedos tiene por lo general una caricatura en las manos?","cuatro","seis","cinco","dos",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta5= new Pregunta("¿Qué nota musical hay entre re y fa?","mi","sol","la","do",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta6= new Pregunta("Más vale pájaro en mano...","que cien volando","que mal que por bien no venga!"," que lamentar."," bajo el sol.",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta7= new Pregunta("¿A qué se dedicaban los siete enanitos?","eran mineros","borrachos","strepers","sicarios",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta8= new Pregunta("Perro que ladra...","No muerde","que cien volando."," cruza venados en el mar.","esconde la mano",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta6= new Pregunta("Más vale pájaro en mano...","que cientos volando","que mal que por bien no venga!"," que lamentar."," bajo el sol.",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta7= new Pregunta("¿A qué se dedicaban los siete enanitos?","mineros","borrachos","strepers","sicarios",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta8= new Pregunta("Perro que ladra...","no muerde","que cien volando."," cruza venados en el mar.","esconde la mano",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta9= new Pregunta("¿A qué familia de instrumentos pertenece la guitarra, el violín y el bajo?","cuerdas","viento","percusion","electrico",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta10= new Pregunta("¿En qué novela el protagonista es un asesino en serie con un sentido del olfato increíblemente desarrollado?","el Perfume","csi","dora la exploradora","doki",TipoPregunta.FACIL,ClasePregunta.ARTE);
 	
 		Pregunta pregunta11= new Pregunta("Gabriel García Márquez se caracteriza por narrar en un mundo:","real maravilloso","macabro","historietas","manga",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta12= new Pregunta("¿Quién era la diosa de la sabiduría en la mitología griega?","atena","rea","hera","gea",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta12= new Pregunta("¿Quién era la diosa de la sabiduría en la mitología griega?","atena","rea","sol","gea",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 		Pregunta pregunta13= new Pregunta("¿Cuál es el nombre de Picasso?","pablo","juan","didier","mary",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 		Pregunta pregunta14= new Pregunta("¿Tira la piedra...?","y esconde la mano","y corre","y esconde la piedra","y le abre la cabeza",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 		Pregunta pregunta15= new Pregunta("¿A qué ciudad vasca dedicó un cuadro Pablo Picasso?","Guernica","Bogota","Paris","Armenia",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta16= new Pregunta("¿Quién escribió la novela 'Contagio'?","Robin Cook","Gabriel Garcia","Darly","Cristian Gonzalez",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta16= new Pregunta("¿Quién escribió la novela 'Contagio'?","Robin Cook","Gabriel Garcia","Sol","Cristian Gonzalez",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 		Pregunta pregunta17= new Pregunta("¿Qué pieza de arte fue robada y guardada debajo de una cama hasta que se devolvió al Museo Louvre?","Mona Lisa","El Beso","Guernica","La Gioconda",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 		Pregunta pregunta18= new Pregunta("¿Qué instrumento tocaba Zeta Bosio en Soda Stereo?","bajo","Guitarra","flauta","bateria",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 		Pregunta pregunta19= new Pregunta("¿Qué parte del cuerpo se cortó Vicent Van Gogh?","oreja","brazo","nariz","lengua",TipoPregunta.MEDIA,ClasePregunta.ARTE);
@@ -209,8 +209,8 @@ public class ModelFactoryController {
 		Pregunta pregunta59= new Pregunta("¿En qué deporte olímpico conlleva la expulsión salpicar deliberadamente la cara de un oponente o hundirlo en el agua cuando no tiene la pelota?","Waterpolo","Natación","Kitesurf","Windsurf",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta60= new Pregunta("¿Cuál de estas posiciones no representa a un jugador de Baseball?","Fullback","Base","Escolta","Alero",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
 	
-		Pregunta pregunta61= new Pregunta("¿Qué fruta es la casa de Bob Esponja?","Una piña","Manzana","Banana","Coco",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta62= new Pregunta("¿Quién es el marido de la actriz Angelina Jolie?","Brad Pitt","Cristiano Ronaldo","Cris evans","Cris MJ",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta61= new Pregunta("¿Qué fruta es la casa de Bob Esponja?","Piña","Manzana","Banana","Coco",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta62= new Pregunta("¿Quién es el marido de la actriz Angelina Jolie?","Billy Bob Thornton","Cristiano Ronaldo","Brad pid","Cris MJ",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta63= new Pregunta("¿En la serie Los Simpson de qué color son las perlas de Lisa?","Blancas","Rojas","Azules","Verdes",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta64= new Pregunta("¿Cómo se llama el gremlin bueno de la película Gremlins?","Gizmo","Gremli","Bicho bueno","Peludin",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta65= new Pregunta("¿Cuál fue la primera película de Disney?","Blancanieves","Sirenita","Pocajontas","Hercules",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
@@ -231,8 +231,8 @@ public class ModelFactoryController {
 		Pregunta pregunta79= new Pregunta("¿En qué año nació Michael Jackson?","1958","1978","1968","1948",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta80= new Pregunta("¿Cuál es el nombre del actor que interpreta a Harry Potter?","Daniel Radcliffe","Robbie Coltrane","Richard Harris","Richard Harrison",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 	
-		Pregunta pregunta81= new Pregunta("¿Cuáles son los nombres de Los Tres Chiflados?","Moe, Larry y Curly","Moe, Larry y Carly","Mae, Larry y Carly","Moe, Peezer y Curly",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta82= new Pregunta("¿Cómo se llamaba el primer gato de Los Simpsons?","Bola de nieve","Nieve ","Snowballal","Bolita de nieve",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta81= new Pregunta("¿Cuáles son los nombres de Los Tres Chiflados?","Moe, Larry y Curly","cris, sol y didier","Mae, Larry y Carly","Moe, Peezer y Curly",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta82= new Pregunta("¿Cómo se llamaba el primer gato de Los Simpsons?","Bola de nieve","Nieve ","Snowball","Bolita de nieve",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta83= new Pregunta("¿Qué cantante estuvo saliendo con Selena Gómez?","Justin Bieber","Drake ","Zadd","Charli Puth",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta84= new Pregunta("¿De quién es la canción 'Master of Puppets'?","Metallica","Megadeth","Slayer","Anthrax",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta85= new Pregunta("¿Cómo se llama el personaje malvado de Aladdin?","Jafar","Razoul ","Rajah ","Lago",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
@@ -290,7 +290,7 @@ public class ModelFactoryController {
 		Pregunta pregunta131= new Pregunta("¿Cuál es la comida típica madrileña?","El cocido","Callos","Roscas","Bocadillo de calamares",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
 		Pregunta pregunta132= new Pregunta("¿Cómo pasó a llamarse el Imperio Austríaco tras la revolución de 1848?","Imperio Austrohúngaro","Imperio húngaro","Imperio Nordico","Imperio Austriaco",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
 		Pregunta pregunta133= new Pregunta("¿Qué ciudad quedó partida en dos tras la Segunda Guerra Mundial?","Berlín","Volgogrado","Foggia","Turin",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
-		Pregunta pregunta134= new Pregunta("¿Cuál fue el faraón que reinó durante 66 años en Egipto?","Ramsés II","Ramsés III","Cleopatra VII","Akenaton",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
+		Pregunta pregunta134= new Pregunta("¿Cuál fue el faraón que reinó durante 66 años en Egipto?","Ramsés II","Razan","Cleopatra VII","Akenaton",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
 		Pregunta pregunta135= new Pregunta("¿Quién fue el autor de la frase 'Puedo comprar a todos los hombres del mundo'?","Howard Hughes","Noah Dietrich","Robert Maheu","Franklin D. Roosevelt",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
 		Pregunta pregunta136= new Pregunta("¿Cuántos meses duró la batalla de Stalingrado en la Segunda Guerra Mundial?","Seis meses","Siete meses","9 meses","3 meses",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
 		Pregunta pregunta137= new Pregunta("Según el Libro Guiness de los récords, ¿cuánto tiempo duró la guerra más corta de la historia?","45 minutos","3 meses","24 horas","2 semanas",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
@@ -299,9 +299,9 @@ public class ModelFactoryController {
 		Pregunta pregunta140= new Pregunta("¿Quién fue uno de los promotores de la primera línea regular de ferrocarril de la Península Ibérica?","Miquel Biada Bunyol","George Stephenson","Anastasio Bustamante","William Jackson Palmer",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
 	
 		Pregunta pregunta141= new Pregunta("¿Qué país reconoció Italia a través de los Pactos de Letrán de 1929?","La Ciudad del Vaticano","Francia","Portugal","España",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
-		Pregunta pregunta142= new Pregunta("¿Quién dijo la frase 'miente, miente que algo quedará'?","Joseph Goebbels","Adolf Hitler","Gregor Strasser"," Max Wilhelm Kimmich",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
+		Pregunta pregunta142= new Pregunta("¿Quién dijo la frase 'miente, miente que algo quedará'?","Joseph Goebels","Adolf Hitler","Gregor Strasser"," Max Wilhelm Kimmich",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta143= new Pregunta("¿Cómo se decía en latín la famosa expresión 'La suerte está echada'?","Alea iacta est","In medio virtus","Clavum clavo expellere","Cogito, ergo sum",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
-		Pregunta pregunta144= new Pregunta("¿Por cuánto vendió Rusia a Alaska a los Estados Unidos?","Alrededor de 7,2 millones de dólares","7200 millones de dólares","720 millones de dólares","72 millones de dolares",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
+		Pregunta pregunta144= new Pregunta("¿Por cuánto vendió Rusia a Alaska a los Estados Unidos?","7,2 millones de dólares","7200 millones de dólares","720 millones de dólares","72 millones de dolares",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta145= new Pregunta("¿Cuándo fue el periodo de la guerra de África?","De 1859 a 1860","De 1859 a 1861","De 1858 a 1860","De 1859 a 1862",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta146= new Pregunta("¿Cómo se llamaba el caballo de Alejandro Magno?","Bucéfalo","Rocinante","Pegaso","Babieca",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta147= new Pregunta("¿De qué color eran los permisos de conducir en en el año 2003?","Rosa","Rojo","Fucsia","Marron",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
@@ -315,7 +315,7 @@ public class ModelFactoryController {
 		Pregunta pregunta154= new Pregunta("A cuántas unidades equivale 10 decenas de millar","100000 unidades","99999 unidades","10000 unidades","1000000 unidades",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
 		Pregunta pregunta155= new Pregunta("Aproxima el número 58 a la decena","60","50","68","65",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
 		Pregunta pregunta156= new Pregunta("Escribe el número ordinal trigésimo quinto en cifras","35","57","39","30",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta157= new Pregunta("¿Qué número resulta si divides 56 entre 7","7","6","8","7,28",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta157= new Pregunta("¿Qué número resulta si divides 56 entre 7","8","6","7","7,28",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
 		Pregunta pregunta158= new Pregunta("Si en una carrera vas tres puestos por detrás del vigésimo segundo, ¿en qué puesto vas?","Decimonoveno","Noveno","Decimotercero","Onceavo",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
 		Pregunta pregunta159= new Pregunta("Cómo se llama el polígono de siete lados","Septágono","Octagono","Pentagono","Nonagono",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
 		Pregunta pregunta160= new Pregunta(" Cuál es el resultado de multiplicar 7x9","63","67","64","73",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
