@@ -50,6 +50,9 @@ public class JuegoViewController {
     private Button btnPistaParar;
 
     @FXML
+    private Label txtClasePregunta;
+
+    @FXML
     private Button btnPistaSaltar;
 
     @FXML
@@ -225,6 +228,8 @@ public class JuegoViewController {
 
                 Collections.shuffle(preguntaPantalla.getRespuestas());
 
+                txtClasePregunta.setText(preguntaPantalla.getClasePregunta().name());
+
                 txtPregunta.setText(preguntaPantalla.getPregunta());
 
                 btnResponder1.setText(preguntaPantalla.getRespuestas().get(0).getRespuesta());
@@ -391,6 +396,7 @@ public class JuegoViewController {
 
         Collections.shuffle(preguntaPantalla.getRespuestas());
 
+        txtClasePregunta.setText(preguntaPantalla.getClasePregunta().name());
         txtPregunta.setText(preguntaPantalla.getPregunta());
 
         btnResponder1.setText(preguntaPantalla.getRespuestas().get(0).getRespuesta());
