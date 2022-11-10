@@ -193,51 +193,51 @@ public class ModelFactoryController {
 		Pregunta pregunta38= new Pregunta("¿Cuántos tiempos tiene un partido de baloncesto?","4","3","1","10",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta39= new Pregunta("¿En qué equipo juega Cristiano Ronaldo?","Manchester Unite","Argentina","FC Barcelona","Nacional",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta40= new Pregunta("¿Cuál de estos partidos de la Liga Española se considera un clásico?","FC Barcelona vs Real Madrid","Millonarios Vs Nacional","Milan Vs Inter","Manchester United Vs Manchester City",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
-	//Voy aca
+
 		Pregunta pregunta41= new Pregunta("¿Qué duración tiene un partido de fútbol que llega a la tanda de penaltis?","120","110","90","130",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta42= new Pregunta("¿En cuántos mundiales participó la selección de Inglaterra?","14","8","16","20",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta43= new Pregunta("¿Con qué deporte relacionarías a Aitor Osa?","Ciclismo","futbol","Baloncesto","Hockey",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta44= new Pregunta("¿Quién ganó el mundial de 2010 en Sudáfrica?","España","Colombia","Argentina","Brazil",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta45= new Pregunta("¿Cuál es el salto más alto en caballo?","1'20 m","2'00 m","0'50 m","2'20 m",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta43= new Pregunta("¿Con qué deporte relacionarías a Aitor Osa?","Ciclismo","Futbol","Baloncesto","Hockey",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta44= new Pregunta("¿Quién ganó el mundial de 2010 en Sudáfrica?","España","Colombia","Argentina","Brasil",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta45= new Pregunta("¿Cuál es el salto más alto en caballo?","1.20 metros","2.00 metros","0.50 metros","2.20 metros",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta46= new Pregunta("¿Cuántos jugadores componen usualmente un equipo de rugby?","15","11","8","3",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta47= new Pregunta("¿Cómo se llama la anotación de un tanto en el fútbol americano?","Touchdown","gol","anotacion","entrada",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta48= new Pregunta("¿Quién fue el máximo goleador de la UEFA Champions League en 2013?","Cristiano Ronaldo","Leonel Messi","Neymar Jr","kaka",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
-		Pregunta pregunta49= new Pregunta("En voleibol, ¿hasta cuántos toques se le puede dar a la pelota antes de pasarla al campo rival?","Tres","Uno","Dos","Cinco",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta47= new Pregunta("¿Cómo se llama la anotación de un tanto en el fútbol americano?","Touchdown","Gol","Anotacion","Entrada",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta48= new Pregunta("¿Quién fue el máximo goleador de la UEFA Champions League en 2013?","Cristiano Ronaldo","Leonel Messi","Neymar Jr","Kaka",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
+		Pregunta pregunta49= new Pregunta("En voleibol, ¿Hasta cuántos toques se le puede dar a la pelota antes de pasarla al campo rival?","Tres","Uno","Dos","Cinco",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta50= new Pregunta("Evgenia Kanaeva es la 'reina' de...","Gimnasia rítmica","Natacion","Voleibol","Tejo",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 	
 		Pregunta pregunta51= new Pregunta("¿Cómo se llamaba la pelota del Mundial de Fútbol 1978?","Adidas Tango","Brazuca Final","Telstar 18","Al Rihla",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta52= new Pregunta("¿Cuál es el nombre de pila del tenista Federer?","Roger","Fernandez","Mario","Angel",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta53= new Pregunta("¿cuales son los goleadores del mundial 2010?","Diego y Thomas","Messi y Cristiano","Falcao y James","Neymar y Mbappé",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta54= new Pregunta("¿Cómo se llama Iniesta?","Andrés","Didier","Cristian","Juan",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta55= new Pregunta("¿En qué país ganó Alemania su primer mundial de fútbol?","Suiza","Paises bajos","Brazil","Alemania",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta54= new Pregunta("¿Cómo se llama Iniesta?","Andrés","Didier","Cristian","Carlos",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta55= new Pregunta("¿En qué país ganó Alemania su primer mundial de fútbol?","Suiza","Paises bajos","Brasil","Alemania",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta56= new Pregunta("¿Quién fue el primer jugador que recibió la distinción de 'Mejor Jugador del Siglo'?","Pelé","René Higuita","Kaka","Ronaldinho",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta57= new Pregunta("¿A qué se denomina hacer un rosco en Tenis?","6-0","Un pan","Salir de la cancha","Fuera de lugar",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta58= new Pregunta("¿Quién fue el primer equipo en llevar dorsales en la liga Española?","Real Madrid","Barcelona","Atletico de madrid","Real sociedad",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta58= new Pregunta("¿Quién fue el primer equipo en llevar dorsales en la liga Española?","Real Madrid","FC Barcelona","Atletico de Madrid","Real Sociedad",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta59= new Pregunta("¿En qué deporte olímpico conlleva la expulsión salpicar deliberadamente la cara de un oponente o hundirlo en el agua cuando no tiene la pelota?","Waterpolo","Natación","Kitesurf","Windsurf",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta60= new Pregunta("¿Cuál de estas posiciones no representa a un jugador de Baseball?","Fullback","Base","Escolta","Alero",TipoPregunta.DIFICIL,ClasePregunta.DEPORTE);
-	
+
 		Pregunta pregunta61= new Pregunta("¿Qué fruta es la casa de Bob Esponja?","Piña","Manzana","Banana","Coco",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta62= new Pregunta("¿Quién es el marido de la actriz Angelina Jolie?","Billy Bob Thornton","Cristiano Ronaldo","Brad pid","Cris MJ",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta63= new Pregunta("¿En la serie Los Simpson de qué color son las perlas de Lisa?","Blancas","Rojas","Azules","Verdes",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta64= new Pregunta("¿Cómo se llama el gremlin bueno de la película Gremlins?","Gizmo","Gremli","Bicho bueno","Peludin",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta65= new Pregunta("¿Cuál fue la primera película de Disney?","Blancanieves","Sirenita","Pocajontas","Hercules",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta66= new Pregunta("¿Qué famoso personaje animado sacaba inventos del futuro de su bolsillo mágico?","Doraemon","Naruto","Naguisa","Lufi",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta67= new Pregunta("¿Quién se convirtió en el mejor amigo de Woody en la película Toy Story?","Buzz Lightyear","Cerdo","Dinosaurio verde","Carro a control remoto",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta68= new Pregunta("¿Cuál de estos villanos NO es enemigo de Batman?","Magento","Pinguiono","Guazon","acertijo",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta69= new Pregunta("¿En qué programa sale Sheldon Cooper?","The Big Bang Theory","betty la fea","pasion de gabilanes","the office",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta67= new Pregunta("¿Quién se convirtió en el mejor amigo de Woody en la película Toy Story?","Buzz Lightyear","Hamm el cerdito","Rex","Señor cara de papa",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta68= new Pregunta("¿Cuál de estos villanos NO es enemigo de Batman?","Magneto","El Pingüino","Joker","Acertijo",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta69= new Pregunta("¿En qué programa de television aparece Sheldon Cooper?","The Big Bang Theory","Betty la Fea","Pasion de Gabilanes","The Office",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta70= new Pregunta("¿Quién es el primer super saiyajin que se convierte en dios?","Goku","Vegeta","Bardock","Gohan",TipoPregunta.FACIL,ClasePregunta.ENTRETENIMIENTO);
 	
-		Pregunta pregunta71= new Pregunta("¿A qué se le llama 'manga'?","cómic japonés","libreta","hentai","Caricaturas",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta71= new Pregunta("¿A qué tipo de texto se le llama 'Manga'?","Cómic japonés","Novela","Doujinshi","Caricatura",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta72= new Pregunta("¿Cómo se llama el hermano menor de Mario Bros?","Luigi","Yoshi","Toad","Browser",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta73= new Pregunta("¿En qué año murió Marilyn Monroe?","1962","1972","1982","1952",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta74= new Pregunta("¿De qué nacionalidad es la cantante Belinda?","Mexicana","Cubana","Colombiana","Chilena",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta75= new Pregunta("¿De qué juego son las siglas WOW?","World of Warcraft","World of Wonder","World of Wisdom","World of Wracaft",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta76= new Pregunta("¿Con qué canción saltó a la fama del grupo Hombres G?","Sufre mamón","Venezia","Devuelveme a mi chica","Marta tiene un marcapasos",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta77= new Pregunta("¿Qué icono tiene la aplicación Instagram?","Una cámara de fotos","Un lente fotografico","Una ventana ","un recuadro minimalista",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta78= new Pregunta("¿Cómo se llama el amigo inseparable de Dora la Exploradora?","Botas ","El mapa","fernando","Caricaturas",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta77= new Pregunta("¿Qué icono tiene la aplicación Instagram?","Una cámara de fotos","Un lente fotografico","Una ventana ","Un pajaro azul",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta78= new Pregunta("¿Cómo se llama el amigo inseparable de Dora la Exploradora?","Botas","El mapa","Fernando","Zorro",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta79= new Pregunta("¿En qué año nació Michael Jackson?","1958","1978","1968","1948",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta80= new Pregunta("¿Cuál es el nombre del actor que interpreta a Harry Potter?","Daniel Radcliffe","Robbie Coltrane","Richard Harris","Richard Harrison",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
-	
+	//voy aca
 		Pregunta pregunta81= new Pregunta("¿Cuáles son los nombres de Los Tres Chiflados?","Moe, Larry y Curly","cris, sol y didier","Mae, Larry y Carly","Moe, Peezer y Curly",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta82= new Pregunta("¿Cómo se llamaba el primer gato de Los Simpsons?","Bola de nieve","Nieve ","Snowball","Bolita de nieve",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta83= new Pregunta("¿Qué cantante estuvo saliendo con Selena Gómez?","Justin Bieber","Drake ","Zadd","Charli Puth",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
