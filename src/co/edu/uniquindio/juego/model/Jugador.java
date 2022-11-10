@@ -17,7 +17,6 @@ public class Jugador implements Serializable {
     private String nombre;
 	private String contrasenia;
 	private int puntaje;
-	private int fallos;
 	
 	public Jugador(String nombre, String contrasenia) {
 		this.nombre = nombre;
@@ -51,20 +50,13 @@ public class Jugador implements Serializable {
 		this.puntaje = puntaje;
 	}
 
-	public int getFallos() {
-		return fallos;
-	}
 
-	public void setFallos(int fallos) {
-		this.fallos = fallos;
-	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((contrasenia == null) ? 0 : contrasenia.hashCode());
-		result = prime * result + fallos;
 		result = prime * result + ((nombre == null) ? 0 : nombre.hashCode());
 		result = prime * result + puntaje;
 		return result;
@@ -83,8 +75,6 @@ public class Jugador implements Serializable {
 			if (other.contrasenia != null)
 				return false;
 		} else if (!contrasenia.equals(other.contrasenia))
-			return false;
-		if (fallos != other.fallos)
 			return false;
 		if (nombre == null) {
 			if (other.nombre != null)

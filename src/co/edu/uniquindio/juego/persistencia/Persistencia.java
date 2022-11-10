@@ -5,6 +5,7 @@ import co.edu.uniquindio.juego.model.Juego;
 public class Persistencia  {
 
 	public static final String RUTA_ARCHIVO_MODELO_JUEGO_XML = "src/resources/model.xml";
+	public static final String RUTA_ARCHIVO_MODELO_JUEGO_XMLDOM= "src/resources/modelDOM.xml";
 
 
 
@@ -34,8 +35,30 @@ public class Persistencia  {
 		}
 	}
 
-	
- 
+	public static void guardarRecursoBancoXMLDOM(Juego juego) {
+
+		try {
+			ArchivoUtil.salvarRecursoSerializadoXMLDOM(RUTA_ARCHIVO_MODELO_JUEGO_XMLDOM, juego);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static Juego cargarRecursoBancoXMLDOM() {
+
+          Juego juego = new Juego();
+
+		try {
+			juego =ArchivoUtil.cargarRecursoSerializadoXMLDOM(RUTA_ARCHIVO_MODELO_JUEGO_XMLDOM);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	return juego;
+
+	}
+
+
+
 		
 		
 	

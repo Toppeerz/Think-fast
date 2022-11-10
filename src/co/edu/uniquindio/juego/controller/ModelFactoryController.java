@@ -53,8 +53,9 @@ public class ModelFactoryController {
 
 		//4. Guardar y Cargar el recurso serializable XML
     // 	guardarResourceXML();
+		cargarResourceXMLDOM();
+	    //cargarResourceXML();
 		
-	    cargarResourceXML();
 
 
 		//Siempre se debe verificar si la raiz del recurso es null
@@ -125,12 +126,18 @@ public class ModelFactoryController {
 		juego = Persistencia.cargarRecursoBancoXML();
 	}
 
+	public void cargarResourceXMLDOM() {
+
+		juego = Persistencia.cargarRecursoBancoXMLDOM();
+	}
+
 	/**
 	 * M�todo que permite guardar un recurso XML
 	 */
 	public void guardarResourceXML() {
 
 	    Persistencia.guardarRecursoBancoXML(juego);
+		Persistencia.guardarRecursoBancoXMLDOM(juego);
 	
 	}
 
@@ -143,50 +150,50 @@ public class ModelFactoryController {
 
 		juego = new Juego();
         
-		Pregunta pregunta1= new Pregunta("¿Para qué sirve la paleta?","mezclar pinturas","comer helado","cavar un hoyo","cocinar",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta2= new Pregunta("¿Qué tendencia musical es la que más incursiona en Jamaica?","reggae","cumbia","trap","dubstep",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta3= new Pregunta("¿Qué usamos para diluir los colores de las acuarelas?","agua","aceite","aire","tierra",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta4= new Pregunta("¿Cuántos dedos tiene por lo general una caricatura en las manos?","cuatro","seis","cinco","dos",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta1= new Pregunta("¿Para qué sirve la paleta?","Mezclar pinturas","Comer helado","Cavar un hoyo","Cocinar",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta2= new Pregunta("¿Qué tendencia musical es la que más incursiona en Jamaica?","Reggae","Cumbia","Trap","Dubstep",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta3= new Pregunta("¿Qué usamos para diluir los colores de las acuarelas?","Agua","Aceite","Aire","Tierra",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta4= new Pregunta("¿Cuántos dedos tiene por lo general una caricatura en las manos?","Cuatro","Seis","Cinco","Dos",TipoPregunta.FACIL,ClasePregunta.ARTE);
 		Pregunta pregunta5= new Pregunta("¿Qué nota musical hay entre re y fa?","mi","sol","la","do",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta6= new Pregunta("Más vale pájaro en mano...","que cientos volando","que mal que por bien no venga!"," que lamentar."," bajo el sol.",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta7= new Pregunta("¿A qué se dedicaban los siete enanitos?","mineros","borrachos","strepers","sicarios",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta8= new Pregunta("Perro que ladra...","no muerde","que cien volando."," cruza venados en el mar.","esconde la mano",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta9= new Pregunta("¿A qué familia de instrumentos pertenece la guitarra, el violín y el bajo?","cuerdas","viento","percusion","electrico",TipoPregunta.FACIL,ClasePregunta.ARTE);
-		Pregunta pregunta10= new Pregunta("¿En qué novela el protagonista es un asesino en serie con un sentido del olfato increíblemente desarrollado?","el Perfume","csi","dora la exploradora","doki",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta6= new Pregunta("Más vale pájaro en mano...","Que cientos volando","Que mal que por bien no venga!","Que lamentar.","Bajo el sol.",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta7= new Pregunta("¿A qué se dedicaban los siete enanitos?","Mineros","Borrachos","Strepers","Sicarios",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta8= new Pregunta("Perro que ladra...","No muerde","Que cien volando.","Cruza venados en el mar.","Esconde la mano",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta9= new Pregunta("¿A qué familia de instrumentos pertenecen la guitarra, el violín y el bajo?","Cuerdas","Viento","Percusion","Electricos",TipoPregunta.FACIL,ClasePregunta.ARTE);
+		Pregunta pregunta10= new Pregunta("¿En qué novela el protagonista es un asesino en serie con un sentido del olfato increíblemente desarrollado?","El Perfume","Game of Thrones","Dora la exploradora","Doki",TipoPregunta.FACIL,ClasePregunta.ARTE);
 	
-		Pregunta pregunta11= new Pregunta("Gabriel García Márquez se caracteriza por narrar en un mundo:","real maravilloso","macabro","historietas","manga",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta12= new Pregunta("¿Quién era la diosa de la sabiduría en la mitología griega?","atena","rea","sol","gea",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta13= new Pregunta("¿Cuál es el nombre de Picasso?","pablo","juan","didier","mary",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta14= new Pregunta("¿Tira la piedra...?","y esconde la mano","y corre","y esconde la piedra","y le abre la cabeza",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta11= new Pregunta("Gabriel García Márquez se caracteriza por narrar en un mundo:","Real magico","Macabro","Oscuro","Serio",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta12= new Pregunta("¿Quién era la diosa de la sabiduría en la mitología griega?","Atenea","Rea","Nemesís","Gaia",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta13= new Pregunta("¿Cuál es el nombre de Picasso?","Pablo","Leonardo","Didier","Mary",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta14= new Pregunta("¿Tira la piedra...?","Y esconde la mano","Y corre","Y esconde la piedra","Y le abre la cabeza",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 		Pregunta pregunta15= new Pregunta("¿A qué ciudad vasca dedicó un cuadro Pablo Picasso?","Guernica","Bogota","Paris","Armenia",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta16= new Pregunta("¿Quién escribió la novela 'Contagio'?","Robin Cook","Gabriel Garcia","Sol","Cristian Gonzalez",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta16= new Pregunta("¿Quién escribió la novela 'Contagio'?","Robin Cook","Gabriel Garcia","H.P Lovecraft","Cristian Gonzalez",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 		Pregunta pregunta17= new Pregunta("¿Qué pieza de arte fue robada y guardada debajo de una cama hasta que se devolvió al Museo Louvre?","Mona Lisa","El Beso","Guernica","La Gioconda",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta18= new Pregunta("¿Qué instrumento tocaba Zeta Bosio en Soda Stereo?","bajo","Guitarra","flauta","bateria",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta19= new Pregunta("¿Qué parte del cuerpo se cortó Vicent Van Gogh?","oreja","brazo","nariz","lengua",TipoPregunta.MEDIA,ClasePregunta.ARTE);
-		Pregunta pregunta20= new Pregunta("De qué país es la caricatura 'Condorito'?","chile","venezuela","mexico","argentina",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta18= new Pregunta("¿Qué instrumento tocaba Zeta Bosio en Soda Stereo?","Bajo","Guitarra","Flauta","Bateria",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta19= new Pregunta("¿Qué parte del cuerpo se cortó Vicent Van Gogh?","Oreja","Brazo","Nariz","Lengua",TipoPregunta.MEDIA,ClasePregunta.ARTE);
+		Pregunta pregunta20= new Pregunta("¿De qué país es la caricatura 'Condorito'?","Chile","Venezuela","Mexico","Argentina",TipoPregunta.MEDIA,ClasePregunta.ARTE);
 	
-		Pregunta pregunta21= new Pregunta("¿Cuál es la famosa cueva en la que se narra el Quijote?","Montesinos","calasqui","salima","petra",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta21= new Pregunta("¿Cuál es la famosa cueva en la que se narra el Quijote?","Montesinos","Calasqui","Salima","Petra",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 		Pregunta pregunta22= new Pregunta("¿Cuántos anillos fueron creados por Sauron para los Señores Enanos en el Señor de los Anillos?","7","1","5","3",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta23= new Pregunta("¿Cuál de las siguientes palabras es esdrújula?","metálico","impídanselo","alguacil","corren",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta24= new Pregunta("¿Cuál es la obra cumbre en la literatura española escrita por Fernando de Rojas?","la Celestina","la zelestina","burgos","madrid",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta25= new Pregunta("¿Cuál de las siguientes obras no pertenece a Edgar Allan Poe?","El monte de las ánimas","It","El resplandor","Doctor Sleep",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta26= new Pregunta("¿Quien escribio doctor sleep?","Stephen king","Muere anunciada","Hamlet","Romeo y julieta",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta27= new Pregunta("¿Qué color consigues mezclando todos los colores del CMYK?","Negro","cafe","azul","violeta",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta28= new Pregunta("¿Quién pintó el cuadro La Persistencia de la Memoria?","Dalí","Picasso","Van gogh","Frederick valvo",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta29= new Pregunta("¿Cuántos 'gritos' pintó Munch?","cuatro","uno","cinco","tres",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
-		Pregunta pregunta30= new Pregunta("¿De qué murió Jean Valjean en la novela 'Los Miserables'?","de viejo","disparo","suicidio","pena moral",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta23= new Pregunta("¿Cuál de las siguientes palabras es esdrújula?","Metálico","Impídanselo","Alguacil","Corren",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta24= new Pregunta("¿Cuál es la obra cumbre en la literatura española escrita por Fernando de Rojas?","La Celestina","La Zelestina","Burgos","Madrid",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta25= new Pregunta("¿Cuál de las siguientes obras no pertenece a Stephen King?","El Monte De Las Ánimas","It","El Resplandor","Doctor Sleep",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta26= new Pregunta("¿Quien escribio Doctor Sleep?","Stephen king","Edgar Allan Poe","Jorge Luis Borges","Gabriel García Márquez",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta27= new Pregunta("¿Qué color consigues mezclando todos los colores del CMYK?","Negro","Cafe","Azul","Violeta",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta28= new Pregunta("¿Quién pintó el cuadro La Persistencia de la Memoria?","Dalí","Picasso","Van Gogh","Frederick Valvo",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta29= new Pregunta("¿Cuántos 'gritos' pintó Munch?","Cuatro","Uno","Cinco","Tres",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
+		Pregunta pregunta30= new Pregunta("¿De qué murió Jean Valjean en la novela 'Los Miserables'?","De viejo","Le dispararon","Suicidio","Pena moral",TipoPregunta.DIFICIL,ClasePregunta.ARTE);
 	
-		Pregunta pregunta31= new Pregunta("¿deporte donde solo se toca el balón con las manos y se nete en una canasta?","Baloncesto","Fútbol","hockey","golf",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta32= new Pregunta("¿A qué deporte pertenece la WWE?","Lucha libre","cortar madera","belleza","tecnologia",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta33= new Pregunta("¿Qué deporte estamos viendo si el árbitro señala 'falta de rotación'?","voleibol","fútbol","hockey","baloncesto",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta31= new Pregunta("¿Deporte donde solo se toca el balón con las manos y se mete en una canasta?","Baloncesto","Fútbol","Hockey","Golf",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta32= new Pregunta("¿A qué deporte pertenece la WWE?","Lucha libre","Boxeo","Artes Marciales","Tenis",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta33= new Pregunta("¿Qué deporte estamos viendo si el árbitro señala 'falta de rotación'?","Voleibol","Fútbol","Hockey","Baloncesto",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta34= new Pregunta("¿Cómo se llama el lugar destinado a las carreras de caballos?","Hipódromo","Cuadrilatero","Exagono","Circuito cerrado",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta35= new Pregunta("¿Quién tiene más balones de oro?","Lionel Messi","Cristiano Ronaldo","Roonie","Chicharito",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta36= new Pregunta("Estilo de atletismo en el que los corredores llevan un testigo:","relevo","maratón","waterpolo","ciclismo",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta36= new Pregunta("Estilo de atletismo en el que los corredores llevan un testigo:","Relevo","Naratón","Waterpolo","Ciclismo",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta37= new Pregunta("¿Cuántas Copas del Mundo de Fútbol ha ganado la selección de Italia?","Cuatro","Cinco","Tres","Dos",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
 		Pregunta pregunta38= new Pregunta("¿Cuántos tiempos tiene un partido de baloncesto?","4","3","1","10",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta39= new Pregunta("¿En qué equipo juega Cristiano Ronaldo?","manchester unite","Argentina","Millonarios","Nacional",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
-		Pregunta pregunta40= new Pregunta("¿Cuál de estos partidos de la Liga Española se considera un clásico?","Barsa vs Madrid","Millonarios Vs Nacional","Milan Vs Inter","Manchester United Vs Manchester City",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
-	
+		Pregunta pregunta39= new Pregunta("¿En qué equipo juega Cristiano Ronaldo?","Manchester Unite","Argentina","FC Barcelona","Nacional",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+		Pregunta pregunta40= new Pregunta("¿Cuál de estos partidos de la Liga Española se considera un clásico?","FC Barcelona vs Real Madrid","Millonarios Vs Nacional","Milan Vs Inter","Manchester United Vs Manchester City",TipoPregunta.FACIL,ClasePregunta.DEPORTE);
+	//Voy aca
 		Pregunta pregunta41= new Pregunta("¿Qué duración tiene un partido de fútbol que llega a la tanda de penaltis?","120","110","90","130",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta42= new Pregunta("¿En cuántos mundiales participó la selección de Inglaterra?","14","8","16","20",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
 		Pregunta pregunta43= new Pregunta("¿Con qué deporte relacionarías a Aitor Osa?","Ciclismo","futbol","Baloncesto","Hockey",TipoPregunta.MEDIA,ClasePregunta.DEPORTE);
@@ -528,9 +535,8 @@ public class ModelFactoryController {
 		listaPreguntas.put(180, pregunta180);	
 		juego.setListaPreguntas(listaPreguntas);
 
-	  
-
-		System.out.println("Juego inicializado");
+	   guardarResourceXML();
+	   System.out.println("Juego inicializado");
 
 	}
 
@@ -618,7 +624,9 @@ public class ModelFactoryController {
 	}
 
 	public String eliminarCuenta() {
-		return juego.borrarJugador(jugadorLogueado.getNombre());
+		String mensaje = juego.borrarJugador(jugadorLogueado.getNombre());
+		guardarResourceXML();
+		return mensaje;
 	}
 
 	
