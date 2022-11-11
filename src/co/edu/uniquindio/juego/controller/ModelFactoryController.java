@@ -237,26 +237,26 @@ public class ModelFactoryController {
 		Pregunta pregunta78= new Pregunta("¿Cómo se llama el amigo inseparable de Dora la Exploradora?","Botas","El mapa","Fernando","Zorro",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta79= new Pregunta("¿En qué año nació Michael Jackson?","1958","1978","1968","1948",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta80= new Pregunta("¿Cuál es el nombre del actor que interpreta a Harry Potter?","Daniel Radcliffe","Robbie Coltrane","Richard Harris","Richard Harrison",TipoPregunta.MEDIA,ClasePregunta.ENTRETENIMIENTO);
-	//voy aca
-		Pregunta pregunta81= new Pregunta("¿Cuáles son los nombres de Los Tres Chiflados?","Moe, Larry y Curly","cris, sol y didier","Mae, Larry y Carly","Moe, Peezer y Curly",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta82= new Pregunta("¿Cómo se llamaba el primer gato de Los Simpsons?","Bola de nieve","Nieve ","Snowball","Bolita de nieve",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta83= new Pregunta("¿Qué cantante estuvo saliendo con Selena Gómez?","Justin Bieber","Drake ","Zadd","Charli Puth",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta84= new Pregunta("¿De quién es la canción 'Master of Puppets'?","Metallica","Megadeth","Slayer","Anthrax",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta85= new Pregunta("¿Cómo se llama el personaje malvado de Aladdin?","Jafar","Razoul ","Rajah ","Lago",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta86= new Pregunta("¿De qué color era Clifford, el perro gigante?","Rojo","Marron ","Gris ","Amarillo",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
-		Pregunta pregunta87= new Pregunta("¿Qué es Assasin's Creed?","Un videojuego","Una Serie de Netflixt ","Una Serie de HBO","Una pelicula",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+
+		Pregunta pregunta81= new Pregunta("¿Cuáles son los nombres de Los Tres Chiflados?","Moe, Larry y Curly","Cris, Sol y Didier","Mae, Larry y Carly","Moe, Peezer y Curly",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta82= new Pregunta("¿Cómo se llamaba el primer gato de Los Simpsons?","Bola de nieve","Nieve","Copo de nieve","Bolita de nieve",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta83= new Pregunta("¿Qué cantante estuvo saliendo con Selena Gómez?","Justin Bieber","Drake","Zadd","Charli Puth",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta84= new Pregunta("¿De quién es la canción 'Master of Puppets'?","Metallica","Megadeth","Slipknot","Anthrax",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta85= new Pregunta("¿Cómo se llama el personaje malvado de Aladdin?","Jafar","Razoul","Rajah","Lago",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta86= new Pregunta("¿De qué color era Clifford, el perro gigante?","Rojo","Marron","Gris","Amarillo",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
+		Pregunta pregunta87= new Pregunta("¿Qué es Assasin's Creed?","Un videojuego","Una Serie de Netflix","Una Serie de HBO","Un libro",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta88= new Pregunta("¿En qué año se fundó The Walt Disney Company?","1923","1927","1924","1933",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta89= new Pregunta("¿Qué actor protagonizó la película Grease?","John Travolta","Barry Pearl","Jeff Conaway","Jamie Donnelly",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
 		Pregunta pregunta90= new Pregunta("¿Quién es Mario Casas?","Un actor","Presentador de Tv","Fisico Mexicano","Atleta",TipoPregunta.DIFICIL,ClasePregunta.ENTRETENIMIENTO);
 	
-		Pregunta pregunta91= new Pregunta("¿Cuál es la capital de Uruguay?","Montevideo","Asuncion ","Santiago ","Lima",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
-		Pregunta pregunta92= new Pregunta("¿Dónde se encuentra el río Nilo?","En África","En Irak","En America ","Sur de europa",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
-		Pregunta pregunta93= new Pregunta("¿Cuál es el idioma tradicional en Bulgaria?","Búlgaro","Ingles ","Eslavo ","Aleman",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
+		Pregunta pregunta91= new Pregunta("¿Cuál es la capital de Uruguay?","Montevideo","Asuncion","Santiago","Lima",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
+		Pregunta pregunta92= new Pregunta("¿Dónde se encuentra el río Nilo?","En África","En Irak","En America","Sur de europa",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
+		Pregunta pregunta93= new Pregunta("¿Cuál es el idioma tradicional en Bulgaria?","Búlgaro","Ingles","Eslavo","Aleman",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
 		Pregunta pregunta94= new Pregunta("¿Con cuál de los siguientes países NO limita Colombia?","Guayana","Panama","Brasil","Peru",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
 		Pregunta pregunta95= new Pregunta("¿Dónde está la torre Eiffel?","En París","En Roma","En Madrid ","En Barcelona",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
 		Pregunta pregunta96= new Pregunta("¿A qué continente pertenece Islandia?","Europa","Asia","Africa","Oceania",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
-		Pregunta pregunta97= new Pregunta("¿Dónde se encuentra Irak?","Asia","Norte de Africa","Sur de Europa"," Al SudoEste de Rusia",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
-		Pregunta pregunta98= new Pregunta("¿Qué país tiene más territorio en la Amazonía?","Brasil","Peru y Colombia ","Bolivia","Colombia",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
+		Pregunta pregunta97= new Pregunta("¿Dónde se encuentra Irak?","Asia","Norte de Africa","Sur de Europa","Al SudoEste de Rusia",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
+		Pregunta pregunta98= new Pregunta("¿Qué país tiene más territorio en la Amazonía?","Brasil","Peru","Bolivia","Colombia",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
 		Pregunta pregunta99= new Pregunta("¿En qué continente apareció el Ébola?","En África","Oceania","Asia","Europa",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
 		Pregunta pregunta100= new Pregunta("¿A qué continente pertenece Ecuador?","América","Norte America","Asia","Oceania",TipoPregunta.FACIL,ClasePregunta.GEOGRAFIA);
 
@@ -265,8 +265,8 @@ public class ModelFactoryController {
 		Pregunta pregunta103= new Pregunta("¿Cuál es el sexto país más grande el mundo?","Australia","Brasil","Argentina","India",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
 		Pregunta pregunta104= new Pregunta("¿Cuál de los siguientes países no es de Europa?","Nigeria" ,"Monaco","Luxemburgo","Liechtenstein",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
 		Pregunta pregunta105= new Pregunta("¿Cuáles son los colores de la bandera de Panamá?","Azul, blanco y oro","Azul marino, blanco y Amarillo ","Azul, Rojo y Blanco","Blanco, rojo y oro",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
-		Pregunta pregunta106= new Pregunta("¿Cuál fue la primera capital de Costa Rica?","Cartago","San Jose ","Herida","Puntarena",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
-		Pregunta pregunta107= new Pregunta("¿En qué provincia de Argentina se encuentra el obelisco?","Buenos Aires","Santiago de Chile","Mar de Plata ","Ciudad de Cordoba",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
+		Pregunta pregunta106= new Pregunta("¿Cuál fue la primera capital de Costa Rica?","Cartago","San Jose","Herida","Puntarena",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
+		Pregunta pregunta107= new Pregunta("¿En qué provincia de Argentina se encuentra el obelisco?","Buenos Aires","Santiago de Chile","Mar de Plata","Ciudad de Cordoba",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
 		Pregunta pregunta108= new Pregunta("¿Dónde queda Panamá?","América Central","Al suroeste de Mexico","Sur America","Al nororiente de Colombia ",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
 		Pregunta pregunta109= new Pregunta("¿Cuál es el país de origen de la galletita pretzel?","Alemania","Rusia","Bielorrusia","Francia",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
 		Pregunta pregunta110= new Pregunta("¿Cuál es la ciudad más poblada de Oceanía?","Sidney","AucKland","Suva","Port Vila",TipoPregunta.MEDIA,ClasePregunta.GEOGRAFIA);
@@ -278,7 +278,7 @@ public class ModelFactoryController {
 		Pregunta pregunta115= new Pregunta("¿De dónde es el queso D.O. Idiazábal?","Gipuzkoa","Astorga","Belmonte","Almagro",TipoPregunta.DIFICIL,ClasePregunta.GEOGRAFIA);
 		Pregunta pregunta116= new Pregunta("¿En qué ciudad se encuentra el museo San Telmo?","Donostia","Villabona","Hondarribia","Zarautz",TipoPregunta.DIFICIL,ClasePregunta.GEOGRAFIA);
 		Pregunta pregunta117= new Pregunta("¿Desde qué ciudad de España puedes ver el monte llamado Mujer Muerta Jebel Musa?","Ceuta","Tarifa","Marfil","Algeciras",TipoPregunta.DIFICIL,ClasePregunta.GEOGRAFIA);
-		Pregunta pregunta118= new Pregunta("¿Cuál de los siguientes colores es el menos frecuente en las banderas de los países árabes?","Amarillo, marron, blanco","Blanco, verde y negro","blanco, rojo y negro","blanco, marron y rojo",TipoPregunta.DIFICIL,ClasePregunta.GEOGRAFIA);
+		Pregunta pregunta118= new Pregunta("¿Cuáles de los siguientes colores son los menos frecuentes en las banderas de los países árabes?","Amarillo, marron, blanco","Blanco, verde y negro","blanco, rojo y negro","blanco, marron y rojo",TipoPregunta.DIFICIL,ClasePregunta.GEOGRAFIA);
 		Pregunta pregunta119= new Pregunta("¿Cuál de estas ciudades no es de Argentina?","Cali","Cordoba","Santa Fe","Mar de plata",TipoPregunta.DIFICIL,ClasePregunta.GEOGRAFIA);
 		Pregunta pregunta120= new Pregunta("¿A qué país pertenece Gibraltar?","Reino Unido","Letonia","Rumania","Armenia",TipoPregunta.DIFICIL,ClasePregunta.GEOGRAFIA);
 		
@@ -297,9 +297,9 @@ public class ModelFactoryController {
 		Pregunta pregunta131= new Pregunta("¿Cuál es la comida típica madrileña?","El cocido","Callos","Roscas","Bocadillo de calamares",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
 		Pregunta pregunta132= new Pregunta("¿Cómo pasó a llamarse el Imperio Austríaco tras la revolución de 1848?","Imperio Austrohúngaro","Imperio húngaro","Imperio Nordico","Imperio Austriaco",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
 		Pregunta pregunta133= new Pregunta("¿Qué ciudad quedó partida en dos tras la Segunda Guerra Mundial?","Berlín","Volgogrado","Foggia","Turin",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
-		Pregunta pregunta134= new Pregunta("¿Cuál fue el faraón que reinó durante 66 años en Egipto?","Ramsés II","Razan","Cleopatra VII","Akenaton",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
+		Pregunta pregunta134= new Pregunta("¿Cuál fue el faraón que reinó durante 66 años en Egipto?","Ramsés II","Razan","Cleopatra VII","Tutankamon",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
 		Pregunta pregunta135= new Pregunta("¿Quién fue el autor de la frase 'Puedo comprar a todos los hombres del mundo'?","Howard Hughes","Noah Dietrich","Robert Maheu","Franklin D. Roosevelt",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
-		Pregunta pregunta136= new Pregunta("¿Cuántos meses duró la batalla de Stalingrado en la Segunda Guerra Mundial?","Seis meses","Siete meses","9 meses","3 meses",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
+		Pregunta pregunta136= new Pregunta("¿Cuántos meses duró la batalla de Stalingrado en la Segunda Guerra Mundial?","Seis meses","Siete meses","Nueve meses","Tres meses",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
 		Pregunta pregunta137= new Pregunta("Según el Libro Guiness de los récords, ¿cuánto tiempo duró la guerra más corta de la historia?","45 minutos","3 meses","24 horas","2 semanas",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
 		Pregunta pregunta138= new Pregunta("¿Quién fue Luís XIV?","Rey de Francia","Dictador Frances","Rey de Roma","Virrey Español",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
 		Pregunta pregunta139= new Pregunta("¿Quién dijo la famosa frase 'La suerte está echada'?","Julio César","Lucio Cornelio Cinna","Marco Minucio Termo","Aurelio Cota",TipoPregunta.MEDIA,ClasePregunta.HISTORIA);
@@ -311,38 +311,38 @@ public class ModelFactoryController {
 		Pregunta pregunta144= new Pregunta("¿Por cuánto vendió Rusia a Alaska a los Estados Unidos?","7,2 millones de dólares","7200 millones de dólares","720 millones de dólares","72 millones de dolares",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta145= new Pregunta("¿Cuándo fue el periodo de la guerra de África?","De 1859 a 1860","De 1859 a 1861","De 1858 a 1860","De 1859 a 1862",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta146= new Pregunta("¿Cómo se llamaba el caballo de Alejandro Magno?","Bucéfalo","Rocinante","Pegaso","Babieca",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
-		Pregunta pregunta147= new Pregunta("¿De qué color eran los permisos de conducir en en el año 2003?","Rosa","Rojo","Fucsia","Marron",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
+		Pregunta pregunta147= new Pregunta("En España, ¿De qué color eran los permisos de conducir en en el año 2003?","Rosa","Rojo","Fucsia","Marron",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta148= new Pregunta("¿A quién mató el anarquista Angiolillo?","Cánovas del Castillo","Práxedes Mateo Sagasta","Serafín Estébanez Calderón","Arsenio Martínez Campos",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta149= new Pregunta("La fiebre del oro fue un período de migraciones hacia áreas rurales para explorar oro. ¿Dónde se produjo las más famosa?","California","Alaska","Klondike","Norte de nevada",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 		Pregunta pregunta150= new Pregunta("¿Qué conquistador y explorador, cuyos restos momificados se exhibieron en Perú, fue asesinado por sus propios hombres?","Francisco Pizarro","Lope de Aguirre","Hernando Pizarro","Diego de Almagro",TipoPregunta.DIFICIL,ClasePregunta.HISTORIA);
 	
 		Pregunta pregunta151= new Pregunta("¿Alberto, Benjamín y Carlota hicieron un total de 20 sándwiches,Benjamín hizo 3 veces más que Alberto, y Carlota hizo el doble que Benjamín.¿Cuántos sándwiches hizo Alberto?","2","3","5","4",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta152= new Pregunta("Si 10 + x es 5 más que 10, ¿cuál es el valor de 2x?","10","5","15","7.5",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta153= new Pregunta("Cuál es la representación gráfica del número nueve mil treinta y seis","9036","9360","90306","9336",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta154= new Pregunta("A cuántas unidades equivale 10 decenas de millar","100000 unidades","99999 unidades","10000 unidades","1000000 unidades",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta155= new Pregunta("Aproxima el número 58 a la decena","60","50","68","65",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta152= new Pregunta("Si 10 + X es 5 más que 10, ¿Cuál es el valor de 2X?","10","5","15","7.5",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta153= new Pregunta("¿Cuál es la representación gráfica del número nueve mil treinta y seis?","9036","9360","90306","9336",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta154= new Pregunta("¿A cuántas unidades equivale 10 decenas de millar?","100000 unidades","99999 unidades","10000 unidades","1000000 unidades",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta155= new Pregunta("Aproxima el número 58 a la decena mas cercana","60","50","68","65",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
 		Pregunta pregunta156= new Pregunta("Escribe el número ordinal trigésimo quinto en cifras","35","57","39","30",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta157= new Pregunta("¿Qué número resulta si divides 56 entre 7","8","6","7","7,28",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta158= new Pregunta("Si en una carrera vas tres puestos por detrás del vigésimo segundo, ¿en qué puesto vas?","Decimonoveno","Noveno","Decimotercero","Onceavo",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta159= new Pregunta("Cómo se llama el polígono de siete lados","Septágono","Octagono","Pentagono","Nonagono",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta160= new Pregunta(" Cuál es el resultado de multiplicar 7x9","63","67","64","73",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta157= new Pregunta("¿Qué número resulta si divides 56 entre 7?","8","6","7","7,28",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta158= new Pregunta("Si en una carrera vas tres puestos por delante del vigésimo segundo, ¿En qué puesto vas?","Decimonoveno","Noveno","Decimotercero","Onceavo",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta159= new Pregunta("¿Cómo se llama un polígono de siete lados?","Septágono","Octagono","Pentagono","Nonagono",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta160= new Pregunta("¿Cuál es el resultado de multiplicar 7x9?","63","67","64","73",TipoPregunta.FACIL,ClasePregunta.MATEMATICA);
 		
 		Pregunta pregunta161= new Pregunta("En una panadería con 80 kg de harina son capaces de hacer 120 kg de pan. ¿Cuántos kg de harina serán necesarios para hacer 99 kg de pan?","66 kg de harina","67 kg de harina","64 kg de harina","73 kg de harina",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
-		Pregunta pregunta162= new Pregunta("Dos ruedas están unidas por una correa de transmisión. La primera tiene un radio de 25 cm y la segunda de 75 cm. Cuando la primera ha dado 300 vueltas. ¿Cuántas vueltas dará la segunda?","100 vueltas","121 vueltas","127 vueltas","99 vueltas",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+		Pregunta pregunta162= new Pregunta("Dos ruedas están unidas por una correa de transmisión. La primera tiene un radio de 25 cm y la segunda de 75 cm. Cuando la primera haya dado 300 vueltas. ¿Cuántas vueltas habra dado la segunda?","100 vueltas","121 vueltas","127 vueltas","99 vueltas",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
 		Pregunta pregunta163= new Pregunta("¿Cuánto es la cuarta parte de la tercera parte?","Un doceavo","Tres cuartos","Un noveno ","Un septimo",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
 		Pregunta pregunta164= new Pregunta("Seis personas pueden vivir en un hotel durante 12 días por 792 euros. ¿Cuánto costará el hotel de 15 personas durante 8 días?","1320 euros","1239 euros","1327 euros","1289 euros",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
 		Pregunta pregunta165= new Pregunta("¿Cuanto es 1257+12-504*0 ?","0","200","100","10",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
-		Pregunta pregunta166= new Pregunta("¿Cómo se llama a un poliedro de 20 caras?","icosaedro","tetradecaedro","hectaedro","pentadecaedro",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+		Pregunta pregunta166= new Pregunta("¿Cómo se llama a un poliedro de 20 caras?","Icosaedro","Tetradecaedro","Hectaedro","Pentadecaedro",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
 		Pregunta pregunta167= new Pregunta("Si 8 litros de aceite valen 60 euros. ¿Cuántos litros compraré con 15 euros?","2 litros de aceite","2,5 litros de aceite","2,7 litros de aceite","2,8 litros de aceite",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
-		Pregunta pregunta168= new Pregunta("¿Cuánto habrá que rebajar un producto para que valga lo mismo que valía antes de que incrementase un 25% su precio?","un 20%","un 23%","un 25%","un 22%",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
-		Pregunta pregunta169= new Pregunta("En un torneo de tenis, el jugador que pierde se vuelve a casa. Cuántos jugadores iniciaron este torneo si desde la ronda preliminar hasta la final se han jugado 128 partidos","129","67","64","128",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+		Pregunta pregunta168= new Pregunta("¿Cuánto habrá que rebajar un producto para que valga lo mismo que valía antes de que incrementase un 25% su precio?","Un 20%","Un 23%","Un 25%","Un 22%",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
+		Pregunta pregunta169= new Pregunta("En un torneo de tenis, el jugador que pierde vuelve a casa ¿Cuántos jugadores iniciaron este torneo si desde la ronda preliminar hasta la final se han jugado 128 partidos?","129","67","64","128",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
 		Pregunta pregunta170= new Pregunta("Tengo 20 metros de cinta roja para hacer lazos en unos paquetes de regalo idénticos. Para cada lazo necesito 50 centímetros de cinta. ¿Cuántos lazos puedo hacer?","40 lazos","47 lazos","50 lazos","39 lazos",TipoPregunta.MEDIA,ClasePregunta.MATEMATICA);
 	
-		Pregunta pregunta171= new Pregunta("¿Cuál es la función inversa de y=sen.x?","y=arc. sen x","y = arccsc(x)","x = tan(y)","x = csc(y)",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta172= new Pregunta("¿Cómo se llaman los triángulos con dos los lados iguales y uno desigual?","Isósceles","icosaedro","escaleno","Equilatero",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta171= new Pregunta("¿Cuál es la función inversa de y=sen(X)?","y=arcsen (X)","y = arccsc(X)","X = tan(y)","X = csc(y)",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta172= new Pregunta("¿Cómo se llaman los triángulos con dos los lados iguales y uno desigual?","Isósceles","Icosaedro","Escaleno","Equilatero",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
 		Pregunta pregunta173= new Pregunta("El monstruo del lago Ness mide 80 metros más la mitad de lo que mide, ¿cuánto mide el monstruo del lago Ness?","160 metros","173 metos","178 metros","167 metros ",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
 		Pregunta pregunta174= new Pregunta("Adivina cuántos años tengo sabiendo que la tercera parte de ellos menos 1 es igual a la sexta parte","6","13","7","9",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta175= new Pregunta("¿A cuánto equivale pi?","3.1415","3.1416","3.1514","3.1418",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta175= new Pregunta("¿A cuánto equivale pi hasta sus cuatro primeros decimales?","3.1415","3.1416","3.1514","3.1418",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
 		Pregunta pregunta176= new Pregunta("¿Qué formula es esta? S = π x R²","Superficie de un circulo","Radio de un circulo","Area de un circulo","perimetro de un cubo",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
 		Pregunta pregunta177= new Pregunta("Por un bolso hemos pagado 50 euros, más el 21% de IVA. ¿Cuánto hemos tenido que pagar en total?","60,50","59.80","64,79","61,35",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
 		Pregunta pregunta178= new Pregunta("¿Qué expresa esta formula? e = mc²","equivalente entre masa y energía","Energia cinetica","64","Constante de Coulomb",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
