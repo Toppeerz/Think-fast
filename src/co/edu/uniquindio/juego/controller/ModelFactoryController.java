@@ -343,7 +343,7 @@ public class ModelFactoryController {
 		Pregunta pregunta173= new Pregunta("El monstruo del lago Ness mide 80 metros más la mitad de lo que mide, ¿cuánto mide el monstruo del lago Ness?","160 metros","173 metos","178 metros","167 metros ",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
 		Pregunta pregunta174= new Pregunta("Adivina cuántos años tengo sabiendo que la tercera parte de ellos menos 1 es igual a la sexta parte","6","13","7","9",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
 		Pregunta pregunta175= new Pregunta("¿A cuánto equivale pi hasta sus cuatro primeros decimales?","3.1415","3.1416","3.1514","3.1418",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
-		Pregunta pregunta176= new Pregunta("¿Qué formula es esta? S = π x R²","Superficie de un circulo","Radio de un circulo","Area de un circulo","perimetro de un cubo",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
+		Pregunta pregunta176= new Pregunta("¿Qué formula es esta? S = π x R²","Superficie de un circulo","Radio de un circulo","Area de un circulo","Perimetro de un cubo",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
 		Pregunta pregunta177= new Pregunta("Por un bolso hemos pagado 50 euros, más el 21% de IVA. ¿Cuánto hemos tenido que pagar en total?","60,50","59.80","64,79","61,35",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
 		Pregunta pregunta178= new Pregunta("¿Qué expresa esta formula? e = mc²","equivalente entre masa y energía","Energia cinetica","64","Constante de Coulomb",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);
 		Pregunta pregunta179= new Pregunta("Una rueda de un coche da 4590 vueltas en 9 minutos. ¿Cuántas vueltas dará en 24 horas y 24 minutos?","746640","746646","746648","744640",TipoPregunta.DIFICIL,ClasePregunta.MATEMATICA);

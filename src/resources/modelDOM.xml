@@ -145,10 +145,6 @@
       <clasePregunta>ARTE</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Sicarios</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Mineros</textoRespuesta>
           <correcta>true</correcta>
         </respuesta>
@@ -158,6 +154,10 @@
         </respuesta>
         <respuesta>
           <textoRespuesta>Strepers</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Sicarios</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -214,7 +214,11 @@
       <clasePregunta>ARTE</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Doki</textoRespuesta>
+          <textoRespuesta>El Perfume</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Game of Thrones</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
@@ -222,11 +226,7 @@
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>El Perfume</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Game of Thrones</textoRespuesta>
+          <textoRespuesta>Doki</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -237,15 +237,15 @@
       <clasePregunta>ARTE</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Oscuro</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Real magico</textoRespuesta>
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Macabro</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Oscuro</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
@@ -260,10 +260,6 @@
       <clasePregunta>ARTE</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Gaia</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Atenea</textoRespuesta>
           <correcta>true</correcta>
         </respuesta>
@@ -273,6 +269,10 @@
         </respuesta>
         <respuesta>
           <textoRespuesta>Nemesís</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Gaia</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -306,19 +306,19 @@
       <clasePregunta>ARTE</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Y le abre la cabeza</textoRespuesta>
-          <correcta>false</correcta>
+          <textoRespuesta>Y esconde la mano</textoRespuesta>
+          <correcta>true</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Y corre</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Y esconde la mano</textoRespuesta>
-          <correcta>true</correcta>
+          <textoRespuesta>Y esconde la piedra</textoRespuesta>
+          <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Y esconde la piedra</textoRespuesta>
+          <textoRespuesta>Y le abre la cabeza</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -398,7 +398,11 @@
       <clasePregunta>ARTE</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Bateria</textoRespuesta>
+          <textoRespuesta>Bajo</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Guitarra</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
@@ -406,12 +410,8 @@
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Guitarra</textoRespuesta>
+          <textoRespuesta>Bateria</textoRespuesta>
           <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Bajo</textoRespuesta>
-          <correcta>true</correcta>
         </respuesta>
       </respuestas>
     </pregunta>
@@ -559,19 +559,19 @@
       <clasePregunta>ARTE</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>El Monte De Las Ánimas</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>It</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>El Resplandor</textoRespuesta>
-          <correcta>false</correcta>
+          <textoRespuesta>El Monte De Las Ánimas</textoRespuesta>
+          <correcta>true</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Doctor Sleep</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>El Resplandor</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -582,19 +582,19 @@
       <clasePregunta>ARTE</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Stephen king</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Edgar Allan Poe</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Jorge Luis Borges</textoRespuesta>
-          <correcta>false</correcta>
+          <textoRespuesta>Stephen king</textoRespuesta>
+          <correcta>true</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Gabriel García Márquez</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Jorge Luis Borges</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -701,7 +701,7 @@
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Fútbol</textoRespuesta>
+          <textoRespuesta>Golf</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
@@ -709,7 +709,7 @@
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Golf</textoRespuesta>
+          <textoRespuesta>Fútbol</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -977,7 +977,7 @@
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Hockey</textoRespuesta>
+          <textoRespuesta>Futbol</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
@@ -985,7 +985,7 @@
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Futbol</textoRespuesta>
+          <textoRespuesta>Hockey</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -1000,16 +1000,16 @@
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
+          <textoRespuesta>España</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
           <textoRespuesta>Colombia</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Brasil</textoRespuesta>
           <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>España</textoRespuesta>
-          <correcta>true</correcta>
         </respuesta>
       </respuestas>
     </pregunta>
@@ -1019,7 +1019,11 @@
       <clasePregunta>DEPORTE</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>2.20 metros</textoRespuesta>
+          <textoRespuesta>1.20 metros</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>2.00 metros</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
@@ -1027,11 +1031,7 @@
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>1.20 metros</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>2.00 metros</textoRespuesta>
+          <textoRespuesta>2.20 metros</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -1065,20 +1065,20 @@
       <clasePregunta>DEPORTE</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Touchdown</textoRespuesta>
-          <correcta>true</correcta>
+          <textoRespuesta>Anotacion</textoRespuesta>
+          <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Gol</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Anotacion</textoRespuesta>
+          <textoRespuesta>Entrada</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Entrada</textoRespuesta>
-          <correcta>false</correcta>
+          <textoRespuesta>Touchdown</textoRespuesta>
+          <correcta>true</correcta>
         </respuesta>
       </respuestas>
     </pregunta>
@@ -1111,19 +1111,19 @@
       <clasePregunta>DEPORTE</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Uno</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Cinco</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Tres</textoRespuesta>
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
+          <textoRespuesta>Uno</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
           <textoRespuesta>Dos</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Cinco</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -1138,11 +1138,11 @@
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Voleibol</textoRespuesta>
+          <textoRespuesta>Natacion</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Natacion</textoRespuesta>
+          <textoRespuesta>Voleibol</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
@@ -1230,15 +1230,15 @@
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
+          <textoRespuesta>Carlos</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
           <textoRespuesta>Didier</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Cristian</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Carlos</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -1257,11 +1257,11 @@
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Alemania</textoRespuesta>
+          <textoRespuesta>Brasil</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Brasil</textoRespuesta>
+          <textoRespuesta>Alemania</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -1295,10 +1295,6 @@
       <clasePregunta>DEPORTE</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>6-0</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Un pan</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
@@ -1309,6 +1305,10 @@
         <respuesta>
           <textoRespuesta>Fuera de lugar</textoRespuesta>
           <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>6-0</textoRespuesta>
+          <correcta>true</correcta>
         </respuesta>
       </respuestas>
     </pregunta>
@@ -1341,12 +1341,12 @@
       <clasePregunta>DEPORTE</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Waterpolo</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Natación</textoRespuesta>
           <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Waterpolo</textoRespuesta>
+          <correcta>true</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Kitesurf</textoRespuesta>
@@ -1387,19 +1387,19 @@
       <clasePregunta>ENTRETENIMIENTO</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Piña</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Manzana</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Banana</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Coco</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Piña</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Manzana</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -1437,11 +1437,11 @@
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Rojas</textoRespuesta>
+          <textoRespuesta>Azules</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Azules</textoRespuesta>
+          <textoRespuesta>Rojas</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
@@ -1479,19 +1479,19 @@
       <clasePregunta>ENTRETENIMIENTO</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Sirenita</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Hercules</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Blancanieves</textoRespuesta>
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
+          <textoRespuesta>Sirenita</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
           <textoRespuesta>Pocajontas</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Hercules</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -1502,16 +1502,16 @@
       <clasePregunta>ENTRETENIMIENTO</clasePregunta>
       <respuestas>
         <respuesta>
+          <textoRespuesta>Doraemon</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
           <textoRespuesta>Naruto</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Naguisa</textoRespuesta>
           <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Doraemon</textoRespuesta>
-          <correcta>true</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Lufi</textoRespuesta>
@@ -1525,16 +1525,16 @@
       <clasePregunta>ENTRETENIMIENTO</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Buzz Lightyear</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Hamm el cerdito</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Rex</textoRespuesta>
           <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Buzz Lightyear</textoRespuesta>
+          <correcta>true</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Señor cara de papa</textoRespuesta>
@@ -1548,19 +1548,19 @@
       <clasePregunta>ENTRETENIMIENTO</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Magneto</textoRespuesta>
-          <correcta>true</correcta>
+          <textoRespuesta>Acertijo</textoRespuesta>
+          <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>El Pingüino</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Joker</textoRespuesta>
-          <correcta>false</correcta>
+          <textoRespuesta>Magneto</textoRespuesta>
+          <correcta>true</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Acertijo</textoRespuesta>
+          <textoRespuesta>Joker</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -1644,15 +1644,15 @@
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
+          <textoRespuesta>Yoshi</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
           <textoRespuesta>Toad</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Browser</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Yoshi</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -1847,16 +1847,16 @@
       <clasePregunta>ENTRETENIMIENTO</clasePregunta>
       <respuestas>
         <respuesta>
+          <textoRespuesta>Moe, Larry y Curly</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
           <textoRespuesta>Cris, Sol y Didier</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Mae, Larry y Carly</textoRespuesta>
           <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Moe, Larry y Curly</textoRespuesta>
-          <correcta>true</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Moe, Peezer y Curly</textoRespuesta>
@@ -1893,19 +1893,19 @@
       <clasePregunta>ENTRETENIMIENTO</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Justin Bieber</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Drake</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Zadd</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
+          <textoRespuesta>Justin Bieber</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
           <textoRespuesta>Charli Puth</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Drake</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -1916,19 +1916,19 @@
       <clasePregunta>ENTRETENIMIENTO</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Metallica</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Megadeth</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Slipknot</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Anthrax</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Metallica</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Megadeth</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -2031,19 +2031,19 @@
       <clasePregunta>ENTRETENIMIENTO</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>John Travolta</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Barry Pearl</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Jeff Conaway</textoRespuesta>
+          <textoRespuesta>Jamie Donnelly</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Jamie Donnelly</textoRespuesta>
+          <textoRespuesta>John Travolta</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Jeff Conaway</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -2054,11 +2054,7 @@
       <clasePregunta>ENTRETENIMIENTO</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Un actor</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Presentador de Tv</textoRespuesta>
+          <textoRespuesta>Atleta</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
@@ -2066,8 +2062,12 @@
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Atleta</textoRespuesta>
+          <textoRespuesta>Presentador de Tv</textoRespuesta>
           <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Un actor</textoRespuesta>
+          <correcta>true</correcta>
         </respuesta>
       </respuestas>
     </pregunta>
@@ -2307,19 +2307,19 @@
       <clasePregunta>GEOGRAFIA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Colón costarricense</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Peso costarricense</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Dolar</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
+          <textoRespuesta>Colón costarricense</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
           <textoRespuesta>Quetzal</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Peso costarricense</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -2353,7 +2353,11 @@
       <clasePregunta>GEOGRAFIA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>India</textoRespuesta>
+          <textoRespuesta>Australia</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Brasil</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
@@ -2361,11 +2365,7 @@
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Australia</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Brasil</textoRespuesta>
+          <textoRespuesta>India</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -2449,15 +2449,15 @@
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Santiago de Chile</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Mar de Plata</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Ciudad de Cordoba</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Santiago de Chile</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -2583,19 +2583,19 @@
       <clasePregunta>GEOGRAFIA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Filipinas</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Tailandia</textoRespuesta>
           <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Irlanda</textoRespuesta>
+          <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Indionesia</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Irlanda</textoRespuesta>
+          <textoRespuesta>Filipinas</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -2606,19 +2606,19 @@
       <clasePregunta>GEOGRAFIA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Marseille</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Moustiers-Sainte-Marie</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Piana</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
+          <textoRespuesta>Marseille</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
           <textoRespuesta>Alpes de Alta Provenza</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Moustiers-Sainte-Marie</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -2675,11 +2675,11 @@
       <clasePregunta>GEOGRAFIA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Tarifa</textoRespuesta>
-          <correcta>false</correcta>
+          <textoRespuesta>Ceuta</textoRespuesta>
+          <correcta>true</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Algeciras</textoRespuesta>
+          <textoRespuesta>Tarifa</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
@@ -2687,8 +2687,8 @@
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Ceuta</textoRespuesta>
-          <correcta>true</correcta>
+          <textoRespuesta>Algeciras</textoRespuesta>
+          <correcta>false</correcta>
         </respuesta>
       </respuestas>
     </pregunta>
@@ -2697,6 +2697,10 @@
       <tipoPregunta>DIFICIL</tipoPregunta>
       <clasePregunta>GEOGRAFIA</clasePregunta>
       <respuestas>
+        <respuesta>
+          <textoRespuesta>Amarillo, marron, blanco</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
         <respuesta>
           <textoRespuesta>Blanco, verde y negro</textoRespuesta>
           <correcta>false</correcta>
@@ -2709,10 +2713,6 @@
           <textoRespuesta>blanco, marron y rojo</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
-        <respuesta>
-          <textoRespuesta>Amarillo, marron, blanco</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
       </respuestas>
     </pregunta>
     <pregunta>
@@ -2721,19 +2721,19 @@
       <clasePregunta>GEOGRAFIA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Cali</textoRespuesta>
-          <correcta>true</correcta>
+          <textoRespuesta>Mar de plata</textoRespuesta>
+          <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Cordoba</textoRespuesta>
-          <correcta>false</correcta>
+          <textoRespuesta>Cali</textoRespuesta>
+          <correcta>true</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Santa Fe</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Mar de plata</textoRespuesta>
+          <textoRespuesta>Cordoba</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -2997,19 +2997,19 @@
       <clasePregunta>HISTORIA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Callos</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>El cocido</textoRespuesta>
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Bocadillo de calamares</textoRespuesta>
+          <textoRespuesta>Callos</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Roscas</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Bocadillo de calamares</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -3066,15 +3066,15 @@
       <clasePregunta>HISTORIA</clasePregunta>
       <respuestas>
         <respuesta>
+          <textoRespuesta>Cleopatra VII</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
           <textoRespuesta>Ramsés II</textoRespuesta>
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Razan</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Cleopatra VII</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
@@ -3089,20 +3089,20 @@
       <clasePregunta>HISTORIA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Howard Hughes</textoRespuesta>
-          <correcta>true</correcta>
+          <textoRespuesta>Robert Maheu</textoRespuesta>
+          <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Noah Dietrich</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Robert Maheu</textoRespuesta>
+          <textoRespuesta>Franklin D. Roosevelt</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Franklin D. Roosevelt</textoRespuesta>
-          <correcta>false</correcta>
+          <textoRespuesta>Howard Hughes</textoRespuesta>
+          <correcta>true</correcta>
         </respuesta>
       </respuestas>
     </pregunta>
@@ -3112,19 +3112,19 @@
       <clasePregunta>HISTORIA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Seis meses</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Siete meses</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Nueve meses</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Tres meses</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Seis meses</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Siete meses</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -3158,19 +3158,19 @@
       <clasePregunta>HISTORIA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Rey de Roma</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Rey de Francia</textoRespuesta>
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Virrey Español</textoRespuesta>
+          <textoRespuesta>Dictador Frances</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Dictador Frances</textoRespuesta>
+          <textoRespuesta>Rey de Roma</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Virrey Español</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -3181,20 +3181,20 @@
       <clasePregunta>HISTORIA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Marco Minucio Termo</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Aurelio Cota</textoRespuesta>
-          <correcta>false</correcta>
+          <textoRespuesta>Julio César</textoRespuesta>
+          <correcta>true</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Lucio Cornelio Cinna</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Julio César</textoRespuesta>
-          <correcta>true</correcta>
+          <textoRespuesta>Marco Minucio Termo</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Aurelio Cota</textoRespuesta>
+          <correcta>false</correcta>
         </respuesta>
       </respuestas>
     </pregunta>
@@ -3250,19 +3250,19 @@
       <clasePregunta>HISTORIA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Joseph Goebels</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Adolf Hitler</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Gregor Strasser</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta> Max Wilhelm Kimmich</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Joseph Goebels</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Adolf Hitler</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -3273,16 +3273,16 @@
       <clasePregunta>HISTORIA</clasePregunta>
       <respuestas>
         <respuesta>
+          <textoRespuesta>Alea iacta est</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
           <textoRespuesta>In medio virtus</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Clavum clavo expellere</textoRespuesta>
           <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Alea iacta est</textoRespuesta>
-          <correcta>true</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Cogito, ergo sum</textoRespuesta>
@@ -3304,11 +3304,11 @@
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>720 millones de dólares</textoRespuesta>
+          <textoRespuesta>72 millones de dolares</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>72 millones de dolares</textoRespuesta>
+          <textoRespuesta>720 millones de dólares</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -3319,19 +3319,19 @@
       <clasePregunta>HISTORIA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>De 1859 a 1861</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>De 1858 a 1860</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>De 1859 a 1860</textoRespuesta>
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>De 1859 a 1862</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>De 1859 a 1861</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>De 1858 a 1860</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -3392,11 +3392,11 @@
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Práxedes Mateo Sagasta</textoRespuesta>
+          <textoRespuesta>Serafín Estébanez Calderón</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Serafín Estébanez Calderón</textoRespuesta>
+          <textoRespuesta>Práxedes Mateo Sagasta</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
@@ -3415,15 +3415,15 @@
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
+          <textoRespuesta>Alaska</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
           <textoRespuesta>Klondike</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Norte de nevada</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Alaska</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -3779,20 +3779,20 @@
       <clasePregunta>MATEMATICA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>0</textoRespuesta>
-          <correcta>true</correcta>
+          <textoRespuesta>100</textoRespuesta>
+          <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>200</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>100</textoRespuesta>
+          <textoRespuesta>10</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>10</textoRespuesta>
-          <correcta>false</correcta>
+          <textoRespuesta>0</textoRespuesta>
+          <correcta>true</correcta>
         </respuesta>
       </respuestas>
     </pregunta>
@@ -3917,10 +3917,6 @@
       <clasePregunta>MATEMATICA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>X = csc(y)</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>y=arcsen (X)</textoRespuesta>
           <correcta>true</correcta>
         </respuesta>
@@ -3932,6 +3928,10 @@
           <textoRespuesta>X = tan(y)</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
+        <respuesta>
+          <textoRespuesta>X = csc(y)</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
       </respuestas>
     </pregunta>
     <pregunta>
@@ -3940,12 +3940,12 @@
       <clasePregunta>MATEMATICA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Icosaedro</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Isósceles</textoRespuesta>
           <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Icosaedro</textoRespuesta>
+          <correcta>false</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>Escaleno</textoRespuesta>
@@ -4009,19 +4009,19 @@
       <clasePregunta>MATEMATICA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>3.1415</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>3.1416</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>3.1514</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
+          <textoRespuesta>3.1415</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
           <textoRespuesta>3.1418</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>3.1416</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -4032,6 +4032,10 @@
       <clasePregunta>MATEMATICA</clasePregunta>
       <respuestas>
         <respuesta>
+          <textoRespuesta>Superficie de un circulo</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
           <textoRespuesta>Radio de un circulo</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
@@ -4040,11 +4044,7 @@
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Superficie de un circulo</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>perimetro de un cubo</textoRespuesta>
+          <textoRespuesta>Perimetro de un cubo</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -4128,11 +4128,11 @@
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>4 cm, 4 cm, 4 cm</textoRespuesta>
+          <textoRespuesta>3 cm, 4 cm, 4 cm</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>3 cm, 4 cm, 4 cm</textoRespuesta>
+          <textoRespuesta>4 cm, 4 cm, 4 cm</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
@@ -4146,7 +4146,7 @@
     <jugador>
       <nombre>1</nombre>
       <contrasenia>1</contrasenia>
-      <puntaje>196500</puntaje>
+      <puntaje>211400</puntaje>
     </jugador>
   </listaJugadores>
 </juego>
