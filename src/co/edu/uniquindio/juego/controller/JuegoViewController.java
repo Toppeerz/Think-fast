@@ -71,6 +71,9 @@ public class JuegoViewController {
     private ImageView vida3;
 
     @FXML
+    private ImageView fondoImagen; 
+
+    @FXML
     public Label txtCronometro;
 
     @FXML
@@ -117,12 +120,15 @@ public class JuegoViewController {
 
     @FXML
     void responder1(ActionEvent event) {
+      
         seleccionarRespuesta(btnResponder1, preguntaPantalla.getRespuestas().get(0));
+        
 
     }
 
     @FXML
     void responder2(ActionEvent event) {
+       
         seleccionarRespuesta(btnResponder2, preguntaPantalla.getRespuestas().get(1));
        
 
@@ -130,6 +136,7 @@ public class JuegoViewController {
 
     @FXML
     void responder3(ActionEvent event) {
+      
         seleccionarRespuesta(btnResponder3, preguntaPantalla.getRespuestas().get(2));
         
 
@@ -137,6 +144,7 @@ public class JuegoViewController {
 
     @FXML
     void responder4(ActionEvent event) {
+        
         seleccionarRespuesta(btnResponder4, preguntaPantalla.getRespuestas().get(3));
        
     }
@@ -155,6 +163,7 @@ public class JuegoViewController {
         pausaDos.setOnFinished(event -> {
             removerRespuestas();
             cambiarPreguntaPantalla();
+            cambiarFigura();
         });
         pausaUno.play();
 
@@ -232,10 +241,13 @@ public class JuegoViewController {
 
                 txtPregunta.setText(preguntaPantalla.getPregunta());
 
+                
+
                 btnResponder1.setText(preguntaPantalla.getRespuestas().get(0).getRespuesta());
                 btnResponder2.setText(preguntaPantalla.getRespuestas().get(1).getRespuesta());
                 btnResponder3.setText(preguntaPantalla.getRespuestas().get(2).getRespuesta());
                 btnResponder4.setText(preguntaPantalla.getRespuestas().get(3).getRespuesta());
+               
                 iniciarCronometro();
             } else {
 
@@ -244,6 +256,36 @@ public class JuegoViewController {
             }
         }
     }
+
+    private void cambiarFigura() {
+        if (preguntaPantalla.getClasePregunta().name()=="HISTORIA") {
+            
+
+            fondoImagen.setImage(new Image(new File("src/resources/imagenes/1.jpg").toURI().toString()));
+        }
+          else if (preguntaPantalla.getClasePregunta().name()=="DEPORTE") {
+
+                fondoImagen.setImage(new Image(new File("src/resources/imagenes/2.jpg").toURI().toString()));
+
+            } else if (preguntaPantalla.getClasePregunta().name()=="ENTRETENIMIENTO")  {
+
+                fondoImagen.setImage(new Image(new File("src/resources/imagenes/5.jpg").toURI().toString()));
+
+            }else if (preguntaPantalla.getClasePregunta().name()=="MATEMATICA")  {
+
+                fondoImagen.setImage(new Image(new File("src/resources/imagenes/3.jpg").toURI().toString()));
+
+            }else if (preguntaPantalla.getClasePregunta().name()=="GEOGRAFIA")  {
+
+                fondoImagen.setImage(new Image(new File("src/resources/imagenes/4.jpg").toURI().toString()));
+
+            }else   {
+
+                fondoImagen.setImage(new Image(new File("src/resources/imagenes/6.jpg").toURI().toString()));
+
+            }
+        }
+    
 
     private void revelarRespuestas() {
 
@@ -381,6 +423,8 @@ public class JuegoViewController {
 
     @FXML
     void initialize() {
+       
+       
 
         vidas = 3;
         puntuacion = 0;
@@ -398,6 +442,8 @@ public class JuegoViewController {
 
         txtClasePregunta.setText(preguntaPantalla.getClasePregunta().name());
         txtPregunta.setText(preguntaPantalla.getPregunta());
+
+         cambiarFigura();
 
         btnResponder1.setText(preguntaPantalla.getRespuestas().get(0).getRespuesta());
         btnResponder2.setText(preguntaPantalla.getRespuestas().get(1).getRespuesta());

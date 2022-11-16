@@ -7,19 +7,19 @@
       <clasePregunta>ARTE</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Mezclar pinturas</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Comer helado</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Cavar un hoyo</textoRespuesta>
+          <textoRespuesta>Cocinar</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>Cocinar</textoRespuesta>
+          <textoRespuesta>Mezclar pinturas</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Cavar un hoyo</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -122,19 +122,19 @@
       <clasePregunta>ARTE</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>Que cientos volando</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>Que mal que por bien no venga!</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
           <textoRespuesta>Que lamentar.</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
+          <textoRespuesta>Que cientos volando</textoRespuesta>
+          <correcta>true</correcta>
+        </respuesta>
+        <respuesta>
           <textoRespuesta>Bajo el sol.</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>Que mal que por bien no venga!</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
       </respuestas>
@@ -2974,11 +2974,7 @@
       <clasePregunta>HISTORIA</clasePregunta>
       <respuestas>
         <respuesta>
-          <textoRespuesta>1969</textoRespuesta>
-          <correcta>true</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>1968</textoRespuesta>
+          <textoRespuesta>1972</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
@@ -2986,8 +2982,12 @@
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
-          <textoRespuesta>1972</textoRespuesta>
+          <textoRespuesta>1968</textoRespuesta>
           <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
+          <textoRespuesta>1969</textoRespuesta>
+          <correcta>true</correcta>
         </respuesta>
       </respuestas>
     </pregunta>
@@ -3549,15 +3549,15 @@
       <clasePregunta>MATEMATICA</clasePregunta>
       <respuestas>
         <respuesta>
+          <textoRespuesta>68</textoRespuesta>
+          <correcta>false</correcta>
+        </respuesta>
+        <respuesta>
           <textoRespuesta>60</textoRespuesta>
           <correcta>true</correcta>
         </respuesta>
         <respuesta>
           <textoRespuesta>50</textoRespuesta>
-          <correcta>false</correcta>
-        </respuesta>
-        <respuesta>
-          <textoRespuesta>68</textoRespuesta>
           <correcta>false</correcta>
         </respuesta>
         <respuesta>
@@ -4147,6 +4147,11 @@
       <nombre>1</nombre>
       <contrasenia>1</contrasenia>
       <puntaje>211400</puntaje>
+    </jugador>
+    <jugador>
+      <nombre>didier</nombre>
+      <contrasenia>1234</contrasenia>
+      <puntaje>21900</puntaje>
     </jugador>
   </listaJugadores>
 </juego>

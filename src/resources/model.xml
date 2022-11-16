@@ -3,7 +3,7 @@
  <object class="co.edu.uniquindio.juego.model.Juego" id="Juego0">
   <void property="listaJugadores">
    <void method="put">
-    <int>0</int>
+    <int>1</int>
     <object class="co.edu.uniquindio.juego.model.Jugador">
      <void property="contrasenia">
       <string>1</string>
@@ -13,6 +13,20 @@
      </void>
      <void property="puntaje">
       <int>211400</int>
+     </void>
+    </object>
+   </void>
+   <void method="put">
+    <int>0</int>
+    <object class="co.edu.uniquindio.juego.model.Jugador">
+     <void property="contrasenia">
+      <string>1234</string>
+     </void>
+     <void property="nombre">
+      <string>didier</string>
+     </void>
+     <void property="puntaje">
+      <int>21900</int>
      </void>
     </object>
    </void>
@@ -33,6 +47,20 @@
      <void property="respuestas">
       <void method="add">
        <object class="co.edu.uniquindio.juego.model.Respuesta">
+        <void property="respuesta">
+         <string>Comer helado</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="co.edu.uniquindio.juego.model.Respuesta">
+        <void property="respuesta">
+         <string>Cocinar</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="co.edu.uniquindio.juego.model.Respuesta">
         <void property="correcta">
          <boolean>true</boolean>
         </void>
@@ -44,21 +72,7 @@
       <void method="add">
        <object class="co.edu.uniquindio.juego.model.Respuesta">
         <void property="respuesta">
-         <string>Comer helado</string>
-        </void>
-       </object>
-      </void>
-      <void method="add">
-       <object class="co.edu.uniquindio.juego.model.Respuesta">
-        <void property="respuesta">
          <string>Cavar un hoyo</string>
-        </void>
-       </object>
-      </void>
-      <void method="add">
-       <object class="co.edu.uniquindio.juego.model.Respuesta">
-        <void property="respuesta">
-         <string>Cocinar</string>
         </void>
        </object>
       </void>
@@ -271,6 +285,13 @@
      <void property="respuestas">
       <void method="add">
        <object class="co.edu.uniquindio.juego.model.Respuesta">
+        <void property="respuesta">
+         <string>Que lamentar.</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="co.edu.uniquindio.juego.model.Respuesta">
         <void property="correcta">
          <boolean>true</boolean>
         </void>
@@ -282,21 +303,14 @@
       <void method="add">
        <object class="co.edu.uniquindio.juego.model.Respuesta">
         <void property="respuesta">
-         <string>Que mal que por bien no venga!</string>
-        </void>
-       </object>
-      </void>
-      <void method="add">
-       <object class="co.edu.uniquindio.juego.model.Respuesta">
-        <void property="respuesta">
-         <string>Que lamentar.</string>
-        </void>
-       </object>
-      </void>
-      <void method="add">
-       <object class="co.edu.uniquindio.juego.model.Respuesta">
-        <void property="respuesta">
          <string>Bajo el sol.</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="co.edu.uniquindio.juego.model.Respuesta">
+        <void property="respuesta">
+         <string>Que mal que por bien no venga!</string>
         </void>
        </object>
       </void>
@@ -6117,18 +6131,8 @@
      <void property="respuestas">
       <void method="add">
        <object class="co.edu.uniquindio.juego.model.Respuesta">
-        <void property="correcta">
-         <boolean>true</boolean>
-        </void>
         <void property="respuesta">
-         <string>1969</string>
-        </void>
-       </object>
-      </void>
-      <void method="add">
-       <object class="co.edu.uniquindio.juego.model.Respuesta">
-        <void property="respuesta">
-         <string>1968</string>
+         <string>1972</string>
         </void>
        </object>
       </void>
@@ -6142,7 +6146,17 @@
       <void method="add">
        <object class="co.edu.uniquindio.juego.model.Respuesta">
         <void property="respuesta">
-         <string>1972</string>
+         <string>1968</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="co.edu.uniquindio.juego.model.Respuesta">
+        <void property="correcta">
+         <boolean>true</boolean>
+        </void>
+        <void property="respuesta">
+         <string>1969</string>
         </void>
        </object>
       </void>
@@ -7295,6 +7309,13 @@
      <void property="respuestas">
       <void method="add">
        <object class="co.edu.uniquindio.juego.model.Respuesta">
+        <void property="respuesta">
+         <string>68</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="co.edu.uniquindio.juego.model.Respuesta">
         <void property="correcta">
          <boolean>true</boolean>
         </void>
@@ -7307,13 +7328,6 @@
        <object class="co.edu.uniquindio.juego.model.Respuesta">
         <void property="respuesta">
          <string>50</string>
-        </void>
-       </object>
-      </void>
-      <void method="add">
-       <object class="co.edu.uniquindio.juego.model.Respuesta">
-        <void property="respuesta">
-         <string>68</string>
         </void>
        </object>
       </void>

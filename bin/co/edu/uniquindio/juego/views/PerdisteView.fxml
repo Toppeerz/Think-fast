@@ -8,18 +8,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.juego.controller.PerdisteViewController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.juego.controller.PerdisteViewController">
    <children>
       <ImageView fitHeight="600.0" fitWidth="900.0">
          <image>
-            <Image url="@../../../../../resources/imagenes/perdiste.png" />
+            <Image url="@../../../../../resources/imagenes/7.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="btnRegresar" layoutX="337.0" layoutY="501.0" mnemonicParsing="false" onAction="#regresar" opacity="0.0" prefHeight="51.0" prefWidth="223.0" text="regresar">
+      <Button fx:id="btnRegresar" layoutX="358.0" layoutY="520.0" mnemonicParsing="false" onAction="#regresar" opacity="0.0" prefHeight="59.0" prefWidth="181.0" text="regresar">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Label fx:id="txtPuntuacion" layoutX="191.0" layoutY="41.0" prefHeight="59.0" prefWidth="562.0" text="Puntuacion: ">
+      <Label fx:id="txtPuntuacion" layoutX="81.0" layoutY="472.0" prefHeight="59.0" prefWidth="562.0" text="Puntuacion: " textFill="#d0cbcb">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
