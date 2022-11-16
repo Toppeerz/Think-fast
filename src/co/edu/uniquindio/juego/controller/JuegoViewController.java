@@ -50,9 +50,6 @@ public class JuegoViewController {
     private Button btnPistaParar;
 
     @FXML
-    private Label txtClasePregunta;
-
-    @FXML
     private Button btnPistaSaltar;
 
     @FXML
@@ -163,7 +160,6 @@ public class JuegoViewController {
         pausaDos.setOnFinished(event -> {
             removerRespuestas();
             cambiarPreguntaPantalla();
-            cambiarFigura();
         });
         pausaUno.play();
 
@@ -235,9 +231,9 @@ public class JuegoViewController {
             if (!colaPreguntas.isEmpty()) {
                 preguntaPantalla = colaPreguntas.poll();
 
-                Collections.shuffle(preguntaPantalla.getRespuestas());
+                cambiarFigura();
 
-                txtClasePregunta.setText(preguntaPantalla.getClasePregunta().name());
+                Collections.shuffle(preguntaPantalla.getRespuestas());
 
                 txtPregunta.setText(preguntaPantalla.getPregunta());
 
@@ -412,7 +408,6 @@ public class JuegoViewController {
     private void usarPistaSaltar() {
         pararCronometro();
         cambiarPreguntaPantalla();
-        cambiarFigura();
         btnPistaSaltar.setVisible(false);
         puntuacion -= 100;
         txtPuntuacion.setText("Puntuacion: " + puntuacion);
@@ -441,7 +436,6 @@ public class JuegoViewController {
 
         Collections.shuffle(preguntaPantalla.getRespuestas());
 
-        txtClasePregunta.setText(preguntaPantalla.getClasePregunta().name());
         txtPregunta.setText(preguntaPantalla.getPregunta());
 
          cambiarFigura();
