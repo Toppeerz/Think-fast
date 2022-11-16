@@ -75,7 +75,7 @@ public class Aplicacion extends Application {
 
 		primaryStage.getIcons().add(new Image(new File("src/resources/imagenes/Logo.png").toURI().toString()));
 
-		primaryStage.setTitle("Think Fast");
+		primaryStage.setTitle("Think Faster");
 		
 		primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
 			@Override
@@ -97,7 +97,7 @@ public class Aplicacion extends Application {
 	public void cambiarEscena(String fxmlFile)
 	{
 
-	    FXMLLoader loader = new FXMLLoader(getClass() .getResource(fxmlFile));
+	    FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
 	    Parent root;
 	    try
 	    {
