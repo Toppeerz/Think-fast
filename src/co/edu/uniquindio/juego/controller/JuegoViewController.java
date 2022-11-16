@@ -412,6 +412,7 @@ public class JuegoViewController {
     private void usarPistaSaltar() {
         pararCronometro();
         cambiarPreguntaPantalla();
+        cambiarFigura();
         btnPistaSaltar.setVisible(false);
         puntuacion -= 100;
         txtPuntuacion.setText("Puntuacion: " + puntuacion);
